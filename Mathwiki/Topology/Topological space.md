@@ -1,5 +1,5 @@
 ## Definition
-A **topological space** is a set $X$ together with a set $\mathscr{T}\subseteq \mathbb{P}(X)$ such that:
+A **topological space** is a set $X$ together with a set $\mathscr{T}\subseteq \mathcal{P}(X)$ such that:
 1. $\emptyset\in\mathscr{T}$ and $X\in\mathscr{T}$;
 2. $\mathscr{T}$ is closed under union;
 3. $\mathscr{T}$ is closed under finite intersection.
