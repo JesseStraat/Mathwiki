@@ -2,7 +2,7 @@
  A **category** $\mathcal{C}$ consists of:
  - A collection of *[[Object|objects]]* $\mathrm{Ob}(\mathcal{C})$;
  - A collection of *[[Morphism|morphisms]]* $\mathrm{Mor}(\mathcal{C})$ (also called *arrows*);
- - Maps $\mathrm{dom}\colon \mathrm{Mor}(\mathcal{C})\to\mathrm{Ob}(\mathcal{C})$, the *domain map* and $\mathrm{cod}\colon \mathrm{Mor}(\mathcal{C})\to\mathrm{Ob}(\mathcal{C})$, the *codomain map*, i.e., to each morphism we associate a *domain* and a *codomain* (notation: $f\colon A\to B$, being equivalent to $\mathrm{dom}(f)=A$ and $\mathrm{cod}(g)=B$);
+ - Maps $\mathrm{dom}\colon \mathrm{Mor}(\mathcal{C})\to\mathrm{Ob}(\mathcal{C})$, the *domain map* and $\mathrm{cod}\colon \mathrm{Mor}(\mathcal{C})\to\mathrm{Ob}(\mathcal{C})$, the *codomain map*, i.e., to each morphism we associate a *domain* and a *codomain* (notation: $f\colon A\to B$, being equivalent to $\mathrm{dom}(f)=A$ and $\mathrm{cod}(f)=B$);
  - For each pair $f\colon A\to B$ and $g\colon B\to C$, there is a morphism $g\circ f\colon A\to C$ (the *composition* of $g$ and $f$; sometimes we neglect the $\circ$ symbol $gf := g\circ f$);
  - For every object $A$ a morphism $1_A\colon A\to A$ (the *identity morphism* on $A$),
 such that the following axioms hold:
