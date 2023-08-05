@@ -1,0 +1,8 @@
+
+/* --- proofs.css --- */  
+ .callout[data-callout="proof"] {
+    --callout-color: 100, 100, 100;
+    --callout-icon: lucide-pen-square;
+}  
+
+
