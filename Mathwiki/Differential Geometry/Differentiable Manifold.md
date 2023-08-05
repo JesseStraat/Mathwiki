@@ -1,6 +1,6 @@
 ## Definition
 An **$n$-dimensional $C^k$-differentiable manifold** is
-- A [[Topological Manifold|topological manifold]] $(M, \mathscr{T})$, i.e., a [[Topological space|topological space]] that is locally Euclidean, [[Hausdorff]] and [[Second countable|secondcountable]];
+- A [[Topological Manifold|topological manifold]] $(M, \mathscr{T})$, i.e., a [[Topological space|topological space]] that is locally Euclidean, [[Hausdorff]] and [[Second countable|second countable]];
 - A collection of local *charts* $\mathscr{A} = \{(U, \varphi)\ |\ U\in \mathscr{T}, \varphi\colon U\to \mathbb{R}^n\text{ is injective and continuous}\}$,
 such that
 1. $\cup_{(U,\varphi)\in\mathscr{A}}U = M$;

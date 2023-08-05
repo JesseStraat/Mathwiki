@@ -10,7 +10,7 @@ such that the following axioms hold:
 2. For each $f\colon A\to B$, we have $f\circ 1_A = f = 1_B\circ f$;
 For any objects $X,Y$, the collection of morphisms with domain $X$ and codomain $Y$, known as the **hom-set**, is denoted $\mathcal{C}(X,Y)$.
 ## Special categories
-- A **groupoid** is a category in which all morphisms are [[Morphism#Isomorphisms|isomorphic]].
+- A **groupoid** is a category in which all morphisms are [[Morphism#Isomorphisms|isomorphisms]].
 - A category is called a **complete category** if it has all [[Limit|small limits]].
 ## Examples
 ### Opposite categories
