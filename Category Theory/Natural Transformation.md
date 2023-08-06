@@ -24,7 +24,7 @@ Given functors $F,G,H\colon\mathcal{C}\to\mathcal{D}$ and $\mu\colon F\Rightarro
 \begin{tikzcd}
 FC \arrow[r, "Ff"]\arrow[d, "\mu_C"]\arrow[bend right=60,swap,dd,"(\nu\circ\mu)_C"] & FD \arrow[d, "\mu_D"]\arrow[bend left=60,dd,"(\nu\circ\mu)_D"]\\
 GC \arrow[r, "Gf"]\arrow[d, "\nu_C"] & GD \arrow[d, "\nu_D"]\\
-HC \arrow[r, "Hf"] & H
+HC \arrow[r, "Hf"] & HD
 \end{tikzcd}
 \end{document}
 ```
