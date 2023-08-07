@@ -62,3 +62,65 @@ A functor $F\colon\mathcal{C}\to\mathcal{D}$ is an **equivalence** if there exis
 >Let $F\colon\mathcal{C}\to\mathcal{D}$ be faithful and $f\colon X\to Y$ in $\mathcal{C}$ such that $Ff$ is epimorphic. Assume we have $g,h\colon Y\to Z$ such that $g\circ f = h\circ f$. Then $Fg\circ Ff = Fh\circ Ff$, which implies $Fg = Fh$, and through injectivity, $g = h$. Hence, $f$ is epimorphic.
 >A similar proof holds for monomorphisms.
 >Now assume $F$ is fully faithful and $f$ is isomorphic. Then there exists a (unique) $g\colon Y\to X$ that is its inverse. Therefore, $F(f\circ g) = 1_{FY}$, which implies that $f\circ g = 1_Y$. Similarly, we show that $g\circ f = 1_X$, which proves that $f$ is an isomorphism.
+
+**Proposition:** Given categories $\mathcal{C},\mathcal{D}$ and for each object $C$ in $\mathcal{C}$ a functor $G_C^\mathcal{C}\to\mathcal{E}$ and for each object $D$ in $\mathcal{D}$ a functor $H_D\colon\mathcal{C}\to\mathcal{E}$, assume that $G_C(D) = H_D(C) =: \tilde{F}(C,D)$ for all $C,D$, and that for any morphisms $f\colon C\to C'$ in $\mathcal{C}$ and $g\colon D\to D'$ in $\mathcal{D}$, the following diagram commutes,
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+	\tilde{F}(C,D) \arrow[r,"H_C(g)"]\arrow[d,"G_C(f)"] & \tilde{F}(C,D') \arrow[d,"G_{D'}(f)"]\\
+	\tilde{F}(C',D) \arrow[r,"H_{C'}(g)"] & \tilde{F}(C',D')
+\end{tikzcd}
+\end{document}
+```
+there is a unique functor $F\colon \mathcal{C}\times\mathcal{D}\to\mathcal{E}$ such that:
+1. $F(C,D) = \tilde{F}(C,D)$;
+2. $F(f,1_D) = G(f)$;
+3. $F(1_C,f) = H(f)$.
+>[!proof]-
+>To finish defining the functor, we only need to define $F(f,g)$ for arbitrary morphisms $f\colon C\to C'$, $g\colon D\to D'$. We find that
+>$$F(f,g) = F((1_{C'}, g) \circ (f, 1_D)) = H_{C'}(g) \circ G_D(f),$$
+>diagrammatically,
+>```tikz
+>\usepackage{tikz-cd}
+>\usepackage{amsmath}
+>\usepackage{amssymb}
+>\begin{document}
+>\Large
+>\begin{tikzcd}
+>	F(C,D) \arrow[r,"G_D(f)"]\arrow[d,dashed,swap,"{F(f,g)}"] & F(C',D)\arrow[dl,"H_{C'}(g)"]\\
+>	F(C',D') &
+>\end{tikzcd}
+>\end{document}
+>```
+>which, of course, uniquely defines $F$. Now we only need to check the functor axioms. By construction, it is trivial that $F(1_C,1_D) = 1_{F(C,D)}$. As for composition, given morphisms
+>```tikz
+>\usepackage{tikz-cd}
+>\usepackage{amsmath}
+>\usepackage{amssymb}
+>\begin{document}
+>\Large
+>\begin{tikzcd}
+>	C \arrow[r,"f"] & C'\arrow[r,"f'"] & C''\\
+>	D \arrow[r,"g"] & D' \arrow[r,"g'"] & D''
+>\end{tikzcd}
+>\end{document}
+>```
+>we see that we have the following commutative diagram,
+>```tikz
+>\usepackage{tikz-cd}
+>\usepackage{amsmath}
+>\usepackage{amssymb}
+>\begin{document}
+>\Large
+>\begin{tikzcd}
+>	F(C,D) \arrow[dd,bend right=80,swap,dashed,"{F(f'\circ f,g'\circ g)}"]\arrow[r,"G_D(f)"]\arrow[d,dashed,swap,"{F(f,g)}"] & F(C',D) \arrow[r,"G_D(f')"]\arrow[dl,"H_{C'}(g)"] & F(C'',D) \arrow[dl,"H_{C''}(g)"]\\
+>	F(C',D') \arrow[d,dashed,swap,"{F(f',g')}"]\arrow[r,swap,"G_{D'}(f')"] & F(C'', D') \arrow[dl, "H_{C''}(g')"] & \\
+>	F(C'',D'') &&
+>\end{tikzcd}
+>\end{document}
+>```
+>which proves that $F$ is indeed a functor.
