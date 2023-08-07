@@ -22,13 +22,13 @@
   <!-- Graph View Data -->
   <script>
     let nodes = {
-      "nodeCount": 12,
-      "linkCount": 38,
-      "radii": [7, 7, 7, 7, 7, 6.626543209876543, 6.626543209876543, 6.209876543209877, 6.209876543209877, 5.638888888888889, 4.033950617283951, 3],
-      "labels": ["Object", "Morphism", "Limit", "Functor", "Category", "Smallness", "Natural Transformation", "Differentiable Manifold", "Exponential object", "Natural Numbers Object", "Topological space", "index"],
-      "paths": ["category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "set-theory/smallness.html", "category-theory/natural-transformation.html", "differential-geometry/differentiable-manifold.html", "category-theory/exponential-object.html", "category-theory/natural-numbers-object.html", "topology/topological-space.html", "index.html"],
-      "linkSources": [4, 4, 4, 4, 4, 4, 4, 8, 8, 8, 8, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 1, 1, 1, 9, 9, 9, 6, 6, 6, 0, 0, 7, 7, 7, 5, 5, 5],
-      "linkTargets": [0, 1, 2, 3, 6, 5, 7, 4, 2, 0, 1, 4, 0, 1, 3, 3, 0, 6, 1, 4, 5, 4, 0, 1, 4, 0, 1, 4, 3, 1, 4, 0, 10, 4, 1, 4, 0, 1]
+      "nodeCount": 14,
+      "linkCount": 41,
+      "radii": [7, 7, 7, 7, 7, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.209876543209877, 5.638888888888889, 4.913580246913581, 4.033950617283951, 4.033950617283951, 3],
+      "labels": ["Category", "Functor", "Morphism", "Object", "Limit", "Smallness", "Natural Transformation", "Exponential object", "Differentiable Manifold", "Natural Numbers Object", "Presheaves", "Topological space", "Adjoint", "index"],
+      "paths": ["category-theory/category.html", "category-theory/functor.html", "category-theory/morphism.html", "category-theory/object.html", "category-theory/limit.html", "set-theory/smallness.html", "category-theory/natural-transformation.html", "category-theory/exponential-object.html", "differential-geometry/differentiable-manifold.html", "category-theory/natural-numbers-object.html", "category-theory/presheaves.html", "topology/topological-space.html", "category-theory/adjoint.html", "index.html"],
+      "linkSources": [0, 0, 0, 0, 0, 0, 0, 7, 7, 7, 7, 7, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 2, 2, 2, 9, 9, 9, 6, 6, 6, 3, 3, 8, 8, 8, 5, 5, 5, 10, 10],
+      "linkTargets": [3, 2, 4, 1, 6, 5, 8, 0, 4, 3, 2, 12, 0, 3, 2, 1, 1, 3, 6, 2, 0, 5, 0, 3, 2, 0, 3, 2, 0, 1, 2, 0, 3, 11, 0, 2, 0, 3, 2, 5, 0]
     };
     let attractionForce = 1;
     let linkLength = 10;
@@ -49,7 +49,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-maximized is-hidden-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
   <div class="webpage-container">
     <div class="sidebar-left sidebar">
       <div class="sidebar-content">
@@ -66,6 +66,10 @@
                   </svg></div><a class="tree-item-link" href="category-theory"><span class="tree-item-title">Category Theory</span></a>
               </div>
               <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/adjoint.html"><span class="tree-item-title">Adjoint</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/category.html"><span class="tree-item-title">Category</span></a></div>
                   <div class="tree-item-children"></div>
@@ -96,6 +100,10 @@
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/object.html"><span class="tree-item-title">Object</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/presheaves.html"><span class="tree-item-title">Presheaves</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
               </div>
@@ -150,94 +158,89 @@
     <div class="document-container">
       <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
         <style id="MJX-CHTML-styles">
-          mjx-c.mjx-c1D452.TEX-I::before {
-            padding: 0.442em 0.466em 0.011em 0px;
-            content: "e";
+          mjx-c.mjx-c2286::before {
+            padding: 0.636em 0.778em 0.138em 0px;
+            content: "⊆";
           }
 
-          mjx-c.mjx-c1D463.TEX-I::before {
-            padding: 0.443em 0.485em 0.011em 0px;
-            content: "v";
+          mjx-c.mjx-c50.TEX-C::before {
+            padding: 0.683em 0.733em 0.057em 0px;
+            content: "P";
           }
 
-          mjx-c.mjx-c22C5::before {
-            padding: 0.31em 0.278em 0px 0px;
-            content: "⋅";
+          mjx-c.mjx-c2205::before {
+            padding: 0.772em 0.5em 0.078em 0px;
+            content: "∅";
           }
 
-          mjx-msubsup {
-            display: inline-block;
-            text-align: left;
+          mjx-c.mjx-c212C.TEX-SC::before {
+            padding: 0.708em 0.928em 0.028em 0px;
+            content: "B";
           }
 
-          mjx-script {
-            display: inline-block;
-            padding-right: 0.05em;
-            padding-left: 0.033em;
+          mjx-c.mjx-c2265::before {
+            padding: 0.636em 0.778em 0.138em 0px;
+            content: "≥";
           }
 
-          mjx-script>mjx-spacer {
-            display: block;
+          mjx-c.mjx-c2264::before {
+            padding: 0.636em 0.778em 0.138em 0px;
+            content: "≤";
           }
 
-          mjx-c.mjx-c1D44D.TEX-I::before {
-            padding: 0.683em 0.723em 0px 0px;
-            content: "Z";
+          mjx-c.mjx-c3E::before {
+            padding: 0.54em 0.778em 0.04em 0px;
+            content: ">";
           }
 
-          mjx-c.mjx-c2243::before {
-            padding: 0.464em 0.778em 0px 0px;
-            content: "≃";
+          mjx-c.mjx-c3C::before {
+            padding: 0.54em 0.778em 0.04em 0px;
+            content: "<";
           }
 
-          mjx-c.mjx-c1D716.TEX-I::before {
-            padding: 0.431em 0.406em 0.011em 0px;
-            content: "ϵ";
+          mjx-c.mjx-c50::before {
+            padding: 0.683em 0.681em 0px 0px;
+            content: "P";
           }
 
-          mjx-c.mjx-c21A6::before {
-            padding: 0.511em 1em 0.011em 0px;
-            content: "↦";
+          mjx-c.mjx-c1D459.TEX-I::before {
+            padding: 0.694em 0.298em 0.011em 0px;
+            content: "l";
           }
 
-          mjx-c.mjx-c2033::before {
-            padding: 0.56em 0.55em 0px 0px;
-            content: "′′";
+          mjx-c.mjx-c68::before {
+            padding: 0.694em 0.556em 0px 0px;
+            content: "h";
           }
 
-          mjx-c.mjx-c1D702.TEX-I::before {
-            padding: 0.442em 0.497em 0.216em 0px;
-            content: "η";
+          mjx-c.mjx-c5C::before {
+            padding: 0.75em 0.5em 0.25em 0px;
+            content: "\\";
           }
 
-          mjx-c.mjx-c1D460.TEX-I::before {
-            padding: 0.442em 0.469em 0.01em 0px;
-            content: "s";
+          mjx-c.mjx-c46::before {
+            padding: 0.68em 0.653em 0px 0px;
+            content: "F";
           }
 
-          mjx-c.mjx-c2115.TEX-A::before {
-            padding: 0.683em 0.722em 0.02em 0px;
-            content: "N";
+          mjx-c.mjx-c45.TEX-C::before {
+            padding: 0.705em 0.564em 0.022em 0px;
+            content: "E";
           }
 
-          mjx-c.mjx-c1D43B.TEX-I::before {
-            padding: 0.683em 0.888em 0px 0px;
-            content: "H";
-          }
-
-          mjx-c.mjx-c1D708.TEX-I::before {
-            padding: 0.442em 0.53em 0px 0px;
-            content: "ν";
-          }
-
-          mjx-c.mjx-c1D43E.TEX-I::before {
-            padding: 0.683em 0.889em 0px 0px;
-            content: "K";
+          mjx-c.mjx-c7E::before {
+            padding: 0.318em 0.5em 0px 0px;
+            content: "~";
           }
 
           mjx-c.mjx-c1D440.TEX-I::before {
             padding: 0.683em 1.051em 0px 0px;
             content: "M";
+          }
+
+          mjx-c.mjx-c1D4AF.TEX-SC::before {
+            padding: 0.735em 0.996em 0.037em 0px;
+            content: "T";
           }
 
           mjx-c.mjx-c1D49C.TEX-SC::before {
@@ -250,9 +253,19 @@
             content: "U";
           }
 
-          mjx-c.mjx-c1D711.TEX-I::before {
-            padding: 0.442em 0.654em 0.218em 0px;
-            content: "φ";
+          mjx-c.mjx-cA0::before {
+            padding: 0px 0.25em 0px 0px;
+            content: " ";
+          }
+
+          mjx-c.mjx-c7C::before {
+            padding: 0.75em 0.278em 0.249em 0px;
+            content: "|";
+          }
+
+          mjx-c.mjx-c211D.TEX-A::before {
+            padding: 0.683em 0.722em 0px 0px;
+            content: "R";
           }
 
           mjx-c.mjx-c73::before {
@@ -295,11 +308,6 @@
             content: "ψ";
           }
 
-          mjx-c.mjx-c2212::before {
-            padding: 0.583em 0.778em 0.082em 0px;
-            content: "−";
-          }
-
           mjx-c.mjx-c2229::before {
             padding: 0.598em 0.667em 0.022em 0px;
             content: "∩";
@@ -315,74 +323,104 @@
             content: "N";
           }
 
-          mjx-mtext {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-c.mjx-c1D4AF.TEX-SC::before {
-            padding: 0.735em 0.996em 0.037em 0px;
-            content: "T";
-          }
-
-          mjx-c.mjx-c2286::before {
-            padding: 0.636em 0.778em 0.138em 0px;
-            content: "⊆";
-          }
-
-          mjx-c.mjx-c50.TEX-C::before {
-            padding: 0.683em 0.733em 0.057em 0px;
-            content: "P";
-          }
-
-          mjx-c.mjx-c2205::before {
-            padding: 0.772em 0.5em 0.078em 0px;
-            content: "∅";
-          }
-
-          mjx-c.mjx-c212C.TEX-SC::before {
-            padding: 0.708em 0.928em 0.028em 0px;
-            content: "B";
-          }
-
-          mjx-c.mjx-c1D451.TEX-I::before {
-            padding: 0.694em 0.52em 0.01em 0px;
-            content: "d";
-          }
-
-          mjx-c.mjx-c211D.TEX-A::before {
-            padding: 0.683em 0.722em 0px 0px;
-            content: "R";
-          }
-
-          mjx-c.mjx-c2265::before {
-            padding: 0.636em 0.778em 0.138em 0px;
-            content: "≥";
-          }
-
           mjx-c.mjx-c1D465.TEX-I::before {
             padding: 0.442em 0.572em 0.011em 0px;
             content: "x";
           }
 
-          mjx-c.mjx-c1D466.TEX-I::before {
-            padding: 0.442em 0.49em 0.205em 0px;
-            content: "y";
+          mjx-c.mjx-c2115.TEX-A::before {
+            padding: 0.683em 0.722em 0.02em 0px;
+            content: "N";
           }
 
-          mjx-c.mjx-c1D467.TEX-I::before {
-            padding: 0.442em 0.465em 0.011em 0px;
-            content: "z";
+          mjx-msubsup {
+            display: inline-block;
+            text-align: left;
           }
 
-          mjx-c.mjx-c2264::before {
-            padding: 0.636em 0.778em 0.138em 0px;
-            content: "≤";
+          mjx-script {
+            display: inline-block;
+            padding-right: 0.05em;
+            padding-left: 0.033em;
           }
 
-          mjx-c.mjx-c2B::before {
+          mjx-script>mjx-spacer {
+            display: block;
+          }
+
+          mjx-c.mjx-c2243::before {
+            padding: 0.464em 0.778em 0px 0px;
+            content: "≃";
+          }
+
+          mjx-c.mjx-c1D716.TEX-I::before {
+            padding: 0.431em 0.406em 0.011em 0px;
+            content: "ϵ";
+          }
+
+          mjx-c.mjx-c2033::before {
+            padding: 0.56em 0.55em 0px 0px;
+            content: "′′";
+          }
+
+          mjx-c.mjx-c1D702.TEX-I::before {
+            padding: 0.442em 0.497em 0.216em 0px;
+            content: "η";
+          }
+
+          mjx-c.mjx-c1D464.TEX-I::before {
+            padding: 0.443em 0.716em 0.011em 0px;
+            content: "w";
+          }
+
+          mjx-c.mjx-c1D460.TEX-I::before {
+            padding: 0.442em 0.469em 0.01em 0px;
+            content: "s";
+          }
+
+          mjx-c.mjx-c1D44F.TEX-I::before {
+            padding: 0.694em 0.429em 0.011em 0px;
+            content: "b";
+          }
+
+          mjx-c.mjx-c1D450.TEX-I::before {
+            padding: 0.442em 0.433em 0.011em 0px;
+            content: "c";
+          }
+
+          mjx-c.mjx-c1D461.TEX-I::before {
+            padding: 0.626em 0.361em 0.011em 0px;
+            content: "t";
+          }
+
+          mjx-c.mjx-c24::before {
+            padding: 0.75em 0.5em 0.056em 0px;
+            content: "$";
+          }
+
+          mjx-c.mjx-c58.TEX-C::before {
+            padding: 0.683em 0.807em 0px 0px;
+            content: "X";
+          }
+
+          mjx-c.mjx-c2C.TEX-MI::before {
+            padding: 0.121em 0.307em 0.194em 0px;
+            content: ",";
+          }
+
+          mjx-c.mjx-c5A.TEX-C::before {
+            padding: 0.683em 0.767em 0px 0px;
+            content: "Z";
+          }
+
+          mjx-c.mjx-c2212::before {
             padding: 0.583em 0.778em 0.082em 0px;
-            content: "+";
+            content: "−";
+          }
+
+          mjx-c.mjx-c22A3::before {
+            padding: 0.694em 0.611em 0px 0px;
+            content: "⊣";
           }
 
           mjx-c.mjx-c1D45F.TEX-I::before {
@@ -390,24 +428,29 @@
             content: "r";
           }
 
-          mjx-c.mjx-cA0::before {
-            padding: 0px 0.25em 0px 0px;
-            content: " ";
+          mjx-c.mjx-c1D445.TEX-I::before {
+            padding: 0.683em 0.759em 0.021em 0px;
+            content: "R";
           }
 
-          mjx-c.mjx-c7C::before {
-            padding: 0.75em 0.278em 0.249em 0px;
-            content: "|";
+          mjx-c.mjx-c1D43F.TEX-I::before {
+            padding: 0.683em 0.681em 0px 0px;
+            content: "L";
           }
 
-          mjx-c.mjx-c3E::before {
-            padding: 0.54em 0.778em 0.04em 0px;
-            content: ">";
+          mjx-c.mjx-c21A6::before {
+            padding: 0.511em 1em 0.011em 0px;
+            content: "↦";
           }
 
-          mjx-c.mjx-c3C::before {
-            padding: 0.54em 0.778em 0.04em 0px;
-            content: "<";
+          mjx-c.mjx-c2B::before {
+            padding: 0.583em 0.778em 0.082em 0px;
+            content: "+";
+          }
+
+          mjx-c.mjx-c1D711.TEX-I::before {
+            padding: 0.442em 0.654em 0.218em 0px;
+            content: "φ";
           }
 
           mjx-munder {
@@ -429,26 +472,6 @@
 
           mjx-under {
             padding-bottom: 0.1em;
-          }
-
-          mjx-c.mjx-c1D457.TEX-I::before {
-            padding: 0.661em 0.412em 0.204em 0px;
-            content: "j";
-          }
-
-          mjx-c.mjx-c220F.TEX-S1::before {
-            padding: 0.75em 0.944em 0.25em 0px;
-            content: "∏";
-          }
-
-          mjx-c.mjx-c2245::before {
-            padding: 0.589em 0.778em 0px 0px;
-            content: "≅";
-          }
-
-          mjx-c.mjx-c1D712.TEX-I::before {
-            padding: 0.442em 0.626em 0.204em 0px;
-            content: "χ";
           }
 
           mjx-c.mjx-c1D45A.TEX-I::before {
@@ -484,6 +507,86 @@
           mjx-c.mjx-c1D709.TEX-I::before {
             padding: 0.704em 0.438em 0.205em 0px;
             content: "ξ";
+          }
+
+          mjx-c.mjx-c1D712.TEX-I::before {
+            padding: 0.442em 0.626em 0.204em 0px;
+            content: "χ";
+          }
+
+          mjx-c.mjx-c1D457.TEX-I::before {
+            padding: 0.661em 0.412em 0.204em 0px;
+            content: "j";
+          }
+
+          mjx-c.mjx-c220F.TEX-S1::before {
+            padding: 0.75em 0.944em 0.25em 0px;
+            content: "∏";
+          }
+
+          mjx-c.mjx-c1D43C.TEX-I::before {
+            padding: 0.683em 0.504em 0px 0px;
+            content: "I";
+          }
+
+          mjx-c.mjx-c1D451.TEX-I::before {
+            padding: 0.694em 0.52em 0.01em 0px;
+            content: "d";
+          }
+
+          mjx-mtext {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-c.mjx-c2245::before {
+            padding: 0.589em 0.778em 0px 0px;
+            content: "≅";
+          }
+
+          mjx-c.mjx-c1D43B.TEX-I::before {
+            padding: 0.683em 0.888em 0px 0px;
+            content: "H";
+          }
+
+          mjx-c.mjx-c1D708.TEX-I::before {
+            padding: 0.442em 0.53em 0px 0px;
+            content: "ν";
+          }
+
+          mjx-c.mjx-c1D43E.TEX-I::before {
+            padding: 0.683em 0.889em 0px 0px;
+            content: "K";
+          }
+
+          mjx-c.mjx-c1D452.TEX-I::before {
+            padding: 0.442em 0.466em 0.011em 0px;
+            content: "e";
+          }
+
+          mjx-c.mjx-c1D463.TEX-I::before {
+            padding: 0.443em 0.485em 0.011em 0px;
+            content: "v";
+          }
+
+          mjx-c.mjx-c1D44D.TEX-I::before {
+            padding: 0.683em 0.723em 0px 0px;
+            content: "Z";
+          }
+
+          mjx-c.mjx-c1D466.TEX-I::before {
+            padding: 0.442em 0.49em 0.205em 0px;
+            content: "y";
+          }
+
+          mjx-c.mjx-c1D467.TEX-I::before {
+            padding: 0.442em 0.465em 0.011em 0px;
+            content: "z";
+          }
+
+          mjx-c.mjx-c22C5::before {
+            padding: 0.31em 0.278em 0px 0px;
+            content: "⋅";
           }
 
           mjx-container[jax="CHTML"] {
@@ -1879,41 +1982,19 @@
               </div>
               <div class="callout-content" style="display: none;">
                 <p>Assume that (1) is a pullback. Now assume that there is some <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> with <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D435 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> such that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FE TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. In particular, then, there is a unique map <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D709 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> such that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D709 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D709 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45B TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>:</p>
-                <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="189.902" height="157.875" viewBox="-72 -72 142.427 118.407">
-                    <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
-                      <g stroke="none"><text y="-107.84" x="11.847" font-family="cmmi12" font-size="14.4" transform="translate(-76.964 50.68)" stroke="none">X</text><text y="-62.08" x="70.553" font-family="cmmi12" font-size="14.4" transform="translate(-76.108 50.68)" stroke="none">C</text><text y="-62.08" x="128.482" font-family="cmmi12" font-size="14.4" transform="translate(-76.187 50.68)" stroke="none">E</text><text y="-16.32" x="70.553" font-family="cmmi12" font-size="14.4" transform="translate(-76.596 50.68)" stroke="none">D</text><text y="-16.32" x="128.482" font-family="cmmi12" font-size="14.4" transform="translate(-76.09 50.68)" stroke="none">F</text></g>
-                      <g stroke-width=".576">
-                        <path d="M-45.883-62.69c38.95-6.275 69.57 5.386 94.116 35.533" fill="none"></path>
-                        <path d="M49.204-31.438c-1.263 1.734-1.252 3.297-.79 4.505-1.088-.699-2.617-1.026-4.57-.141" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57597696"></path><text y="-16.32" x="-.77" font-family="cmmi10" font-size="10" transform="translate(10.78 -45.594)" stroke="none">n</text>
-                      </g>
-                      <g stroke-width=".576">
-                        <path d="M-58.276-51.69c.656 34.625 15.519 59.278 45.329 75.744" fill="none"></path>
-                        <path d="M-13.646 19.72c-.523 2.08.07 3.526.95 4.473-1.27-.241-2.81.026-4.292 1.577" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759884799999999"></path>
-                        <g font-size="10" stroke="none"><text y="-16.32" x="-.77" font-family="cmmi10" transform="translate(-68.4 19.679)">k</text><text y="-16.32" x="4.751" font-family="cmsy10" transform="translate(-68.4 19.679)">±</text><text y="-16.32" x="9.751" font-family="cmmi10" transform="translate(-68.4 19.679)">m</text></g>
-                      </g>
-                      <g stroke-dasharray="4.03181,2.3039" stroke-width=".576">
-                        <path d="m-47.068-51.69 34.66 27.016" fill="none"></path>
-                        <path d="M-12.42-29.064c-.843 1.972-.483 3.493.238 4.567-1.217-.438-2.78-.415-4.486.884" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="none" stroke-width=".57598272"></path>
-                        <g font-size="10" stroke="none"><text y="-16.32" x="-.77" font-family="cmsy10" transform="translate(-25.353 -27.017)">9</text><text y="-16.32" x="4.786" font-family="cmr10" transform="translate(-25.353 -27.017)">!</text><text y="-16.32" x="7.563" font-family="cmmi10" transform="translate(-25.353 -27.017)">»</text></g>
-                      </g><text y="-16.32" x="-.77" font-family="msam10" font-size="14.4" transform="translate(12.965 16.518)" stroke="none" stroke-width=".576">y</text>
-                      <g stroke-width=".576">
-                        <path d="M11.967-15H45.32" fill="none"></path>
-                        <path d="M42.612-18.456c.547 2.074 1.767 3.053 2.995 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-16.32" x="-.77" font-family="cmmi10" font-size="10" transform="translate(26.484 -2.068)" stroke="none">®</text>
-                      </g>
-                      <g stroke-width=".576">
-                        <path d="M.006-5.93v24.404" fill="none"></path>
-                        <path d="M3.462 15.767C1.39 16.314.41 17.533.006 18.762c-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-16.32" x="-.77" font-family="cmmi10" font-size="10" transform="translate(-8.373 26.352)" stroke="none">h</text>
-                      </g>
-                      <g stroke-width=".576">
-                        <path d="M57.936-5.93v24.404" fill="none"></path>
-                        <path d="M61.392 15.767c-2.074.547-3.053 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-16.32" x="-.77" font-family="cmmi10" font-size="10" transform="translate(62.094 24.06)" stroke="none">°</text>
-                      </g>
-                      <g stroke-width=".576">
-                        <path d="M12.456 30.76h32.961" fill="none"></path>
-                        <path d="M42.71 27.304c.547 2.073 1.766 3.052 2.995 3.456-1.229.403-2.448 1.382-2.995 3.455" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-16.32" x="-.77" font-family="cmmi10" font-size="10" transform="translate(26.902 57.412)" stroke="none">¯</text>
-                      </g>
-                    </g>
-                  </svg></div>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+X \arrow[drr,bend left,"n"]\arrow[ddr,bend right,swap,"k\circ m"]\arrow[dr,dashed,"\exists !\xi"] &&\\
+&C \arrow[dr, phantom, "\lrcorner" , very near start, color=black]\arrow[r,"\alpha"]\arrow[d,swap,"h"] & E\arrow[d,"\gamma"]\\
+&D \arrow[r,swap,"\beta"] & F
+\end{tikzcd}
+\end{document}</script>
+                </div>
                 <p>There then also exists a unique <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D712 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> such that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D712 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D709 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D712 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D45A TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>:</p>
                 <div class="block-language-tikz">
                   <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
@@ -2195,6 +2276,156 @@ E\arrow[r,"\mu"] & \prod_{i\in \mathrm{Ob}(\mathcal{I})} Di \arrow[r,"f",shift l
                 <p>where <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.177em;"><mjx-texatom size="s" texclass="ORD"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c63"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c64"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msub><mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.177em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4D"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c72"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msub></mjx-math></mjx-container></span> and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.177em;"><mjx-texatom size="s" texclass="ORD"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msub><mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.177em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4D"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c72"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msub></mjx-math></mjx-container></span>, for <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D457 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-munder space="2" limits="false"><mjx-mo class="mjx-sop"><mjx-c class="mjx-c220F TEX-S1"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.285em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c4F"></mjx-c><mjx-c class="mjx-c62"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-munder><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D457 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> the projection map.<br>
                   We see that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is equivalent to <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.177em;"><mjx-texatom size="s" texclass="ORD"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c63"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c64"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.177em;"><mjx-texatom size="s" texclass="ORD"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-n"><mjx-c class="mjx-c64"></mjx-c><mjx-c class="mjx-c6F"></mjx-c><mjx-c class="mjx-c6D"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> for all morphisms <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>, which tells us that equaliser diagrams are equivalent to cones of <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> with projection maps <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>.<br>
                   Hence, if <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> is the equaliser of the diagram, we find that it is also the limit of <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. Due to the existence of all equalisers, we therefore find that all small limits exist, and hence, <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> is complete.</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p><strong>Proposition:</strong> Given categories <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c44 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> and assume that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c44 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> has limits of shape <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>, then the <a data-tooltip-position="top" aria-label="Category > Functor category" data-href="Category#Functor category" href="category-theory/category.html#Functor_category" class="internal-link" target="_self" rel="noopener">functor category</a> <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c44 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-math></mjx-container></span> also does.</p>
+          </div>
+          <div>
+            <div data-callout-metadata="" data-callout-fold="-" data-callout="proof" class="callout is-collapsible is-collapsed">
+              <div class="callout-title">
+                <div class="callout-icon"></div>
+                <div class="callout-title-inner">Proof</div>
+                <div class="callout-fold is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg></div>
+              </div>
+              <div class="callout-content" style="display: none;">
+                <p>Take any diagram <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c5B"></mjx-c></mjx-mo><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c44 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c5D"></mjx-c></mjx-mo></mjx-math></mjx-container></span>. Then, for all objects <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>, we have a functor <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c44 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>, and for all morphisms <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D457 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>, we have a natural transformation <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c21D2"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D457 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. In particular, for any object <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> in <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>, we find objects <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> and morphisms <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D457 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> in <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>. This gives a diagram of shape <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> in <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>.<br>
+                  Now choose for every <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> the limit of this diagram, <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>, with <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.323em; margin-left: 0px;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. We will show that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> defines a functor, and that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup></mjx-math></mjx-container></span> form natural transformations, such that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> is a cone of the diagram in the functor category.<br>
+                  First, we should define <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> for morphisms <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span> in <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>. To this end, notice that we have a <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span>, which also induces <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-msubsup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.323em; margin-left: 0px;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span>.<br>
+                  Note that this forms a cone for the diagram associated to <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span>, since the following diagram commutes for any <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D457 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>:</p>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+& FC \arrow[dl,swap,"\mu^i_C"]\arrow[dr,"\mu^j_C"] &\\
+(Di)C \arrow[rr,dashed,"(D\alpha)_C"]\arrow[d,swap,"(Di)f"] & & (Dj)C\arrow[d,"(Dj)f"]\\
+(Di)C' \arrow[rr,swap,"(D\alpha)_{C'}"] && (Dj)C'
+\end{tikzcd}
+\end{document}</script>
+                </div>
+                <p>Hence, we must have a unique morphism <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span> such that</p>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+FC \arrow[rr,dashed,"\exists !Ff"]\arrow[rd,swap,"(Di)f\circ \mu_C^i"] && FC' \arrow[ld,"\mu_{C'}^i"]\\
+& (Di)C' &
+\end{tikzcd}
+\end{document}</script>
+                </div>
+                <p>Now, notice that this is actually the naturality square for <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c21D2"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>, proving its naturalness. Furthermore,</p>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+FC \arrow[rr,dashed,"\exists !Ff"]\arrow[rd,swap,"(Di)f\circ \mu_C^i"] \arrow[rrrr,bend left,dashed,"\exists ! F(g\circ f)"] && FC' \arrow[ld,"\mu_{C'}^i"]\arrow[rr,dashed,"\exists !Fg"] && FC''\arrow[dl,"\mu^i_{C''}"]\\
+& (Di)C' \arrow[rr,swap,"(Di)g"] & & (Di){C''} &
+\end{tikzcd}
+\end{document}</script>
+                </div>
+                <p>commutes, and therefore, <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. Finally, it is trivial that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-msub><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math></mjx-container></span>, which confirms that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is, indeed, a functor.<br>
+                  To conclude that we now have a cone <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>, notice that for any <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D457 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> in <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>, we have <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D457 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup></mjx-math></mjx-container></span>.<br>
+                  Now assume that we have any other cone <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D708 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>. Object-wise, this tells us that we get cones <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D708 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.036em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>, and therefore, there is a unique <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> such that for all <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2208"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>,</p>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+GC \arrow[rr,dashed,"\exists !h_C"]\arrow[dr,swap,"\nu_C^i"] && FC\arrow[dl,"\mu_C^i"]\\
+& (Di)C &
+\end{tikzcd}
+\end{document}</script>
+                </div>
+                <p>If we can prove that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c21D2"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is a natural transformation, we will have proven that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D707 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> is terminal, and hence, the limit.<br>
+                  Consider for any <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span> the fact that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D708 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.036em;"><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.289em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> is a cone implies that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D708 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.036em;"><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.289em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> is, too. Hence, there is a unique <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span> such that the following diagram commutes for all <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span></p>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+GC\arrow[drr,dashed,"\exists !d"]\arrow[d,swap,"Gf"] &  &\\
+GC'\arrow[dr,swap,"\nu_{C'}^i"] && FC'\arrow[dl,"\mu_{C'}^i"]\\
+& (Di)C' &
+\end{tikzcd}
+\end{document}</script>
+                </div>
+                <p>We know that a valid candidate for this <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is given thanks to <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.289em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msub></mjx-math></mjx-container></span>:</p>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+GC\arrow[drr,dashed,"\exists !d"]\arrow[d,swap,"Gf"] &  &\\
+GC'\arrow[dr,swap,"\nu_{C'}^i"]\arrow[rr,"h_{C'}"] && FC'\arrow[dl,"\mu_{C'}^i"]\\
+& (Di)C' &
+\end{tikzcd}
+\end{document}</script>
+                </div>
+                <p>Furthermore, we have</p>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+& (Di)C\arrow[ddd,"(Di)f",swap,
+rounded corners,
+to path={-| ([xshift=-17ex]\tikztostart.south)
+|- (\tikztotarget) [near end]\tikztonodes
+}] &\\
+GC\arrow[ur,"\nu^i_C"]\arrow[drr,dashed,"\exists !d"]\arrow[rr,"h_C"] &  & FC\arrow[ul,swap,"\mu^i_C"]\arrow[d,"Ff"]\\
+&& FC'\arrow[dl,"\mu_{C'}^i"]\\
+& (Di)C' &
+\end{tikzcd}
+\end{document}</script>
+                </div>
+                <p>From naturality, <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-msubsup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D708 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.323em; margin-left: -0.036em;"><mjx-mi class="mjx-i" size="s" style="margin-left: 0.124em;"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msubsup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D708 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.323em; margin-left: -0.036em;"><mjx-mi class="mjx-i" size="s" style="margin-left: 0.124em;"><mjx-c class="mjx-c1D456 TEX-I"></mjx-c></mjx-mi><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.289em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msubsup><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>, so we have</p>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+GC\arrow[d,swap,"Gf"]\arrow[drr,dashed,"\exists !d"]\arrow[rr,"h_C"] &  & FC\arrow[d,"Ff"]\\
+GC'\arrow[dr,swap,"\nu_{C'}^i"]&& FC'\arrow[dl,"\mu_{C'}^i"]\\
+& (Di)C' &
+\end{tikzcd}
+\end{document}</script>
+                </div>
+                <p>Since <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D451 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is unique,</p>
+                <div class="block-language-tikz">
+                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+GC\arrow[d,swap,"Gf"]\arrow[r,"h_C"] &  FC\arrow[d,"Ff"]\\
+GC'\arrow[r,swap,"h_{C'}"]& FC'
+\end{tikzcd}
+\end{document}</script>
+                </div>
+                <p>which confirms that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c21D2"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. This concludes the proof.</p>
               </div>
             </div>
           </div>

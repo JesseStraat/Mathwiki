@@ -22,13 +22,13 @@
   <!-- Graph View Data -->
   <script>
     let nodes = {
-      "nodeCount": 12,
-      "linkCount": 38,
-      "radii": [7, 7, 7, 7, 7, 6.626543209876543, 6.626543209876543, 6.209876543209877, 6.209876543209877, 5.638888888888889, 4.033950617283951, 3],
-      "labels": ["Object", "Morphism", "Limit", "Functor", "Category", "Smallness", "Natural Transformation", "Differentiable Manifold", "Exponential object", "Natural Numbers Object", "Topological space", "index"],
-      "paths": ["category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "set-theory/smallness.html", "category-theory/natural-transformation.html", "differential-geometry/differentiable-manifold.html", "category-theory/exponential-object.html", "category-theory/natural-numbers-object.html", "topology/topological-space.html", "index.html"],
-      "linkSources": [4, 4, 4, 4, 4, 4, 4, 8, 8, 8, 8, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 1, 1, 1, 9, 9, 9, 6, 6, 6, 0, 0, 7, 7, 7, 5, 5, 5],
-      "linkTargets": [0, 1, 2, 3, 6, 5, 7, 4, 2, 0, 1, 4, 0, 1, 3, 3, 0, 6, 1, 4, 5, 4, 0, 1, 4, 0, 1, 4, 3, 1, 4, 0, 10, 4, 1, 4, 0, 1]
+      "nodeCount": 14,
+      "linkCount": 41,
+      "radii": [7, 7, 7, 7, 7, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.209876543209877, 5.638888888888889, 4.913580246913581, 4.033950617283951, 4.033950617283951, 3],
+      "labels": ["Category", "Functor", "Morphism", "Object", "Limit", "Smallness", "Natural Transformation", "Exponential object", "Differentiable Manifold", "Natural Numbers Object", "Presheaves", "Topological space", "Adjoint", "index"],
+      "paths": ["category-theory/category.html", "category-theory/functor.html", "category-theory/morphism.html", "category-theory/object.html", "category-theory/limit.html", "set-theory/smallness.html", "category-theory/natural-transformation.html", "category-theory/exponential-object.html", "differential-geometry/differentiable-manifold.html", "category-theory/natural-numbers-object.html", "category-theory/presheaves.html", "topology/topological-space.html", "category-theory/adjoint.html", "index.html"],
+      "linkSources": [0, 0, 0, 0, 0, 0, 0, 7, 7, 7, 7, 7, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 2, 2, 2, 9, 9, 9, 6, 6, 6, 3, 3, 8, 8, 8, 5, 5, 5, 10, 10],
+      "linkTargets": [3, 2, 4, 1, 6, 5, 8, 0, 4, 3, 2, 12, 0, 3, 2, 1, 1, 3, 6, 2, 0, 5, 0, 3, 2, 0, 3, 2, 0, 1, 2, 0, 3, 11, 0, 2, 0, 3, 2, 5, 0]
     };
     let attractionForce = 1;
     let linkLength = 10;
@@ -49,7 +49,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-maximized is-hidden-frameless obsidian-app show-inline-title show-view-header" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
   <div class="webpage-container">
     <div class="sidebar-left sidebar">
       <div class="sidebar-content">
@@ -66,6 +66,10 @@
                   </svg></div><a class="tree-item-link" href="category-theory"><span class="tree-item-title">Category Theory</span></a>
               </div>
               <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/adjoint.html"><span class="tree-item-title">Adjoint</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/category.html"><span class="tree-item-title">Category</span></a></div>
                   <div class="tree-item-children"></div>
@@ -96,6 +100,10 @@
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/object.html"><span class="tree-item-title">Object</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/presheaves.html"><span class="tree-item-title">Presheaves</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
               </div>
@@ -150,94 +158,89 @@
     <div class="document-container">
       <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
         <style id="MJX-CHTML-styles">
-          mjx-c.mjx-c1D452.TEX-I::before {
-            padding: 0.442em 0.466em 0.011em 0px;
-            content: "e";
+          mjx-c.mjx-c2286::before {
+            padding: 0.636em 0.778em 0.138em 0px;
+            content: "⊆";
           }
 
-          mjx-c.mjx-c1D463.TEX-I::before {
-            padding: 0.443em 0.485em 0.011em 0px;
-            content: "v";
+          mjx-c.mjx-c50.TEX-C::before {
+            padding: 0.683em 0.733em 0.057em 0px;
+            content: "P";
           }
 
-          mjx-c.mjx-c22C5::before {
-            padding: 0.31em 0.278em 0px 0px;
-            content: "⋅";
+          mjx-c.mjx-c2205::before {
+            padding: 0.772em 0.5em 0.078em 0px;
+            content: "∅";
           }
 
-          mjx-msubsup {
-            display: inline-block;
-            text-align: left;
+          mjx-c.mjx-c212C.TEX-SC::before {
+            padding: 0.708em 0.928em 0.028em 0px;
+            content: "B";
           }
 
-          mjx-script {
-            display: inline-block;
-            padding-right: 0.05em;
-            padding-left: 0.033em;
+          mjx-c.mjx-c2265::before {
+            padding: 0.636em 0.778em 0.138em 0px;
+            content: "≥";
           }
 
-          mjx-script>mjx-spacer {
-            display: block;
+          mjx-c.mjx-c2264::before {
+            padding: 0.636em 0.778em 0.138em 0px;
+            content: "≤";
           }
 
-          mjx-c.mjx-c1D44D.TEX-I::before {
-            padding: 0.683em 0.723em 0px 0px;
-            content: "Z";
+          mjx-c.mjx-c3E::before {
+            padding: 0.54em 0.778em 0.04em 0px;
+            content: ">";
           }
 
-          mjx-c.mjx-c2243::before {
-            padding: 0.464em 0.778em 0px 0px;
-            content: "≃";
+          mjx-c.mjx-c3C::before {
+            padding: 0.54em 0.778em 0.04em 0px;
+            content: "<";
           }
 
-          mjx-c.mjx-c1D716.TEX-I::before {
-            padding: 0.431em 0.406em 0.011em 0px;
-            content: "ϵ";
+          mjx-c.mjx-c50::before {
+            padding: 0.683em 0.681em 0px 0px;
+            content: "P";
           }
 
-          mjx-c.mjx-c21A6::before {
-            padding: 0.511em 1em 0.011em 0px;
-            content: "↦";
+          mjx-c.mjx-c1D459.TEX-I::before {
+            padding: 0.694em 0.298em 0.011em 0px;
+            content: "l";
           }
 
-          mjx-c.mjx-c2033::before {
-            padding: 0.56em 0.55em 0px 0px;
-            content: "′′";
+          mjx-c.mjx-c68::before {
+            padding: 0.694em 0.556em 0px 0px;
+            content: "h";
           }
 
-          mjx-c.mjx-c1D702.TEX-I::before {
-            padding: 0.442em 0.497em 0.216em 0px;
-            content: "η";
+          mjx-c.mjx-c5C::before {
+            padding: 0.75em 0.5em 0.25em 0px;
+            content: "\\";
           }
 
-          mjx-c.mjx-c1D460.TEX-I::before {
-            padding: 0.442em 0.469em 0.01em 0px;
-            content: "s";
+          mjx-c.mjx-c46::before {
+            padding: 0.68em 0.653em 0px 0px;
+            content: "F";
           }
 
-          mjx-c.mjx-c2115.TEX-A::before {
-            padding: 0.683em 0.722em 0.02em 0px;
-            content: "N";
+          mjx-c.mjx-c45.TEX-C::before {
+            padding: 0.705em 0.564em 0.022em 0px;
+            content: "E";
           }
 
-          mjx-c.mjx-c1D43B.TEX-I::before {
-            padding: 0.683em 0.888em 0px 0px;
-            content: "H";
-          }
-
-          mjx-c.mjx-c1D708.TEX-I::before {
-            padding: 0.442em 0.53em 0px 0px;
-            content: "ν";
-          }
-
-          mjx-c.mjx-c1D43E.TEX-I::before {
-            padding: 0.683em 0.889em 0px 0px;
-            content: "K";
+          mjx-c.mjx-c7E::before {
+            padding: 0.318em 0.5em 0px 0px;
+            content: "~";
           }
 
           mjx-c.mjx-c1D440.TEX-I::before {
             padding: 0.683em 1.051em 0px 0px;
             content: "M";
+          }
+
+          mjx-c.mjx-c1D4AF.TEX-SC::before {
+            padding: 0.735em 0.996em 0.037em 0px;
+            content: "T";
           }
 
           mjx-c.mjx-c1D49C.TEX-SC::before {
@@ -250,9 +253,19 @@
             content: "U";
           }
 
-          mjx-c.mjx-c1D711.TEX-I::before {
-            padding: 0.442em 0.654em 0.218em 0px;
-            content: "φ";
+          mjx-c.mjx-cA0::before {
+            padding: 0px 0.25em 0px 0px;
+            content: " ";
+          }
+
+          mjx-c.mjx-c7C::before {
+            padding: 0.75em 0.278em 0.249em 0px;
+            content: "|";
+          }
+
+          mjx-c.mjx-c211D.TEX-A::before {
+            padding: 0.683em 0.722em 0px 0px;
+            content: "R";
           }
 
           mjx-c.mjx-c73::before {
@@ -295,11 +308,6 @@
             content: "ψ";
           }
 
-          mjx-c.mjx-c2212::before {
-            padding: 0.583em 0.778em 0.082em 0px;
-            content: "−";
-          }
-
           mjx-c.mjx-c2229::before {
             padding: 0.598em 0.667em 0.022em 0px;
             content: "∩";
@@ -315,74 +323,104 @@
             content: "N";
           }
 
-          mjx-mtext {
-            display: inline-block;
-            text-align: left;
-          }
-
-          mjx-c.mjx-c1D4AF.TEX-SC::before {
-            padding: 0.735em 0.996em 0.037em 0px;
-            content: "T";
-          }
-
-          mjx-c.mjx-c2286::before {
-            padding: 0.636em 0.778em 0.138em 0px;
-            content: "⊆";
-          }
-
-          mjx-c.mjx-c50.TEX-C::before {
-            padding: 0.683em 0.733em 0.057em 0px;
-            content: "P";
-          }
-
-          mjx-c.mjx-c2205::before {
-            padding: 0.772em 0.5em 0.078em 0px;
-            content: "∅";
-          }
-
-          mjx-c.mjx-c212C.TEX-SC::before {
-            padding: 0.708em 0.928em 0.028em 0px;
-            content: "B";
-          }
-
-          mjx-c.mjx-c1D451.TEX-I::before {
-            padding: 0.694em 0.52em 0.01em 0px;
-            content: "d";
-          }
-
-          mjx-c.mjx-c211D.TEX-A::before {
-            padding: 0.683em 0.722em 0px 0px;
-            content: "R";
-          }
-
-          mjx-c.mjx-c2265::before {
-            padding: 0.636em 0.778em 0.138em 0px;
-            content: "≥";
-          }
-
           mjx-c.mjx-c1D465.TEX-I::before {
             padding: 0.442em 0.572em 0.011em 0px;
             content: "x";
           }
 
-          mjx-c.mjx-c1D466.TEX-I::before {
-            padding: 0.442em 0.49em 0.205em 0px;
-            content: "y";
+          mjx-c.mjx-c2115.TEX-A::before {
+            padding: 0.683em 0.722em 0.02em 0px;
+            content: "N";
           }
 
-          mjx-c.mjx-c1D467.TEX-I::before {
-            padding: 0.442em 0.465em 0.011em 0px;
-            content: "z";
+          mjx-msubsup {
+            display: inline-block;
+            text-align: left;
           }
 
-          mjx-c.mjx-c2264::before {
-            padding: 0.636em 0.778em 0.138em 0px;
-            content: "≤";
+          mjx-script {
+            display: inline-block;
+            padding-right: 0.05em;
+            padding-left: 0.033em;
           }
 
-          mjx-c.mjx-c2B::before {
+          mjx-script>mjx-spacer {
+            display: block;
+          }
+
+          mjx-c.mjx-c2243::before {
+            padding: 0.464em 0.778em 0px 0px;
+            content: "≃";
+          }
+
+          mjx-c.mjx-c1D716.TEX-I::before {
+            padding: 0.431em 0.406em 0.011em 0px;
+            content: "ϵ";
+          }
+
+          mjx-c.mjx-c2033::before {
+            padding: 0.56em 0.55em 0px 0px;
+            content: "′′";
+          }
+
+          mjx-c.mjx-c1D702.TEX-I::before {
+            padding: 0.442em 0.497em 0.216em 0px;
+            content: "η";
+          }
+
+          mjx-c.mjx-c1D464.TEX-I::before {
+            padding: 0.443em 0.716em 0.011em 0px;
+            content: "w";
+          }
+
+          mjx-c.mjx-c1D460.TEX-I::before {
+            padding: 0.442em 0.469em 0.01em 0px;
+            content: "s";
+          }
+
+          mjx-c.mjx-c1D44F.TEX-I::before {
+            padding: 0.694em 0.429em 0.011em 0px;
+            content: "b";
+          }
+
+          mjx-c.mjx-c1D450.TEX-I::before {
+            padding: 0.442em 0.433em 0.011em 0px;
+            content: "c";
+          }
+
+          mjx-c.mjx-c1D461.TEX-I::before {
+            padding: 0.626em 0.361em 0.011em 0px;
+            content: "t";
+          }
+
+          mjx-c.mjx-c24::before {
+            padding: 0.75em 0.5em 0.056em 0px;
+            content: "$";
+          }
+
+          mjx-c.mjx-c58.TEX-C::before {
+            padding: 0.683em 0.807em 0px 0px;
+            content: "X";
+          }
+
+          mjx-c.mjx-c2C.TEX-MI::before {
+            padding: 0.121em 0.307em 0.194em 0px;
+            content: ",";
+          }
+
+          mjx-c.mjx-c5A.TEX-C::before {
+            padding: 0.683em 0.767em 0px 0px;
+            content: "Z";
+          }
+
+          mjx-c.mjx-c2212::before {
             padding: 0.583em 0.778em 0.082em 0px;
-            content: "+";
+            content: "−";
+          }
+
+          mjx-c.mjx-c22A3::before {
+            padding: 0.694em 0.611em 0px 0px;
+            content: "⊣";
           }
 
           mjx-c.mjx-c1D45F.TEX-I::before {
@@ -390,24 +428,29 @@
             content: "r";
           }
 
-          mjx-c.mjx-cA0::before {
-            padding: 0px 0.25em 0px 0px;
-            content: " ";
+          mjx-c.mjx-c1D445.TEX-I::before {
+            padding: 0.683em 0.759em 0.021em 0px;
+            content: "R";
           }
 
-          mjx-c.mjx-c7C::before {
-            padding: 0.75em 0.278em 0.249em 0px;
-            content: "|";
+          mjx-c.mjx-c1D43F.TEX-I::before {
+            padding: 0.683em 0.681em 0px 0px;
+            content: "L";
           }
 
-          mjx-c.mjx-c3E::before {
-            padding: 0.54em 0.778em 0.04em 0px;
-            content: ">";
+          mjx-c.mjx-c21A6::before {
+            padding: 0.511em 1em 0.011em 0px;
+            content: "↦";
           }
 
-          mjx-c.mjx-c3C::before {
-            padding: 0.54em 0.778em 0.04em 0px;
-            content: "<";
+          mjx-c.mjx-c2B::before {
+            padding: 0.583em 0.778em 0.082em 0px;
+            content: "+";
+          }
+
+          mjx-c.mjx-c1D711.TEX-I::before {
+            padding: 0.442em 0.654em 0.218em 0px;
+            content: "φ";
           }
 
           mjx-munder {
@@ -429,26 +472,6 @@
 
           mjx-under {
             padding-bottom: 0.1em;
-          }
-
-          mjx-c.mjx-c1D457.TEX-I::before {
-            padding: 0.661em 0.412em 0.204em 0px;
-            content: "j";
-          }
-
-          mjx-c.mjx-c220F.TEX-S1::before {
-            padding: 0.75em 0.944em 0.25em 0px;
-            content: "∏";
-          }
-
-          mjx-c.mjx-c2245::before {
-            padding: 0.589em 0.778em 0px 0px;
-            content: "≅";
-          }
-
-          mjx-c.mjx-c1D712.TEX-I::before {
-            padding: 0.442em 0.626em 0.204em 0px;
-            content: "χ";
           }
 
           mjx-c.mjx-c1D45A.TEX-I::before {
@@ -484,6 +507,86 @@
           mjx-c.mjx-c1D709.TEX-I::before {
             padding: 0.704em 0.438em 0.205em 0px;
             content: "ξ";
+          }
+
+          mjx-c.mjx-c1D712.TEX-I::before {
+            padding: 0.442em 0.626em 0.204em 0px;
+            content: "χ";
+          }
+
+          mjx-c.mjx-c1D457.TEX-I::before {
+            padding: 0.661em 0.412em 0.204em 0px;
+            content: "j";
+          }
+
+          mjx-c.mjx-c220F.TEX-S1::before {
+            padding: 0.75em 0.944em 0.25em 0px;
+            content: "∏";
+          }
+
+          mjx-c.mjx-c1D43C.TEX-I::before {
+            padding: 0.683em 0.504em 0px 0px;
+            content: "I";
+          }
+
+          mjx-c.mjx-c1D451.TEX-I::before {
+            padding: 0.694em 0.52em 0.01em 0px;
+            content: "d";
+          }
+
+          mjx-mtext {
+            display: inline-block;
+            text-align: left;
+          }
+
+          mjx-c.mjx-c2245::before {
+            padding: 0.589em 0.778em 0px 0px;
+            content: "≅";
+          }
+
+          mjx-c.mjx-c1D43B.TEX-I::before {
+            padding: 0.683em 0.888em 0px 0px;
+            content: "H";
+          }
+
+          mjx-c.mjx-c1D708.TEX-I::before {
+            padding: 0.442em 0.53em 0px 0px;
+            content: "ν";
+          }
+
+          mjx-c.mjx-c1D43E.TEX-I::before {
+            padding: 0.683em 0.889em 0px 0px;
+            content: "K";
+          }
+
+          mjx-c.mjx-c1D452.TEX-I::before {
+            padding: 0.442em 0.466em 0.011em 0px;
+            content: "e";
+          }
+
+          mjx-c.mjx-c1D463.TEX-I::before {
+            padding: 0.443em 0.485em 0.011em 0px;
+            content: "v";
+          }
+
+          mjx-c.mjx-c1D44D.TEX-I::before {
+            padding: 0.683em 0.723em 0px 0px;
+            content: "Z";
+          }
+
+          mjx-c.mjx-c1D466.TEX-I::before {
+            padding: 0.442em 0.49em 0.205em 0px;
+            content: "y";
+          }
+
+          mjx-c.mjx-c1D467.TEX-I::before {
+            padding: 0.442em 0.465em 0.011em 0px;
+            content: "z";
+          }
+
+          mjx-c.mjx-c22C5::before {
+            padding: 0.31em 0.278em 0px 0px;
+            content: "⋅";
           }
 
           mjx-container[jax="CHTML"] {
@@ -1676,6 +1779,178 @@
                   Now assume <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is fully faithful and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is isomorphic. Then there exists a (unique) <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> that is its inverse. Therefore, <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi></mjx-texatom></mjx-script></mjx-msub></mjx-math></mjx-container></span>, which implies that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math></mjx-container></span>. Similarly, we show that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub></mjx-math></mjx-container></span>, which proves that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is an isomorphism.</p>
               </div>
             </div>
+          </div>
+          <div>
+            <p><strong>Proposition:</strong> Given categories <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c44 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> and for each object <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> in <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> a functor <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msubsup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.325em; margin-left: 0px;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-spacer style="margin-top: 0.18em;"></mjx-spacer><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msubsup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c45 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> and for each object <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> in <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c44 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> a functor <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.057em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c45 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>, assume that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.057em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.484em; margin-bottom: -0.215em;"><mjx-mo class="mjx-n" style="width: 0px; margin-left: -0.25em;"><mjx-c class="mjx-c7E"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> for all <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>, and that for any morphisms <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span> in <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span> in <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c44 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>, the following diagram commutes,</p>
+          </div>
+          <div>
+            <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="232.644" height="108.9" viewBox="-72 -72 174.483 81.675">
+                <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                  <g stroke="none">
+                    <g font-size="14.4" stroke="none"><text y="-86.979" x="50.326" font-family="cmr12" transform="translate(-111.187 31.157)">~</text><text y="-83.339" x="47.134" font-family="cmmi12" transform="translate(-111.187 31.157)">F</text><text y="-83.339" x="58.219" font-family="cmr12" transform="translate(-111.187 31.157)">(</text><text y="-83.339" x="63.703" font-family="cmmi12" transform="translate(-111.187 31.157)">C</text><text y="-83.339" x="74.041" font-family="cmmi12" transform="translate(-111.187 31.157)">;</text><text y="-83.339" x="80.358" font-family="cmmi12" transform="translate(-111.187 31.157)">D</text><text y="-83.339" x="92.456" font-family="cmr12" transform="translate(-111.187 31.157)">)</text></g>
+                    <g stroke="none"><text y="-86.979" x="153.03" font-family="cmr12" font-size="14.4" transform="translate(-112.812 31.157)">~</text><text y="-83.339" x="149.837" font-family="cmmi12" font-size="14.4" transform="translate(-112.812 31.157)">F</text><text y="-83.339" x="160.923" font-family="cmr12" font-size="14.4" transform="translate(-112.812 31.157)">(</text><text y="-83.339" x="166.406" font-family="cmmi12" font-size="14.4" transform="translate(-112.812 31.157)">C</text><text y="-83.339" x="176.745" font-family="cmmi12" font-size="14.4" transform="translate(-112.812 31.157)">;</text><text y="-83.339" x="183.061" font-family="cmmi12" font-size="14.4" transform="translate(-112.812 31.157)">D</text><text y="-88.565" x="195.16" font-family="cmsy10" font-size="10" transform="translate(-112.812 31.157)">0</text><text y="-83.339" x="198.41" font-family="cmr12" font-size="14.4" transform="translate(-112.812 31.157)">)</text></g>
+                    <g stroke="none"><text y="-34.262" x="50.326" font-family="cmr12" font-size="14.4" transform="translate(-113.204 31.157)">~</text><text y="-30.622" x="47.134" font-family="cmmi12" font-size="14.4" transform="translate(-113.204 31.157)">F</text><text y="-30.622" x="58.219" font-family="cmr12" font-size="14.4" transform="translate(-113.204 31.157)">(</text><text y="-30.622" x="63.703" font-family="cmmi12" font-size="14.4" transform="translate(-113.204 31.157)">C</text><text y="-35.848" x="74.824" font-family="cmsy10" font-size="10" transform="translate(-113.204 31.157)">0</text><text y="-30.622" x="78.074" font-family="cmmi12" font-size="14.4" transform="translate(-113.204 31.157)">;</text><text y="-30.622" x="84.391" font-family="cmmi12" font-size="14.4" transform="translate(-113.204 31.157)">D</text><text y="-30.622" x="96.49" font-family="cmr12" font-size="14.4" transform="translate(-113.204 31.157)">)</text></g>
+                    <g stroke="none"><text y="-34.262" x="153.03" font-family="cmr12" font-size="14.4" transform="translate(-114.829 31.157)">~</text><text y="-30.622" x="149.837" font-family="cmmi12" font-size="14.4" transform="translate(-114.829 31.157)">F</text><text y="-30.622" x="160.923" font-family="cmr12" font-size="14.4" transform="translate(-114.829 31.157)">(</text><text y="-30.622" x="166.406" font-family="cmmi12" font-size="14.4" transform="translate(-114.829 31.157)">C</text><text y="-35.848" x="177.528" font-family="cmsy10" font-size="10" transform="translate(-114.829 31.157)">0</text><text y="-30.622" x="180.778" font-family="cmmi12" font-size="14.4" transform="translate(-114.829 31.157)">;</text><text y="-30.622" x="187.095" font-family="cmmi12" font-size="14.4" transform="translate(-114.829 31.157)">D</text><text y="-35.848" x="199.193" font-family="cmsy10" font-size="10" transform="translate(-114.829 31.157)">0</text><text y="-30.622" x="202.443" font-family="cmr12" font-size="14.4" transform="translate(-114.829 31.157)">)</text></g>
+                  </g>
+                  <g stroke-width=".576">
+                    <path d="M-6.847-55.782h36.896" fill="none"></path>
+                    <path d="M27.342-59.238c.548 2.074 1.767 3.053 2.995 3.456-1.228.403-2.447 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                    <g stroke="none"><text y="-30.622" x="13.514" font-family="cmmi10" font-size="10" transform="translate(-15.597 -31.048)">H</text><text y="-29.122" x="21.826" font-family="cmmi7" font-size="7" transform="translate(-15.597 -31.048)">C</text><text y="-30.622" x="28.552" font-family="cmr10" font-size="10" transform="translate(-15.597 -31.048)">(</text><text y="-30.622" x="32.441" font-family="cmmi10" font-size="10" transform="translate(-15.597 -31.048)">g</text><text y="-30.622" x="37.57" font-family="cmr10" font-size="10" transform="translate(-15.597 -31.048)">)</text></g>
+                  </g>
+                  <g stroke-width=".576">
+                    <path d="M-38.65-43.112v24.404" fill="none"></path>
+                    <path d="M-35.195-21.415c-2.073.547-3.052 1.766-3.455 2.995-.404-1.229-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                    <g stroke="none"><text y="-30.622" x="13.514" font-family="cmmi10" font-size="10" transform="translate(-48.776 2.5)">G</text><text y="-29.122" x="21.376" font-family="cmmi7" font-size="7" transform="translate(-48.776 2.5)">C</text><text y="-30.622" x="28.102" font-family="cmr10" font-size="10" transform="translate(-48.776 2.5)">(</text><text y="-30.622" x="31.991" font-family="cmmi10" font-size="10" transform="translate(-48.776 2.5)">f</text><text y="-30.622" x="37.964" font-family="cmr10" font-size="10" transform="translate(-48.776 2.5)">)</text></g>
+                  </g>
+                  <g stroke-width=".576">
+                    <path d="M64.053-43.112v24.404" fill="none"></path>
+                    <path d="M67.51-21.415c-2.074.547-3.053 1.766-3.457 2.995-.403-1.229-1.382-2.448-3.455-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                    <g stroke="none"><text y="-30.622" x="13.514" font-family="cmmi10" font-size="10" transform="translate(53.927 2.5)">G</text><text y="-28.178" x="21.376" font-family="cmmi7" font-size="7" transform="translate(53.927 2.5)">D</text><text y="-30.178" x="28.13" font-family="cmsy7" font-size="7" transform="translate(53.927 2.5)">0</text><text y="-30.622" x="31.436" font-family="cmr10" font-size="10" transform="translate(53.927 2.5)">(</text><text y="-30.622" x="35.325" font-family="cmmi10" font-size="10" transform="translate(53.927 2.5)">f</text><text y="-30.622" x="41.297" font-family="cmr10" font-size="10" transform="translate(53.927 2.5)">)</text></g>
+                  </g>
+                  <g stroke-width=".576">
+                    <path d="M-4.83-3.065h32.863" fill="none"></path>
+                    <path d="M25.326-6.52c.547 2.073 1.766 3.052 2.995 3.455-1.229.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                    <g stroke="none"><text y="-30.622" x="13.514" font-family="cmmi10" font-size="10" transform="translate(-17 21.67)">H</text><text y="-28.178" x="21.826" font-family="cmmi7" font-size="7" transform="translate(-17 21.67)">C</text><text y="-30.178" x="28.052" font-family="cmsy7" font-size="7" transform="translate(-17 21.67)">0</text><text y="-30.622" x="31.358" font-family="cmr10" font-size="10" transform="translate(-17 21.67)">(</text><text y="-30.622" x="35.247" font-family="cmmi10" font-size="10" transform="translate(-17 21.67)">g</text><text y="-30.622" x="40.375" font-family="cmr10" font-size="10" transform="translate(-17 21.67)">)</text></g>
+                  </g>
+                </g>
+              </svg></div>
+          </div>
+          <div>
+            <p>there is a unique functor <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-texatom space="3" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c44 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c45 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> such that:</p>
+          </div>
+          <div>
+            <ol>
+              <li data-line="0"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mover><mjx-over style="padding-bottom: 0.105em; padding-left: 0.484em; margin-bottom: -0.215em;"><mjx-mo class="mjx-n" style="width: 0px; margin-left: -0.25em;"><mjx-c class="mjx-c7E"></mjx-c></mjx-mo></mjx-over><mjx-base><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi></mjx-base></mjx-mover></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>;</li>
+              <li data-line="1"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>;</li>
+              <li data-line="2"><span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D43B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>.
+                <div data-callout-metadata="" data-callout-fold="-" data-callout="proof" class="callout is-collapsible is-collapsed">
+                  <div class="callout-title">
+                    <div class="callout-icon"></div>
+                    <div class="callout-title-inner">Proof</div>
+                    <div class="callout-fold is-collapsed"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-chevron-down">
+                        <polyline points="6 9 12 15 18 9"></polyline>
+                      </svg></div>
+                  </div>
+                  <div class="callout-content" style="display: none;">
+                    <p>To finish defining the functor, we only need to define <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> for arbitrary morphisms <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span>, <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span>. We find that<br>
+                      <span class="math math-block is-loaded"><mjx-container class="MathJax" jax="CHTML" display="true"><mjx-math display="true" class="MJX-TEX" style="margin-left: 0px; margin-right: 0px;"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.289em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.057em;"><mjx-texatom size="s" texclass="ORD"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.289em; margin-left: 0.052em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-texatom></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-msub space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D43A TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo></mjx-math></mjx-container></span>diagrammatically,
+                    </p>
+                    <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="228.975" height="105.704" viewBox="-72 -72 171.731 79.278">
+                        <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                          <g stroke="none">
+                            <g font-size="14.4" stroke="none"><text y="-80.942" x="48.922" font-family="cmmi12" transform="translate(-111.187 28.76)">F</text><text y="-80.942" x="60.008" font-family="cmr12" transform="translate(-111.187 28.76)">(</text><text y="-80.942" x="65.491" font-family="cmmi12" transform="translate(-111.187 28.76)">C</text><text y="-80.942" x="75.83" font-family="cmmi12" transform="translate(-111.187 28.76)">;</text><text y="-80.942" x="82.146" font-family="cmmi12" transform="translate(-111.187 28.76)">D</text><text y="-80.942" x="94.245" font-family="cmr12" transform="translate(-111.187 28.76)">)</text></g>
+                            <g stroke="none"><text y="-80.942" x="151.626" font-family="cmmi12" font-size="14.4" transform="translate(-113.204 28.76)">F</text><text y="-80.942" x="162.712" font-family="cmr12" font-size="14.4" transform="translate(-113.204 28.76)">(</text><text y="-80.942" x="168.195" font-family="cmmi12" font-size="14.4" transform="translate(-113.204 28.76)">C</text><text y="-86.168" x="179.317" font-family="cmsy10" font-size="10" transform="translate(-113.204 28.76)">0</text><text y="-80.942" x="182.567" font-family="cmmi12" font-size="14.4" transform="translate(-113.204 28.76)">;</text><text y="-80.942" x="188.883" font-family="cmmi12" font-size="14.4" transform="translate(-113.204 28.76)">D</text><text y="-80.942" x="200.982" font-family="cmr12" font-size="14.4" transform="translate(-113.204 28.76)">)</text></g>
+                            <g stroke="none"><text y="-30.622" x="48.922" font-family="cmmi12" font-size="14.4" transform="translate(-114.829 28.76)">F</text><text y="-30.622" x="60.008" font-family="cmr12" font-size="14.4" transform="translate(-114.829 28.76)">(</text><text y="-30.622" x="65.491" font-family="cmmi12" font-size="14.4" transform="translate(-114.829 28.76)">C</text><text y="-35.848" x="76.613" font-family="cmsy10" font-size="10" transform="translate(-114.829 28.76)">0</text><text y="-30.622" x="79.863" font-family="cmmi12" font-size="14.4" transform="translate(-114.829 28.76)">;</text><text y="-30.622" x="86.18" font-family="cmmi12" font-size="14.4" transform="translate(-114.829 28.76)">D</text><text y="-35.848" x="98.278" font-family="cmsy10" font-size="10" transform="translate(-114.829 28.76)">0</text><text y="-30.622" x="101.528" font-family="cmr12" font-size="14.4" transform="translate(-114.829 28.76)">)</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M-5.059-55.782h36.505" fill="none"></path>
+                            <path d="M28.74-59.238c.546 2.074 1.766 3.053 2.994 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                            <g stroke="none"><text y="-30.622" x="13.678" font-family="cmmi10" font-size="10" transform="translate(-14.629 -31.048)">G</text><text y="-29.122" x="21.54" font-family="cmmi7" font-size="7" transform="translate(-14.629 -31.048)">D</text><text y="-30.622" x="28.794" font-family="cmr10" font-size="10" transform="translate(-14.629 -31.048)">(</text><text y="-30.622" x="32.683" font-family="cmmi10" font-size="10" transform="translate(-14.629 -31.048)">f</text><text y="-30.622" x="38.655" font-family="cmr10" font-size="10" transform="translate(-14.629 -31.048)">)</text></g>
+                          </g>
+                          <g stroke-dasharray="4.03181,2.3039" stroke-width=".576">
+                            <path d="M-36.862-43.112v24.404" fill="none"></path>
+                            <path d="M-33.406-21.415c-2.074.547-3.053 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="none"></path>
+                            <g font-size="10" stroke="none"><text y="-30.622" x="13.678" font-family="cmmi10" transform="translate(-82.848 2.5)">F</text><text y="-30.622" x="21.497" font-family="cmr10" transform="translate(-82.848 2.5)">(</text><text y="-30.622" x="25.386" font-family="cmmi10" transform="translate(-82.848 2.5)">f</text><text y="-30.622" x="30.803" font-family="cmmi10" transform="translate(-82.848 2.5)">;g</text><text y="-30.622" x="38.709" font-family="cmr10" transform="translate(-82.848 2.5)">)</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="m39.99-43.112-50.483 24.726" fill="none"></path>
+                            <path d="M-6.542-16.473c-1.403-1.621-2.929-1.964-4.21-1.786.927-.902 1.591-2.318 1.17-4.42" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57598272"></path>
+                            <g stroke="none"><text y="-30.622" x="13.678" font-family="cmmi10" font-size="10" transform="translate(4.2 10.888)">H</text><text y="-28.178" x="21.99" font-family="cmmi7" font-size="7" transform="translate(4.2 10.888)">C</text><text y="-30.178" x="28.216" font-family="cmsy7" font-size="7" transform="translate(4.2 10.888)">0</text><text y="-30.622" x="31.522" font-family="cmr10" font-size="10" transform="translate(4.2 10.888)">(</text><text y="-30.622" x="35.41" font-family="cmmi10" font-size="10" transform="translate(4.2 10.888)">g</text><text y="-30.622" x="40.539" font-family="cmr10" font-size="10" transform="translate(4.2 10.888)">)</text></g>
+                          </g>
+                        </g>
+                      </svg></div>
+                    <p>which, of course, uniquely defines <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. Now we only need to check the functor axioms. By construction, it is trivial that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-msub><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msub space="4"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.177em;"><mjx-texatom size="s" texclass="ORD"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-texatom></mjx-script></mjx-msub></mjx-math></mjx-container></span>. As for composition, given morphisms</p>
+                    <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="200.566" height="95.362" viewBox="-72 -72 150.425 71.521">
+                        <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                          <g stroke="none"><text y="-81.461" x="15.192" font-family="cmmi12" font-size="14.4" transform="translate(-80.773 28.741)" stroke="none">C</text>
+                            <g stroke="none"><text y="-81.461" x="75.155" font-family="cmmi12" font-size="14.4" transform="translate(-82.398 28.741)">C</text><text y="-86.687" x="86.276" font-family="cmsy10" font-size="10" transform="translate(-82.398 28.741)">0</text></g>
+                            <g stroke="none"><text y="-81.461" x="138.118" font-family="cmmi12" font-size="14.4" transform="translate(-83.773 28.741)">C</text><text y="-86.687" x="149.24" font-family="cmsy10" font-size="10" transform="translate(-83.773 28.741)">00</text></g><text y="-34.76" x="15.192" font-family="cmmi12" font-size="14.4" transform="translate(-81.262 28.741)" stroke="none">D</text>
+                            <g stroke="none"><text y="-34.76" x="75.155" font-family="cmmi12" font-size="14.4" transform="translate(-82.887 28.741)">D</text><text y="-39.986" x="87.253" font-family="cmsy10" font-size="10" transform="translate(-82.887 28.741)">0</text></g>
+                            <g stroke="none"><text y="-34.76" x="138.118" font-family="cmmi12" font-size="14.4" transform="translate(-84.262 28.741)">D</text><text y="-39.986" x="150.216" font-family="cmsy10" font-size="10" transform="translate(-84.262 28.741)">00</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M-48.06-56.32h33.84" fill="none"></path>
+                            <path d="M-16.927-59.776c.548 2.074 1.767 3.053 2.995 3.456-1.228.403-2.447 1.383-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-34.76" x="2.942" font-family="cmmi10" font-size="10" transform="translate(-36.78 -26.892)" stroke="none">f</text>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M13.528-56.32h33.84" fill="none"></path>
+                            <path d="M44.661-59.776c.548 2.074 1.767 3.053 2.995 3.456-1.228.403-2.447 1.383-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                            <g stroke="none"><text y="-34.76" x="2.942" font-family="cmmi10" font-size="10" transform="translate(23.405 -26.892)">f</text><text y="-38.389" x="8.915" font-family="cmsy7" font-size="7" transform="translate(23.405 -26.892)">0</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M-47.571-9.619h32.863" fill="none"></path>
+                            <path d="M-17.415-13.075c.547 2.074 1.767 3.053 2.995 3.456-1.228.403-2.448 1.383-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-34.76" x="2.942" font-family="cmmi10" font-size="10" transform="translate(-36.358 19.809)" stroke="none">g</text>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M14.017-9.619H46.88" fill="none"></path>
+                            <path d="M44.173-13.075c.547 2.074 1.767 3.053 2.995 3.456-1.228.403-2.448 1.383-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                            <g stroke="none"><text y="-34.76" x="2.942" font-family="cmmi10" font-size="10" transform="translate(23.827 19.809)">g</text><text y="-38.389" x="8.071" font-family="cmsy7" font-size="7" transform="translate(23.827 19.809)">0</text></g>
+                          </g>
+                        </g>
+                      </svg></div>
+                    <p>we see that we have the following commutative diagram,</p>
+                    <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="495.316" height="172.82" viewBox="-72 -72 371.487 129.615">
+                        <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                          <g stroke="none">
+                            <g font-size="14.4" stroke="none"><text y="-106.084" x="193.763" font-family="cmmi12" transform="translate(-168.851 53.92)">F</text><text y="-106.084" x="204.849" font-family="cmr12" transform="translate(-168.851 53.92)">(</text><text y="-106.084" x="210.332" font-family="cmmi12" transform="translate(-168.851 53.92)">C</text><text y="-106.084" x="220.671" font-family="cmmi12" transform="translate(-168.851 53.92)">;</text><text y="-106.084" x="226.987" font-family="cmmi12" transform="translate(-168.851 53.92)">D</text><text y="-106.084" x="239.086" font-family="cmr12" transform="translate(-168.851 53.92)">)</text></g>
+                            <g stroke="none"><text y="-106.084" x="302.217" font-family="cmmi12" font-size="14.4" transform="translate(-170.868 53.92)">F</text><text y="-106.084" x="313.302" font-family="cmr12" font-size="14.4" transform="translate(-170.868 53.92)">(</text><text y="-106.084" x="318.786" font-family="cmmi12" font-size="14.4" transform="translate(-170.868 53.92)">C</text><text y="-111.31" x="329.908" font-family="cmsy10" font-size="10" transform="translate(-170.868 53.92)">0</text><text y="-106.084" x="333.158" font-family="cmmi12" font-size="14.4" transform="translate(-170.868 53.92)">;</text><text y="-106.084" x="339.474" font-family="cmmi12" font-size="14.4" transform="translate(-170.868 53.92)">D</text><text y="-106.084" x="351.573" font-family="cmr12" font-size="14.4" transform="translate(-170.868 53.92)">)</text></g>
+                            <g stroke="none"><text y="-106.084" x="407.67" font-family="cmmi12" font-size="14.4" transform="translate(-172.243 53.92)">F</text><text y="-106.084" x="418.756" font-family="cmr12" font-size="14.4" transform="translate(-172.243 53.92)">(</text><text y="-106.084" x="424.239" font-family="cmmi12" font-size="14.4" transform="translate(-172.243 53.92)">C</text><text y="-111.31" x="435.361" font-family="cmsy10" font-size="10" transform="translate(-172.243 53.92)">00</text><text y="-106.084" x="441.361" font-family="cmmi12" font-size="14.4" transform="translate(-172.243 53.92)">;</text><text y="-106.084" x="447.678" font-family="cmmi12" font-size="14.4" transform="translate(-172.243 53.92)">D</text><text y="-106.084" x="459.776" font-family="cmr12" font-size="14.4" transform="translate(-172.243 53.92)">)</text></g>
+                            <g stroke="none"><text y="-55.764" x="193.763" font-family="cmmi12" font-size="14.4" transform="translate(-172.493 53.92)">F</text><text y="-55.764" x="204.849" font-family="cmr12" font-size="14.4" transform="translate(-172.493 53.92)">(</text><text y="-55.764" x="210.332" font-family="cmmi12" font-size="14.4" transform="translate(-172.493 53.92)">C</text><text y="-60.99" x="221.454" font-family="cmsy10" font-size="10" transform="translate(-172.493 53.92)">0</text><text y="-55.764" x="224.704" font-family="cmmi12" font-size="14.4" transform="translate(-172.493 53.92)">;</text><text y="-55.764" x="231.02" font-family="cmmi12" font-size="14.4" transform="translate(-172.493 53.92)">D</text><text y="-60.99" x="243.119" font-family="cmsy10" font-size="10" transform="translate(-172.493 53.92)">0</text><text y="-55.764" x="246.369" font-family="cmr12" font-size="14.4" transform="translate(-172.493 53.92)">)</text></g>
+                            <g stroke="none"><text y="-55.764" x="302.217" font-family="cmmi12" font-size="14.4" transform="translate(-173.868 53.92)">F</text><text y="-55.764" x="313.302" font-family="cmr12" font-size="14.4" transform="translate(-173.868 53.92)">(</text><text y="-55.764" x="318.786" font-family="cmmi12" font-size="14.4" transform="translate(-173.868 53.92)">C</text><text y="-60.99" x="329.908" font-family="cmsy10" font-size="10" transform="translate(-173.868 53.92)">00</text><text y="-55.764" x="335.908" font-family="cmmi12" font-size="14.4" transform="translate(-173.868 53.92)">;</text><text y="-55.764" x="342.224" font-family="cmmi12" font-size="14.4" transform="translate(-173.868 53.92)">D</text><text y="-60.99" x="354.323" font-family="cmsy10" font-size="10" transform="translate(-173.868 53.92)">0</text><text y="-55.764" x="357.573" font-family="cmr12" font-size="14.4" transform="translate(-173.868 53.92)">)</text></g>
+                            <g stroke="none"><text y="-5.444" x="193.763" font-family="cmmi12" font-size="14.4" transform="translate(-175.243 53.92)">F</text><text y="-5.444" x="204.849" font-family="cmr12" font-size="14.4" transform="translate(-175.243 53.92)">(</text><text y="-5.444" x="210.332" font-family="cmmi12" font-size="14.4" transform="translate(-175.243 53.92)">C</text><text y="-10.67" x="221.454" font-family="cmsy10" font-size="10" transform="translate(-175.243 53.92)">00</text><text y="-5.444" x="227.454" font-family="cmmi12" font-size="14.4" transform="translate(-175.243 53.92)">;</text><text y="-5.444" x="233.77" font-family="cmmi12" font-size="14.4" transform="translate(-175.243 53.92)">D</text><text y="-10.67" x="245.869" font-family="cmsy10" font-size="10" transform="translate(-175.243 53.92)">00</text><text y="-5.444" x="251.869" font-family="cmr12" font-size="14.4" transform="translate(-175.243 53.92)">)</text></g>
+                          </g>
+                          <g stroke-dasharray="4.03181,2.3039" stroke-width=".576">
+                            <path d="M18.512-50.159c-34.388 3.529-39.913 79.857-6.95 88.162" fill="none"></path>
+                            <path d="M9.78 33.99c.025 2.145.968 3.392 2.06 4.083-1.289.09-2.71.742-3.748 2.62" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="none" stroke-width=".5759884799999999"></path>
+                            <g stroke="none"><text y="-5.444" x="155.768" font-family="cmmi10" font-size="10" transform="translate(-224.938 -8.295)">F</text><text y="-5.444" x="163.588" font-family="cmr10" font-size="10" transform="translate(-224.938 -8.295)">(</text><text y="-5.444" x="167.477" font-family="cmmi10" font-size="10" transform="translate(-224.938 -8.295)">f</text><text y="-9.073" x="173.449" font-family="cmsy7" font-size="7" transform="translate(-224.938 -8.295)">0</text><text y="-5.444" x="176.255" font-family="cmsy10" font-size="10" transform="translate(-224.938 -8.295)">±</text><text y="-5.444" x="181.255" font-family="cmmi10" font-size="10" transform="translate(-224.938 -8.295)">f</text><text y="-5.444" x="186.671" font-family="cmmi10" font-size="10" transform="translate(-224.938 -8.295)">;g</text><text y="-9.073" x="194.578" font-family="cmsy7" font-size="7" transform="translate(-224.938 -8.295)">0</text><text y="-5.444" x="197.383" font-family="cmsy10" font-size="10" transform="translate(-224.938 -8.295)">±</text><text y="-5.444" x="202.383" font-family="cmmi10" font-size="10" transform="translate(-224.938 -8.295)">g</text><text y="-5.444" x="207.512" font-family="cmr10" font-size="10" transform="translate(-224.938 -8.295)">)</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M82.118-55.764h42.255" fill="none"></path>
+                            <path d="M121.666-59.22c.547 2.073 1.766 3.053 2.995 3.456-1.229.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                            <g stroke="none"><text y="-5.444" x="155.768" font-family="cmmi10" font-size="10" transform="translate(-66.668 -56.208)">G</text><text y="-3.944" x="163.631" font-family="cmmi7" font-size="7" transform="translate(-66.668 -56.208)">D</text><text y="-5.444" x="170.885" font-family="cmr10" font-size="10" transform="translate(-66.668 -56.208)">(</text><text y="-5.444" x="174.774" font-family="cmmi10" font-size="10" transform="translate(-66.668 -56.208)">f</text><text y="-5.444" x="180.746" font-family="cmr10" font-size="10" transform="translate(-66.668 -56.208)">)</text></g>
+                          </g>
+                          <g stroke-dasharray="4.03181,2.3039" stroke-width=".576">
+                            <path d="M50.315-43.094v24.404" fill="none"></path>
+                            <path d="M53.77-21.398c-2.073.548-3.052 1.767-3.455 2.996-.404-1.229-1.383-2.448-3.456-2.996" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="none"></path>
+                            <g font-size="10" stroke="none"><text y="-5.444" x="155.768" font-family="cmmi10" transform="translate(-137.762 -22.66)">F</text><text y="-5.444" x="163.588" font-family="cmr10" transform="translate(-137.762 -22.66)">(</text><text y="-5.444" x="167.477" font-family="cmmi10" transform="translate(-137.762 -22.66)">f</text><text y="-5.444" x="172.893" font-family="cmmi10" transform="translate(-137.762 -22.66)">;g</text><text y="-5.444" x="180.8" font-family="cmr10" transform="translate(-137.762 -22.66)">)</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M192.588-55.764h35.864" fill="none"></path>
+                            <path d="M225.744-59.22c.548 2.073 1.767 3.053 2.996 3.456-1.229.403-2.448 1.382-2.996 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                            <g stroke="none"><text y="-5.444" x="155.768" font-family="cmmi10" font-size="10" transform="translate(39.203 -56.208)">G</text><text y="-3.944" x="163.631" font-family="cmmi7" font-size="7" transform="translate(39.203 -56.208)">D</text><text y="-5.444" x="170.885" font-family="cmr10" font-size="10" transform="translate(39.203 -56.208)">(</text><text y="-5.444" x="174.774" font-family="cmmi10" font-size="10" transform="translate(39.203 -56.208)">f</text><text y="-9.073" x="180.746" font-family="cmsy7" font-size="7" transform="translate(39.203 -56.208)">0</text><text y="-5.444" x="183.551" font-family="cmr10" font-size="10" transform="translate(39.203 -56.208)">)</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M131.469-43.094 78.136-18.357" fill="none"></path>
+                            <path d="M82.046-16.36c-1.369-1.652-2.887-2.027-4.17-1.876.944-.882 1.638-2.284 1.262-4.395" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57598272"></path>
+                            <g stroke="none"><text y="-5.444" x="155.768" font-family="cmmi10" font-size="10" transform="translate(-47.839 -14.272)">H</text><text y="-3" x="164.081" font-family="cmmi7" font-size="7" transform="translate(-47.839 -14.272)">C</text><text y="-5" x="170.307" font-family="cmsy7" font-size="7" transform="translate(-47.839 -14.272)">0</text><text y="-5.444" x="173.612" font-family="cmr10" font-size="10" transform="translate(-47.839 -14.272)">(</text><text y="-5.444" x="177.501" font-family="cmmi10" font-size="10" transform="translate(-47.839 -14.272)">g</text><text y="-5.444" x="182.63" font-family="cmr10" font-size="10" transform="translate(-47.839 -14.272)">)</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="m237.678-43.094-51.846 24.732" fill="none"></path>
+                            <path d="M189.763-16.409c-1.386-1.636-2.908-1.995-4.19-1.83.935-.892 1.613-2.3 1.215-4.408" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759654399999999"></path>
+                            <g stroke="none"><text y="-5.444" x="155.768" font-family="cmmi10" font-size="10" transform="translate(59.115 -14.272)">H</text><text y="-3" x="164.081" font-family="cmmi7" font-size="7" transform="translate(59.115 -14.272)">C</text><text y="-5" x="170.307" font-family="cmsy7" font-size="7" transform="translate(59.115 -14.272)">00</text><text y="-5.444" x="175.918" font-family="cmr10" font-size="10" transform="translate(59.115 -14.272)">(</text><text y="-5.444" x="179.807" font-family="cmmi10" font-size="10" transform="translate(59.115 -14.272)">g</text><text y="-5.444" x="184.935" font-family="cmr10" font-size="10" transform="translate(59.115 -14.272)">)</text></g>
+                          </g>
+                          <g stroke-dasharray="4.03181,2.3039" stroke-width=".576">
+                            <path d="M50.315 7.226v24.403" fill="none"></path>
+                            <path d="M53.77 28.922c-2.073.547-3.052 1.767-3.455 2.995-.404-1.228-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="none"></path>
+                            <g stroke="none"><text y="-5.444" x="155.768" font-family="cmmi10" font-size="10" transform="translate(-143.929 27.669)">F</text><text y="-5.444" x="163.588" font-family="cmr10" font-size="10" transform="translate(-143.929 27.669)">(</text><text y="-5.444" x="167.477" font-family="cmmi10" font-size="10" transform="translate(-143.929 27.669)">f</text><text y="-9.073" x="173.449" font-family="cmsy7" font-size="7" transform="translate(-143.929 27.669)">0</text><text y="-5.444" x="176.255" font-family="cmmi10" font-size="10" transform="translate(-143.929 27.669)">;g</text><text y="-9.073" x="184.161" font-family="cmsy7" font-size="7" transform="translate(-143.929 27.669)">0</text><text y="-5.444" x="186.966" font-family="cmr10" font-size="10" transform="translate(-143.929 27.669)">)</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M85.76-5.444h35.613" fill="none"></path>
+                            <path d="M118.666-8.9c.547 2.073 1.766 3.052 2.995 3.456-1.229.403-2.448 1.382-2.995 3.455" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                            <g stroke="none"><text y="-5.444" x="155.768" font-family="cmmi10" font-size="10" transform="translate(-69.153 10.906)">G</text><text y="-3" x="163.631" font-family="cmmi7" font-size="7" transform="translate(-69.153 10.906)">D</text><text y="-5" x="170.385" font-family="cmsy7" font-size="7" transform="translate(-69.153 10.906)">0</text><text y="-5.444" x="173.69" font-family="cmr10" font-size="10" transform="translate(-69.153 10.906)">(</text><text y="-5.444" x="177.579" font-family="cmmi10" font-size="10" transform="translate(-69.153 10.906)">f</text><text y="-9.073" x="183.551" font-family="cmsy7" font-size="7" transform="translate(-69.153 10.906)">0</text><text y="-5.444" x="186.357" font-family="cmr10" font-size="10" transform="translate(-69.153 10.906)">)</text></g>
+                          </g>
+                          <g stroke-width=".576">
+                            <path d="M131.469 7.226 78.136 31.963" fill="none"></path>
+                            <path d="M82.046 33.959c-1.369-1.65-2.887-2.026-4.17-1.875.944-.883 1.638-2.284 1.262-4.395" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57598272"></path>
+                            <g stroke="none"><text y="-5.444" x="155.768" font-family="cmmi10" font-size="10" transform="translate(-47.839 36.066)">H</text><text y="-3" x="164.081" font-family="cmmi7" font-size="7" transform="translate(-47.839 36.066)">C</text><text y="-5" x="170.307" font-family="cmsy7" font-size="7" transform="translate(-47.839 36.066)">00</text><text y="-5.444" x="175.918" font-family="cmr10" font-size="10" transform="translate(-47.839 36.066)">(</text><text y="-5.444" x="179.807" font-family="cmmi10" font-size="10" transform="translate(-47.839 36.066)">g</text><text y="-9.073" x="184.935" font-family="cmsy7" font-size="7" transform="translate(-47.839 36.066)">0</text><text y="-5.444" x="187.741" font-family="cmr10" font-size="10" transform="translate(-47.839 36.066)">)</text></g>
+                          </g>
+                        </g>
+                      </svg></div>
+                    <p>which proves that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D439 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is indeed a functor.</p>
+                  </div>
+                </div>
+              </li>
+            </ol>
           </div>
           <div class="mod-footer"></div>
         </div>
