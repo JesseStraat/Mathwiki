@@ -22,13 +22,13 @@
   <!-- Graph View Data -->
   <script>
     let nodes = {
-      "nodeCount": 14,
-      "linkCount": 41,
-      "radii": [7, 7, 7, 7, 7, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.209876543209877, 5.638888888888889, 4.913580246913581, 4.033950617283951, 4.033950617283951, 3],
-      "labels": ["Category", "Functor", "Morphism", "Object", "Limit", "Smallness", "Natural Transformation", "Exponential object", "Differentiable Manifold", "Natural Numbers Object", "Presheaves", "Topological space", "Adjoint", "index"],
-      "paths": ["category-theory/category.html", "category-theory/functor.html", "category-theory/morphism.html", "category-theory/object.html", "category-theory/limit.html", "set-theory/smallness.html", "category-theory/natural-transformation.html", "category-theory/exponential-object.html", "differential-geometry/differentiable-manifold.html", "category-theory/natural-numbers-object.html", "category-theory/presheaves.html", "topology/topological-space.html", "category-theory/adjoint.html", "index.html"],
-      "linkSources": [0, 0, 0, 0, 0, 0, 0, 7, 7, 7, 7, 7, 1, 1, 1, 1, 4, 4, 4, 4, 4, 4, 2, 2, 2, 9, 9, 9, 6, 6, 6, 3, 3, 8, 8, 8, 5, 5, 5, 10, 10],
-      "linkTargets": [3, 2, 4, 1, 6, 5, 8, 0, 4, 3, 2, 12, 0, 3, 2, 1, 1, 3, 6, 2, 0, 5, 0, 3, 2, 0, 3, 2, 0, 1, 2, 0, 3, 11, 0, 2, 0, 3, 2, 5, 0]
+      "nodeCount": 20,
+      "linkCount": 53,
+      "radii": [7, 7, 7, 7, 7, 6.996913580246913, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.626543209876543, 5.638888888888889, 5.638888888888889, 5.638888888888889, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.033950617283951],
+      "labels": ["Object", "Morphism", "Limit", "Functor", "Category", "Differentiable Manifold", "Smallness", "Smooth Function", "Natural Transformation", "Exponential object", "index", "Tangent Space", "Natural Numbers Object", "Ring", "Continuous Function", "Topological space", "Integration on Manifolds", "Lie Derivatives", "Presheaves", "Adjoint"],
+      "paths": ["category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "differential-geometry/differentiable-manifold.html", "set-theory/smallness.html", "differential-geometry/smooth-function.html", "category-theory/natural-transformation.html", "category-theory/exponential-object.html", "index.html", "differential-geometry/tangent-space.html", "category-theory/natural-numbers-object.html", "algebra/ring.html", "topology/continuous-function.html", "topology/topological-space.html", "differential-geometry/integration-on-manifolds.html", "differential-geometry/lie-derivatives.html", "category-theory/presheaves.html", "category-theory/adjoint.html"],
+      "linkSources": [4, 4, 4, 4, 4, 4, 4, 9, 9, 9, 9, 9, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 1, 1, 1, 12, 12, 12, 8, 8, 8, 0, 0, 18, 18, 5, 5, 5, 6, 6, 6, 10, 10, 10, 14, 7, 7, 7, 7, 13, 17, 11, 16],
+      "linkTargets": [0, 1, 2, 3, 8, 6, 5, 4, 2, 0, 1, 19, 4, 0, 1, 3, 3, 0, 8, 1, 4, 6, 4, 0, 1, 4, 0, 1, 4, 3, 1, 4, 0, 6, 4, 15, 4, 1, 4, 0, 1, 16, 17, 7, 15, 5, 14, 4, 11, 13, 11, 5, 5]
     };
     let attractionForce = 1;
     let linkLength = 10;
@@ -59,6 +59,19 @@
         <div class="tree-container file-tree mod-nav-indicator" data-depth="0">
           <div class="tree-header"><span class="sidebar-section-header">Mathwiki</span><button class="clickable-icon collapse-tree-button is-collapsed"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
           <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
+              <div class="tree-item-contents">
+                <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                    <path d="M3 8L12 17L21 8"></path>
+                  </svg></div><a class="tree-item-link" href="algebra"><span class="tree-item-title">Algebra</span></a>
+              </div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="algebra/ring.html"><span class="tree-item-title">Ring</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
             <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
               <div class="tree-item-contents">
                 <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
@@ -119,6 +132,22 @@
                   <div class="tree-item-contents"><a class="tree-item-link" href="differential-geometry/differentiable-manifold.html"><span class="tree-item-title">Differentiable Manifold</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="differential-geometry/integration-on-manifolds.html"><span class="tree-item-title">Integration on Manifolds</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="differential-geometry/lie-derivatives.html"><span class="tree-item-title">Lie Derivatives</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="differential-geometry/smooth-function.html"><span class="tree-item-title">Smooth Function</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="differential-geometry/tangent-space.html"><span class="tree-item-title">Tangent Space</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
               </div>
             </div>
             <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
@@ -142,6 +171,10 @@
               </div>
               <div class="tree-item-children">
                 <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="topology/continuous-function.html"><span class="tree-item-title">Continuous Function</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="topology/topological-space.html"><span class="tree-item-title">Topological space</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
@@ -156,7 +189,7 @@
       </div>
     </div>
     <div class="document-container">
-      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" style="tab-size: 4;">
+      <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" tabindex="-1" style="tab-size: 4;">
         <style id="MJX-CHTML-styles"></style>
         <div class="markdown-preview-sizer markdown-preview-section" style="padding-bottom: ; padding-top: var(--file-margins); padding-right: var(--file-margins); padding-left: var(--file-margins); width: 100%; position: absolute;">
           <div class="markdown-preview-pusher" style="width: 1px; height: 0.1px; margin-bottom: 0px;"></div>
@@ -165,6 +198,96 @@
           </div>
           <div>
             <p>Welcome to the Mathwiki! Choose an article on the left side to start learning.</p>
+          </div>
+          <div>
+            <h2 data-heading="Recently modified pages" id="Recently_modified_pages" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>Recently modified pages
+            </h2>
+          </div>
+          <div>
+            <div class="block-language-dataview node-insert-event">
+              <table class="dataview table-view-table">
+                <thead class="table-view-thead">
+                  <tr class="table-view-tr-header">
+                    <th class="table-view-th"><span>Page</span><span class="dataview small-text">10</span></th>
+                    <th class="table-view-th"><span>Last Modified</span></th>
+                  </tr>
+                </thead>
+                <tbody class="table-view-tbody">
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Differential Geometry/Integration on Manifolds.md" data-href="Differential Geometry/Integration on Manifolds.md" href="differential-geometry/integration-on-manifolds.html" class="internal-link" target="_self" rel="noopener">Differential Geometry/Integration on Manifolds</a></span></td>
+                    <td><span>2023-08-08, 23:20</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Differential Geometry/Tangent Space.md" data-href="Differential Geometry/Tangent Space.md" href="differential-geometry/tangent-space.html" class="internal-link" target="_self" rel="noopener">Differential Geometry/Tangent Space</a></span></td>
+                    <td><span>2023-08-08, 22:23</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Differential Geometry/Smooth Function.md" data-href="Differential Geometry/Smooth Function.md" href="differential-geometry/smooth-function.html" class="internal-link" target="_self" rel="noopener">Differential Geometry/Smooth Function</a></span></td>
+                    <td><span>2023-08-08, 22:17</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Differential Geometry/Lie Derivatives.md" data-href="Differential Geometry/Lie Derivatives.md" href="differential-geometry/lie-derivatives.html" class="internal-link" target="_self" rel="noopener">Differential Geometry/Lie Derivatives</a></span></td>
+                    <td><span>2023-08-08, 22:14</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Algebra/Ring.md" data-href="Algebra/Ring.md" href="algebra/ring.html" class="internal-link" target="_self" rel="noopener">Algebra/Ring</a></span></td>
+                    <td><span>2023-08-08, 20:55</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Differential Geometry/Differentiable Manifold.md" data-href="Differential Geometry/Differentiable Manifold.md" href="differential-geometry/differentiable-manifold.html" class="internal-link" target="_self" rel="noopener">Differential Geometry/Differentiable Manifold</a></span></td>
+                    <td><span>2023-08-08, 18:18</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Topology/Continuous Function.md" data-href="Topology/Continuous Function.md" href="topology/continuous-function.html" class="internal-link" target="_self" rel="noopener">Topology/Continuous Function</a></span></td>
+                    <td><span>2023-08-08, 17:58</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Category Theory/Presheaves.md" data-href="Category Theory/Presheaves.md" href="category-theory/presheaves.html" class="internal-link" target="_self" rel="noopener">Category Theory/Presheaves</a></span></td>
+                    <td><span>2023-08-08, 15:04</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Category Theory/Adjoint.md" data-href="Category Theory/Adjoint.md" href="category-theory/adjoint.html" class="internal-link" target="_self" rel="noopener">Category Theory/Adjoint</a></span></td>
+                    <td><span>2023-08-08, 12:04</span></td>
+                  </tr>
+                  <tr>
+                    <td><span><a data-tooltip-position="top" aria-label="Category Theory/Limit.md" data-href="Category Theory/Limit.md" href="category-theory/limit.html" class="internal-link" target="_self" rel="noopener">Category Theory/Limit</a></span></td>
+                    <td><span>2023-08-07, 23:30</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div>
+            <h2 data-heading="To do list" id="To_do_list" style="display: flex;">
+              <div class="heading-collapse-indicator collapse-indicator collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
+                  <path d="M3 8L12 17L21 8"></path>
+                </svg></div>To do list
+            </h2>
+          </div>
+          <div>
+            <ul class="contains-task-list has-list-bullet">
+              <li data-line="0" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="0" type="checkbox" class="task-list-item-checkbox">Finish proofs in <a data-href="Integration on Manifolds" href="differential-geometry/integration-on-manifolds.html" class="internal-link" target="_self" rel="noopener">Integration on Manifolds</a>
+              </li>
+              <li data-line="1" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="1" type="checkbox" class="task-list-item-checkbox">Define <a data-href="Lie Derivatives" href="differential-geometry/lie-derivatives.html" class="internal-link" target="_self" rel="noopener">Lie Derivatives</a> for arbitrary tensor fields
+              </li>
+              <li data-line="2" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="2" type="checkbox" class="task-list-item-checkbox">Prove the embeddding theorem in <a data-href="Smooth Function" href="differential-geometry/smooth-function.html" class="internal-link" target="_self" rel="noopener">Smooth Function</a>
+              </li>
+              <li data-line="3" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="3" type="checkbox" class="task-list-item-checkbox">Add Riemann Surfaces article (in algebraic geometry)
+              </li>
+              <li data-line="4" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="4" type="checkbox" class="task-list-item-checkbox">Add and prove Yoneda lemma
+              </li>
+              <li data-line="5" data-task="" class="task-list-item">
+                <div class="list-bullet"></div><input data-line="5" type="checkbox" class="task-list-item-checkbox">Define bundles, especially vector bundles
+              </li>
+            </ul>
           </div>
           <div class="mod-footer"></div>
         </div>
@@ -183,7 +306,21 @@
         </div>
         <div class="tree-container outline-tree" data-depth="0">
           <div class="tree-header"><span class="sidebar-section-header">Table Of Contents</span><button class="clickable-icon collapse-tree-button"><iconify-icon icon="ph:arrows-in-line-horizontal-bold" width="18px" height="18px" rotate="90deg" color="currentColor"></iconify-icon></button></div>
-          <div class="tree-scroll-area"></div>
+          <div class="tree-scroll-area">
+            <div class="tree-item mod-tree-heading" data-depth="1">
+              <div class="tree-item-contents"><a class="tree-item-link" href="#index"><span class="tree-item-title">index</span></a></div>
+              <div class="tree-item-children">
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#Recently_modified_pages"><span class="tree-item-title">Recently modified pages</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-heading" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="#To_do_list"><span class="tree-item-title">To do list</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
