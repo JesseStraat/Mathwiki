@@ -20,3 +20,5 @@ LIMIT 10
  - [ ] Add Riemann Surfaces article (in algebraic geometry)
  - [ ] Add and prove Yoneda lemma
  - [ ] Define bundles, especially vector bundles
+ - [ ] Add nicer index page
+ - [x] Add folder notes to fields to introduce the reader
