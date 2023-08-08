@@ -3,7 +3,7 @@ aliases:
  - Yoneda Lemma
 ---
 ## Definition
-Given a [[Smallness#Category theory|small]] [[Category|category]] $\mathcal{C}$, the category of presheaves on $\mathcal{C}$ is the [[Category#Functor category|functor category]] $[\mathcal{C}^{op},\mathrm{Set}] = \mathrm{Set}^{\mathcal{C}^{op}}$. Common notation for the presheaf category is $\hat{\mathcal{C}}$ or $\mathrm{Psh}(\mathcal{C})$.
+Given a [[Smallness#Category theory|small]] [[Category|category]] $\mathcal{C}$, the **category of presheaves** on $\mathcal{C}$ is the [[Category#Functor category|functor category]] $[\mathcal{C}^{op},\mathrm{Set}] = \mathrm{Set}^{\mathcal{C}^{op}}$. Common notation for the presheaf category is $\hat{\mathcal{C}}$ or $\mathrm{Psh}(\mathcal{C})$. Hence, a **presheaf** is a functor $\mathcal{C}^{op}\to \mathrm{Set}$.
 
 Let $F$ be a presheaf. Notice that objects $C$ in $\mathcal{C}$ are associated to a set $FC$, while morphisms $f\colon C\to C'$ are associated to a function $Ff\colon FC'\to FC$: the direction of morphisms is flipped.
 

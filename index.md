@@ -1,8 +1,8 @@
 Welcome to the Mathwiki! Choose an article on the left side to start learning.
-## Recently modified notes
+## Recently modified pages
 ```dataview
 TABLE WITHOUT ID
-	link(file.path, file.folder + "/" + file.name) AS "Note",
+	link(file.path, file.folder + "/" + file.name) AS "Page",
 	dateformat(file.mtime, "yyyy-MM-dd, HH:mm") AS "Last Modified"
 FROM ""
 WHERE file.mtime >= date(today) - dur(30 days)
