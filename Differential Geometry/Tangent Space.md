@@ -19,6 +19,15 @@ Let $T_p^*M$ denote the dual space of $T_pM$, and assign to each $\left(\frac{\p
 A **$1$-form** $\omega$ on $M$ is a function that assigns to each point $p$ a covector $\omega_p\in T_p^*M$ such that in some neighbourhood of $p$, we have
 $$\omega_p = \sum_{i=1}^mf_j(p)(\mathrm{d}x^j)_p,$$
 where the $f_j$ are smooth functions. The space of all $1$-forms is denoted $\Omega^1(M)$.
+
+In terms of [[Vector Bundle|vector bundles]], we say that a $1$-form is a section of the dual to the tangent bundle.
+## Tensors
+Let $TM$ denote the tangent bundle of some manifold $M$. Then, the **$(m,n)$-tensor bundle** is
+$$T^m_nM = TM^{\otimes m}\otimes T^*M^{\otimes n}.$$
+A **$(m,n)$-tensor field** is a section of the $T^m_nM$ vector bundle. Notice, in particular, that
+ - An $n$-form is a $(0,n)$-tensor field;
+ - A vector field is a $(1,0)$-tensor field;
+ - A smooth function is a $(0,0)$-tensor field.
 ## Propositions
 **Proposition:** Let $M$ be a $m$-dimensional manifold and $p$ a point in $M$. The tangent space $T_pM$ is a real $m$-dimensional vector space.
 >[!proof]-

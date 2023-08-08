@@ -12,3 +12,11 @@ AND file.name != this.file.name
 SORT file.mtime DESC
 LIMIT 10
 ```
+
+## To do list
+ - [ ] Finish proofs in [[Integration on Manifolds]]
+ - [ ] Define [[Lie Derivatives]] for arbitrary tensor fields
+ - [ ] Prove the embeddding theorem in [[Smooth Function]]
+ - [ ] Add Riemann Surfaces article (in algebraic geometry)
+ - [ ] Add and prove Yoneda lemma
+ - [ ] Define bundles, especially vector bundles
