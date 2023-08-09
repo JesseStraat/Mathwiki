@@ -29,7 +29,7 @@ A **$(m,n)$-tensor field** is a section of the $T^m_nM$ vector bundle. Notice, i
  - A vector field is a $(1,0)$-tensor field;
  - A smooth function is a $(0,0)$-tensor field.
 ## Propositions
-**Proposition:** Let $M$ be a $m$-dimensional manifold and $p$ a point in $M$. The tangent space $T_pM$ is a real $m$-dimensional vector space.
+**Proposition:** Let $M$ be a $m$-dimensional manifold and $p$ a point in $M$. The tangent space $T_pM$ is a real $m$-dimensional real [[Vector Space|vector space]].
 >[!proof]-
 >It is quite trivial to see that $T_pM$ is indeed a vector space under $(\gamma'(0)+\eta'(0))f := \gamma'(0)f+\eta'(0)f$ and $(\lambda\gamma'(0))f := \lambda(\gamma'(0)f)$.
 >Now, we only need to find a basis. Let $\varphi$ be any local chart around $p$, and define $x_i = \pi_i\circ \varphi$ for $i=1,\dots, m$ and $\pi_i\colon \mathbb{R}^m\to\mathbb{R}$ the $i$-th projection map. Then, define the curve$$\gamma_i\colon (-1,1)\to M,\ t\mapsto \varphi^{-1}(x_1(p),\dots, x_i(p)+t,\dots, x_m(p)),$$
