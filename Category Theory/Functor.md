@@ -57,6 +57,8 @@ A functor $F\colon\mathcal{C}\to\mathcal{D}$ is an **equivalence** if there exis
 **Proposition:** Let $\mathcal{C}$ be [[Smallness#Category theory|locally small]]. Then the map $\mathrm{Hom}\colon \mathcal{C}^{op}\times \mathcal{C}\to \mathrm{Set}$ sending objects $(C,D)$ to $\mathcal{C}(C,D)$ and morphisms $(f,g)$ to $g\circ -\circ f$ is a functor.
 >[!proof]-
 >First, notice that $\mathrm{Hom}(1_C,1_D) = 1_D\circ -\circ 1_C = 1_{\mathcal{C}(C,D)}$. Moreover, $\mathrm{Hom}(f\circ f',g\circ g') = (g\circ g')\circ - \circ (f'\circ f) = \mathrm{Hom}(f,g)\circ\mathrm{Hom}(f',g')$. This proves that we have a functor.
+
+We can also restrict the Hom-functor to either of its arguments by fixing an object $C$ and defining $\mathrm{Hom}(C,f) = f\circ -$, and $\mathrm{Hom}(f,C) = -\circ f$.
 ## Propositions
 **Proposition:** Functors preserve isomorphisms: given $F\colon\mathcal{C}\to\mathcal{D}$ and $f\colon X\to Y$ isomorphic in $\mathcal{C}$, $Ff$ is isomorphic in $\mathcal{D}$.
 >[!proof]-
@@ -129,3 +131,33 @@ there is a unique functor $F\colon \mathcal{C}\times\mathcal{D}\to\mathcal{E}$ s
 >\end{document}
 >```
 >which proves that $F$ is indeed a functor.
+
+**Proposition:** The Hom-functor preserves limits in its second argument.
+>[!proof]-
+>Let $D\colon\mathcal{I}\to\mathcal{C}$ be any diagram with a limit $(C,\mu)$. Fix an $A$ in $\mathcal{C}$. Let now $(X,\nu)$ denote any cone of the diagram $\mathrm{Hom}(A,-)\circ D$ in $\mathrm{Set}$. Now, given $x\in X$, this tells us that we get a collection of morphisms $\nu_i(x)\colon A\to Di$. The universality property of the limit then gives us a unique $f(x)\colon A\to C$ such that
+>```tikz
+>\usepackage{tikz-cd}
+>\usepackage{amsmath}
+>\usepackage{amssymb}
+>\begin{document}
+>\Large
+>\begin{tikzcd}
+>	A \arrow[rr,dashed,"\exists ! f(x)"]\arrow[rd,swap,"\nu_i(x)"] && C \arrow[ld,"\mu_i"]\\
+>	& Di &
+>\end{tikzcd}
+>\end{document}
+>```
+>This now induces the commutative diagram
+>```tikz
+>\usepackage{tikz-cd}
+>\usepackage{amsmath}
+>\usepackage{amssymb}
+>\begin{document}
+>\Large
+>\begin{tikzcd}
+>	X \arrow[rr,"f"]\arrow[rd,swap,"\nu_i"] && \mathcal{C}(A,C) \arrow[ld,"{\mathrm{Hom}(A,\mu_i) = \mu_i\circ -}"]\\
+>	& \mathcal{C}(A,Di) &
+>\end{tikzcd}
+>\end{document}
+>```
+>In fact, the unicity of $f$ follows directly from the unicity of each $f(x)$. Hence, we have proven that $\mathcal{C}(A,C)$ is the limit of $\mathcal{C}(A,-)\circ D$.

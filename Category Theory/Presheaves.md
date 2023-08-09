@@ -50,3 +50,7 @@ The **Yoneda embeddding** is the functor $Y\colon \mathcal{C}\to \hat{\mathcal{C
 >\end{document}
 >```
 >Hence, we have $Ff(\eta_{C,F}(\mu)) = Ff\circ \mu_C (1_C) = \mu_D\circ (YC)f(1_C) = \mu_D(f)$. Therefore, every element $x\in FC$ has a unique natural transformation $\mu_x$ such that $\eta_{C,F}(\mu_x) = x$, defined by $(\mu_x)_Df = Ff(x)$. This proves bijectivity.
+## Propositions
+**Proposition:** The Yoneda embedding preserves limits.
+>[!proof]-
+>Given a diagram $D\colon \mathcal{I}\to\mathcal{C}$, assume that it has a limit $(X,\mu)$. Now, we also know that $\hat{\mathcal{C}}$ is complete, so we also know that it must have a limit of the diagram $Y\circ D$, defined object-wise by the limit of $Y\circ D(-)C = \mathcal{C}(C, D(-))$ in $\mathrm{Set}$. We know that the [[Functor#Hom-functor|Hom-functor]] [[Functor#Propositions|preserves limits]], so we know that this limit must be $\mathcal{C}(C,X)$. This therefore proves that the limit of $Y\circ D$ is $\mathcal{C}(-,X) = YX$.

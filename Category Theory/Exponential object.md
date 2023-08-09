@@ -16,9 +16,9 @@ Given a [[Category|category]] $\mathcal{C}$ with [[Limit#Binary product|binary p
 \end{tikzcd}
 \end{document}
 ```
-In other words, the map $\mathcal{C}(Z, X^Y)\to \mathcal{C}(Z\times Y, X)$ with $\hat{f}\mapsto ev\circ (\hat{f},1_Y)$ is bijective. A category is **cartesian closed** if it has finite products and the exponential exists for all objects.
+In other words, the map $\mathcal{C}(Z, X^Y)\to \mathcal{C}(Z\times Y, X)$ with $\hat{f}\mapsto ev\circ (\hat{f},1_Y)$ is bijective. A category is **Cartesian closed** if it has finite products and the exponential exists for all objects.
 
-Given a cartesian closed category $\mathcal{C}$, we can construct for any object $Z$ an exponentiation endofunctor $(-)^Z\colon \mathcal{C}\to\mathcal{C}$ through $X\mapsto X^Z$ and for $f\colon X\to Y$, we choose $f^Z\colon X^Z\to Y^Z$ as the unique morphism
+Given a Cartesian closed category $\mathcal{C}$, we can construct for any object $Z$ an exponentiation endofunctor $(-)^Z\colon \mathcal{C}\to\mathcal{C}$ through $X\mapsto X^Z$ and for $f\colon X\to Y$, we choose $f^Z\colon X^Z\to Y^Z$ as the unique morphism
 ```tikz
 \usepackage{tikz-cd}
 \usepackage{amsmath}
@@ -32,16 +32,16 @@ Given a cartesian closed category $\mathcal{C}$, we can construct for any object
 \end{document}
 ```
 
-One can see that in a cartesian closed category, the exponential endofunctor $(-)^Z$ is the [[Adjoint|right adjoint]] to the product endofunctor $(-)\times Z$ for all $Z$.
+One can see that in a Cartesian closed category, the exponential endofunctor $(-)^Z$ is the [[Adjoint|right adjoint]] to the product endofunctor $(-)\times Z$ for all $Z$.
 ## Examples
 ### $\mathrm{Set}$
 In $\mathrm{Set}$, the exponential object is given by $X^Y = \mathrm{Set}(Y,X)$ with $ev(f,y) = f(y)$. Indeed, for any $f\colon Z\times Y\to X$, we define $\hat{f}(z) = f(z,\cdot)$, such that $ev\circ (\hat{f},1_Y) = f$.
-$\mathrm{Set}$ is cartesian closed.
+$\mathrm{Set}$ is Cartesian closed.
 ## Propositions
 **Proposition:** Given any objects $X,Y,Z$ in some category, we have the following isomorphisms:
 1. If $X^Z\times Y^Z$ and $(X\times Y)^Z$ exist, they are isomorphic;
 2. If $(X^Z)^Y$ and $X^{Y\times Z}$ exist, they are isomorphic;
-3. If the category is cartesian closed and $X\times (Y+Z)$ and $(X\times Y)+(X\times Z)$ exist, they are isomorphic;
+3. If the category is Cartesian closed and $X\times (Y+Z)$ and $(X\times Y)+(X\times Z)$ exist, they are isomorphic;
 4. If we have a terminal object $1$, then $1^X$ exists and $1^X\cong 1$.
 >[!proof]-
 >1. We have unique $f_X\colon (X\times Y)^Z\to X^Z$ and $f_Y\colon (X\times Y)^Z\to Y^Z$ such that the following commute:
