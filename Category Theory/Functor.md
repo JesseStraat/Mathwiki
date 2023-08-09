@@ -52,6 +52,11 @@ A functor $F\colon\mathcal{C}\to\mathcal{D}$ is an **equivalence** if there exis
 >```
 >i.e., $Ff\circ F\eta_C = F\eta_{C'}\circ FGFf$, and bijectivity implies that $f\circ\eta_C = \eta_{C'}\circ GFf$. Therefore, $\eta\colon GF\Rightarrow 1_\mathcal{C}$ is a natural transformation. Furthermore, fully faithful functions reflect isomorphy, so $\eta$ is a natural isomorphism.
 >We conclude that $F$ is an equivalence.
+## Examples
+### Hom-functor
+**Proposition:** Let $\mathcal{C}$ be [[Smallness#Category theory|locally small]]. Then the map $\mathrm{Hom}\colon \mathcal{C}^{op}\times \mathcal{C}\to \mathrm{Set}$ sending objects $(C,D)$ to $\mathcal{C}(C,D)$ and morphisms $(f,g)$ to $g\circ -\circ f$ is a functor.
+>[!proof]-
+>First, notice that $\mathrm{Hom}(1_C,1_D) = 1_D\circ -\circ 1_C = 1_{\mathcal{C}(C,D)}$. Moreover, $\mathrm{Hom}(f\circ f',g\circ g') = (g\circ g')\circ - \circ (f'\circ f) = \mathrm{Hom}(f,g)\circ\mathrm{Hom}(f',g')$. This proves that we have a functor.
 ## Propositions
 **Proposition:** Functors preserve isomorphisms: given $F\colon\mathcal{C}\to\mathcal{D}$ and $f\colon X\to Y$ isomorphic in $\mathcal{C}$, $Ff$ is isomorphic in $\mathcal{D}$.
 >[!proof]-
