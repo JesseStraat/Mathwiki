@@ -22,13 +22,13 @@
   <!-- Graph View Data -->
   <script>
     let nodes = {
-      "nodeCount": 20,
-      "linkCount": 53,
-      "radii": [7, 7, 7, 7, 7, 6.996913580246913, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.626543209876543, 5.638888888888889, 5.638888888888889, 5.638888888888889, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.033950617283951],
-      "labels": ["Object", "Morphism", "Limit", "Functor", "Category", "Differentiable Manifold", "Smallness", "Smooth Function", "Natural Transformation", "Exponential object", "index", "Tangent Space", "Natural Numbers Object", "Ring", "Continuous Function", "Topological space", "Integration on Manifolds", "Lie Derivatives", "Presheaves", "Adjoint"],
-      "paths": ["category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "differential-geometry/differentiable-manifold.html", "set-theory/smallness.html", "differential-geometry/smooth-function.html", "category-theory/natural-transformation.html", "category-theory/exponential-object.html", "index.html", "differential-geometry/tangent-space.html", "category-theory/natural-numbers-object.html", "algebra/ring.html", "topology/continuous-function.html", "topology/topological-space.html", "differential-geometry/integration-on-manifolds.html", "differential-geometry/lie-derivatives.html", "category-theory/presheaves.html", "category-theory/adjoint.html"],
-      "linkSources": [4, 4, 4, 4, 4, 4, 4, 9, 9, 9, 9, 9, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 1, 1, 1, 12, 12, 12, 8, 8, 8, 0, 0, 18, 18, 5, 5, 5, 6, 6, 6, 10, 10, 10, 14, 7, 7, 7, 7, 13, 17, 11, 16],
-      "linkTargets": [0, 1, 2, 3, 8, 6, 5, 4, 2, 0, 1, 19, 4, 0, 1, 3, 3, 0, 8, 1, 4, 6, 4, 0, 1, 4, 0, 1, 4, 3, 1, 4, 0, 6, 4, 15, 4, 1, 4, 0, 1, 16, 17, 7, 15, 5, 14, 4, 11, 13, 11, 5, 5]
+      "nodeCount": 27,
+      "linkCount": 67,
+      "radii": [7, 7, 7, 7, 7, 6.9375, 6.9375, 6.4375, 6.4375, 6.4375, 6.4375, 6.4375, 6, 6, 5.4375, 5.4375, 5.4375, 4.75, 4.75, 4.75, 4.75, 4.75, 4.75, 3.9375, 3.9375, 3.9375, 3],
+      "labels": ["Object", "Morphism", "Limit", "Functor", "Category", "Smallness", "Differentiable Manifold", "Smooth Function", "Tangent Space", "Natural Transformation", "Fibre Bundle", "Exponential object", "index", "Vector Bundle", "Topological space", "Natural Numbers Object", "Ring", "Topology", "Continuous Function", "Lie Derivatives", "Integration on Manifolds", "Presheaves", "Adjoint", "Differential Geometry", "Category Theory", "Abstract Algebra", "Set Theory"],
+      "paths": ["category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "set-theory/smallness.html", "differential-geometry/differentiable-manifold.html", "differential-geometry/smooth-function.html", "differential-geometry/tangent-space.html", "category-theory/natural-transformation.html", "category-theory/fibre-bundle.html", "category-theory/exponential-object.html", "index.html", "differential-geometry/vector-bundle.html", "topology/topological-space.html", "category-theory/natural-numbers-object.html", "abstract-algebra/ring.html", "topology/topology.html", "topology/continuous-function.html", "differential-geometry/lie-derivatives.html", "differential-geometry/integration-on-manifolds.html", "category-theory/presheaves.html", "category-theory/adjoint.html", "differential-geometry/differential-geometry.html", "category-theory/category-theory.html", "abstract-algebra/abstract-algebra.html", "set-theory/set-theory.html"],
+      "linkSources": [25, 16, 24, 4, 4, 4, 4, 4, 4, 4, 4, 11, 11, 11, 11, 11, 10, 10, 10, 10, 3, 3, 3, 3, 3, 2, 2, 2, 2, 2, 2, 1, 1, 1, 15, 15, 15, 9, 9, 9, 0, 0, 21, 21, 6, 6, 6, 20, 19, 7, 7, 7, 7, 8, 8, 13, 13, 5, 5, 5, 18, 17, 17, 12, 12, 12, 12],
+      "linkTargets": [16, 16, 4, 0, 1, 2, 3, 9, 5, 6, 13, 4, 2, 0, 1, 22, 4, 0, 1, 2, 4, 0, 1, 3, 5, 3, 0, 9, 1, 4, 5, 4, 0, 1, 4, 0, 1, 4, 3, 1, 4, 0, 5, 4, 14, 4, 1, 6, 8, 6, 18, 4, 8, 6, 13, 10, 8, 4, 0, 1, 14, 14, 23, 20, 19, 7, 22]
     };
     let attractionForce = 1;
     let linkLength = 10;
@@ -49,7 +49,7 @@
 
 </head>
 
-<body class="theme-dark mod-windows is-frameless is-hidden-frameless obsidian-app show-inline-title show-view-header is-maximized" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
+<body class="theme-dark mod-windows is-frameless is-maximized is-hidden-frameless obsidian-app show-inline-title show-view-header alx-folder-icons" style="--zoom-factor:1; --font-text-size:16px; --line-width:50em; --line-width-adaptive:50em; --file-line-width:50em; --content-width:500em; --sidebar-width:25em; --collapse-arrow-size:0.4em; --tree-horizontal-spacing:1em; --tree-vertical-spacing:0.5em; --sidebar-margin:12px;">
   <div class="webpage-container">
     <div class="sidebar-left sidebar">
       <div class="sidebar-content">
@@ -63,11 +63,15 @@
               <div class="tree-item-contents">
                 <div class="tree-item-icon collapse-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon right-triangle">
                     <path d="M3 8L12 17L21 8"></path>
-                  </svg></div><a class="tree-item-link" href="algebra"><span class="tree-item-title">Algebra</span></a>
+                  </svg></div><a class="tree-item-link" href="abstract-algebra"><span class="tree-item-title">Abstract Algebra</span></a>
               </div>
               <div class="tree-item-children">
                 <div class="tree-item mod-tree-file" data-depth="2">
-                  <div class="tree-item-contents"><a class="tree-item-link" href="algebra/ring.html"><span class="tree-item-title">Ring</span></a></div>
+                  <div class="tree-item-contents"><a class="tree-item-link" href="abstract-algebra/abstract-algebra.html"><span class="tree-item-title">Abstract Algebra</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="abstract-algebra/ring.html"><span class="tree-item-title">Ring</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
               </div>
@@ -88,7 +92,15 @@
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/category-theory.html"><span class="tree-item-title">Category Theory</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/exponential-object.html"><span class="tree-item-title">Exponential object</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="category-theory/fibre-bundle.html"><span class="tree-item-title">Fibre Bundle</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
@@ -133,6 +145,10 @@
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="differential-geometry/differential-geometry.html"><span class="tree-item-title">Differential Geometry</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="differential-geometry/integration-on-manifolds.html"><span class="tree-item-title">Integration on Manifolds</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
@@ -148,6 +164,10 @@
                   <div class="tree-item-contents"><a class="tree-item-link" href="differential-geometry/tangent-space.html"><span class="tree-item-title">Tangent Space</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="differential-geometry/vector-bundle.html"><span class="tree-item-title">Vector Bundle</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
               </div>
             </div>
             <div class="tree-item mod-tree-folder mod-collapsible is-collapsed" data-depth="1">
@@ -157,6 +177,10 @@
                   </svg></div><a class="tree-item-link" href="set-theory"><span class="tree-item-title">Set Theory</span></a>
               </div>
               <div class="tree-item-children">
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="set-theory/set-theory.html"><span class="tree-item-title">Set Theory</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="set-theory/smallness.html"><span class="tree-item-title">Smallness</span></a></div>
                   <div class="tree-item-children"></div>
@@ -176,6 +200,10 @@
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="topology/topological-space.html"><span class="tree-item-title">Topological space</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="topology/topology.html"><span class="tree-item-title">Topology</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
               </div>
