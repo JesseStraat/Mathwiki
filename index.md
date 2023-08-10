@@ -24,4 +24,5 @@ LIMIT 10
  - [x] Add folder notes to fields to introduce the reader
  - [ ] Define pullback on tensor fields
  - [ ] Add gauge theories
- - [ ] Do proof in [[Adjoint]].
+ - [ ] Do proof in [[Adjoint]]
+ - [ ] Add functional analysis
