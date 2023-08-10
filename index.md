@@ -17,7 +17,7 @@ LIMIT 10
  - [ ] Finish proofs in [[Integration on Manifolds]]
  - [ ] Define [[Lie Derivatives]] for arbitrary tensor fields
  - [ ] Prove the embeddding theorem in [[Smooth Function]]
- - [ ] Add Riemann Surfaces article (in algebraic geometry)
+ - [x] Add Riemann Surfaces article (in algebraic geometry)
  - [x] Add and prove Yoneda lemma
  - [x] Define bundles, especially vector bundles
  - [ ] Add nicer index page
