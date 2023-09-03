@@ -22,13 +22,13 @@
   <!-- Graph View Data -->
   <script>
     let nodes = {
-      "nodeCount": 39,
-      "linkCount": 87,
-      "radii": [7, 7, 7, 7, 7, 7, 6.996913580246913, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.209876543209877, 6.209876543209877, 6.209876543209877, 6.209876543209877, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 3],
-      "labels": ["Differentiable Manifold", "Object", "Morphism", "Limit", "Functor", "Category", "Smallness", "Exponential object", "Smooth Function", "Tangent Space", "Subobject", "Natural Transformation", "Language", "index", "Vector Bundle", "Topos", "Complex manifold", "Language of Sets", "Topological space", "Ring", "Presheaves", "Natural Numbers Object", "Fibre Bundle", "Theory", "Structure", "Formula", "Logic", "ZFC Set Theory", "Topology", "Continuous Function", "Lie Derivatives", "Integration on Manifolds", "Differential Geometry", "Adjoint", "Riemann Surface", "Set Theory", "Abstract Algebra", "Category Theory", "Algebraic Geometry"],
-      "paths": ["differential-geometry/differentiable-manifold.html", "category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "set-theory/smallness.html", "category-theory/exponential-object.html", "differential-geometry/smooth-function.html", "differential-geometry/tangent-space.html", "category-theory/subobject.html", "category-theory/natural-transformation.html", "logic/language.html", "index.html", "differential-geometry/vector-bundle.html", "category-theory/topos.html", "algebraic-geometry/complex-manifold.html", "set-theory/language-of-sets.html", "topology/topological-space.html", "abstract-algebra/ring.html", "category-theory/presheaves.html", "category-theory/natural-numbers-object.html", "category-theory/fibre-bundle.html", "logic/theory.html", "logic/structure.html", "logic/formula.html", "logic/logic.html", "set-theory/zfc-set-theory.html", "topology/topology.html", "topology/continuous-function.html", "differential-geometry/lie-derivatives.html", "differential-geometry/integration-on-manifolds.html", "differential-geometry/differential-geometry.html", "category-theory/adjoint.html", "algebraic-geometry/riemann-surface.html", "set-theory/set-theory.html", "abstract-algebra/abstract-algebra.html", "category-theory/category-theory.html", "algebraic-geometry/algebraic-geometry.html"],
-      "linkSources": [36, 19, 16, 16, 34, 37, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 7, 22, 22, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 2, 2, 2, 21, 21, 21, 11, 11, 11, 1, 1, 20, 20, 20, 10, 10, 10, 10, 15, 15, 15, 15, 0, 0, 0, 32, 31, 30, 8, 8, 8, 8, 9, 9, 14, 14, 6, 6, 6, 29, 28, 28, 13, 13, 13, 13, 27, 26, 25, 24, 24, 23, 17, 17, 17],
-      "linkTargets": [19, 19, 0, 2, 16, 5, 1, 2, 3, 4, 11, 6, 0, 14, 5, 3, 1, 2, 33, 5, 3, 5, 1, 2, 4, 6, 4, 1, 11, 2, 5, 6, 5, 1, 2, 5, 1, 2, 5, 4, 2, 5, 1, 6, 5, 4, 5, 1, 2, 3, 5, 3, 7, 10, 18, 5, 2, 0, 0, 9, 0, 29, 5, 9, 0, 14, 22, 9, 5, 1, 2, 18, 18, 32, 31, 30, 8, 33, 35, 27, 12, 12, 25, 12, 26, 23, 12]
+      "nodeCount": 40,
+      "linkCount": 92,
+      "radii": [7, 7, 7, 7, 7, 7, 7, 6.888888888888889, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.209876543209877, 6.209876543209877, 6.209876543209877, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 3],
+      "labels": ["Smallness", "Differentiable Manifold", "Object", "Morphism", "Limit", "Functor", "Category", "Language of Sets", "Exponential object", "Language", "ZFC Set Theory", "Smooth Function", "Tangent Space", "Subobject", "Natural Transformation", "index", "Vector Bundle", "Topos", "Complex manifold", "Topological space", "Ring", "Presheaves", "Natural Numbers Object", "Fibre Bundle", "Theory", "Structure", "Formula", "Logic", "Ordinal", "Topology", "Continuous Function", "Lie Derivatives", "Integration on Manifolds", "Differential Geometry", "Adjoint", "Riemann Surface", "Set Theory", "Abstract Algebra", "Category Theory", "Algebraic Geometry"],
+      "paths": ["set-theory/smallness.html", "differential-geometry/differentiable-manifold.html", "category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "set-theory/language-of-sets.html", "category-theory/exponential-object.html", "logic/language.html", "set-theory/zfc-set-theory.html", "differential-geometry/smooth-function.html", "differential-geometry/tangent-space.html", "category-theory/subobject.html", "category-theory/natural-transformation.html", "index.html", "differential-geometry/vector-bundle.html", "category-theory/topos.html", "algebraic-geometry/complex-manifold.html", "topology/topological-space.html", "abstract-algebra/ring.html", "category-theory/presheaves.html", "category-theory/natural-numbers-object.html", "category-theory/fibre-bundle.html", "logic/theory.html", "logic/structure.html", "logic/formula.html", "logic/logic.html", "set-theory/ordinal.html", "topology/topology.html", "topology/continuous-function.html", "differential-geometry/lie-derivatives.html", "differential-geometry/integration-on-manifolds.html", "differential-geometry/differential-geometry.html", "category-theory/adjoint.html", "algebraic-geometry/riemann-surface.html", "set-theory/set-theory.html", "abstract-algebra/abstract-algebra.html", "category-theory/category-theory.html", "algebraic-geometry/algebraic-geometry.html"],
+      "linkSources": [37, 20, 18, 18, 35, 38, 6, 6, 6, 6, 6, 6, 6, 6, 8, 8, 8, 8, 8, 23, 23, 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 3, 3, 3, 22, 22, 22, 14, 14, 14, 2, 2, 21, 21, 21, 13, 13, 13, 13, 17, 17, 17, 17, 1, 1, 1, 33, 32, 31, 11, 11, 11, 11, 12, 12, 16, 16, 0, 0, 0, 0, 30, 29, 29, 15, 15, 15, 15, 10, 10, 10, 27, 26, 25, 25, 24, 7, 7, 7, 28, 28],
+      "linkTargets": [20, 20, 1, 3, 18, 6, 2, 3, 4, 5, 14, 0, 1, 16, 6, 4, 2, 3, 34, 6, 4, 6, 2, 3, 5, 0, 5, 2, 14, 3, 6, 0, 6, 2, 3, 6, 2, 3, 6, 5, 3, 6, 2, 0, 6, 5, 6, 2, 3, 4, 6, 4, 8, 13, 19, 6, 3, 1, 1, 12, 1, 30, 6, 12, 1, 16, 23, 12, 7, 6, 2, 3, 19, 19, 33, 32, 31, 11, 34, 9, 7, 36, 10, 9, 9, 26, 9, 27, 24, 9, 7, 10]
     };
     let attractionForce = 1;
     let linkLength = 10;
@@ -240,6 +240,10 @@
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="set-theory/ordinal.html"><span class="tree-item-title">Ordinal</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="set-theory/set-theory.html"><span class="tree-item-title">Set Theory</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
@@ -285,6 +289,36 @@
     <div class="document-container">
       <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" tabindex="-1" style="tab-size: 4;">
         <style id="MJX-CHTML-styles">
+          mjx-c.mjx-c1D443.TEX-I::before {
+            padding: 0.683em 0.751em 0px 0px;
+            content: "P";
+          }
+
+          mjx-c.mjx-c4E::before {
+            padding: 0.683em 0.75em 0px 0px;
+            content: "N";
+          }
+
+          mjx-c.mjx-c1D539.TEX-A::before {
+            padding: 0.683em 0.667em 0px 0px;
+            content: "B";
+          }
+
+          mjx-c.mjx-c45::before {
+            padding: 0.68em 0.681em 0px 0px;
+            content: "E";
+          }
+
+          mjx-c.mjx-c29.TEX-MI::before {
+            padding: 0.75em 0.409em 0.25em 0px;
+            content: ")";
+          }
+
+          mjx-c.mjx-c79::before {
+            padding: 0.431em 0.528em 0.204em 0px;
+            content: "y";
+          }
+
           mjx-c.mjx-c2243::before {
             padding: 0.464em 0.778em 0px 0px;
             content: "≃";
@@ -2416,34 +2450,55 @@
             <p>cones for a diagram <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c49 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> are characterised by commutative diagrams</p>
           </div>
           <div>
-            <div class="block-language-tikz">
-              <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
-\usepackage{amsmath}
-\begin{document}
-\Large
-\begin{tikzcd}
-X\arrow[r]\arrow[d] & A\arrow[d,"f"]\\
-B\arrow[r,swap,"g"] & C
-\end{tikzcd}
-\end{document}</script>
-            </div>
+            <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="111.06" height="93.344" viewBox="-72 -72 83.295 70.008">
+                <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                  <g stroke="none"><text y="-84.96" x="-18.355" font-family="cmmi12" font-size="14.4" transform="translate(-47.715 27.8)" stroke="none">X</text><text y="-84.96" x="39.862" font-family="cmmi12" font-size="14.4" transform="translate(-46.583 27.8)" stroke="none">A</text><text y="-39.2" x="-18.355" font-family="cmmi12" font-size="14.4" transform="translate(-47.017 27.8)" stroke="none">B</text><text y="-39.2" x="39.862" font-family="cmmi12" font-size="14.4" transform="translate(-46.859 27.8)" stroke="none">C</text></g>
+                  <g stroke-width=".576">
+                    <path d="M-46.836-60.76h33.14" fill="none"></path>
+                    <path d="M-16.403-64.216c.547 2.074 1.766 3.053 2.995 3.456-1.229.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                  </g>
+                  <g stroke-width=".576">
+                    <path d="M-59.653-51.69v24.404" fill="none"></path>
+                    <path d="M-56.197-29.993c-2.074.547-3.053 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                  </g>
+                  <g stroke-width=".576">
+                    <path d="M-1.436-51.69v24.404" fill="none"></path>
+                    <path d="M2.02-29.993c-2.073.547-3.052 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.455-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-39.2" x="-30.972" font-family="cmmi10" font-size="10" transform="translate(32.925 2.5)" stroke="none">f</text>
+                  </g>
+                  <g stroke-width=".576">
+                    <path d="M-47.534-15h33.562" fill="none"></path>
+                    <path d="M-16.68-18.456c.548 2.074 1.767 3.053 2.996 3.456-1.229.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-39.2" x="-30.972" font-family="cmmi10" font-size="10" transform="translate(-2.057 31.893)" stroke="none">g</text>
+                  </g>
+                </g>
+              </svg></div>
           </div>
           <div>
             <p>the limit of which is called the <strong>pullback</strong> of <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. In the case of a pullback, we write</p>
           </div>
           <div>
-            <div class="block-language-tikz">
-              <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\begin{document}
-\Large
-\begin{tikzcd}
-X\arrow[r,"f^*g"]\arrow[d,swap,"g^*f"]\arrow[dr, phantom, "\lrcorner" , very near start, color=black] & A\arrow[d,"f"]\\
-B\arrow[r,swap,"g"] & C
-\end{tikzcd}
-\end{document}</script>
-            </div>
+            <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="123.818" height="98.499" viewBox="-72 -72 92.864 73.875">
+                <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                  <g stroke="none"><text y="-81.093" x="-8.786" font-family="cmmi12" font-size="14.4" transform="translate(-47.715 27.8)" stroke="none">X</text><text y="-81.093" x="49.431" font-family="cmmi12" font-size="14.4" transform="translate(-46.583 27.8)" stroke="none">A</text><text y="-35.333" x="-8.786" font-family="cmmi12" font-size="14.4" transform="translate(-47.017 27.8)" stroke="none">B</text><text y="-35.333" x="49.431" font-family="cmmi12" font-size="14.4" transform="translate(-46.859 27.8)" stroke="none">C</text></g>
+                  <g stroke-width=".576">
+                    <path d="M-37.267-56.893h33.14" fill="none"></path>
+                    <path d="M-6.835-60.349c.548 2.074 1.767 3.053 2.995 3.456-1.228.403-2.447 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                    <g stroke="none"><text y="-35.333" x="-21.403" font-family="cmmi10" font-size="10" transform="translate(-6.855 -26.892)">f</text><text y="-38.962" x="-15.431" font-family="cmsy7" font-size="7" transform="translate(-6.855 -26.892)">¤</text><text y="-35.333" x="-10.834" font-family="cmmi10" font-size="10" transform="translate(-6.855 -26.892)">g</text></g>
+                  </g>
+                  <g stroke-width=".576">
+                    <path d="M-50.084-47.823v24.404" fill="none"></path>
+                    <path d="M-46.628-26.126c-2.074.547-3.053 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                    <g stroke="none"><text y="-35.333" x="-21.403" font-family="cmmi10" font-size="10" transform="translate(-47.767 2.5)">g</text><text y="-38.962" x="-16.275" font-family="cmsy7" font-size="7" transform="translate(-47.767 2.5)">¤</text><text y="-35.333" x="-11.678" font-family="cmmi10" font-size="10" transform="translate(-47.767 2.5)">f</text></g>
+                  </g><text y="-35.333" x="-21.403" font-family="msam10" font-size="14.4" transform="translate(-16.405 -6.357)" stroke="none" stroke-width=".576">y</text>
+                  <g stroke-width=".576">
+                    <path d="M8.133-47.823v24.404" fill="none"></path>
+                    <path d="M11.59-26.126c-2.074.547-3.053 1.766-3.457 2.995-.403-1.229-1.382-2.448-3.455-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-21.403" font-family="cmmi10" font-size="10" transform="translate(32.925 2.5)" stroke="none">f</text>
+                  </g>
+                  <g stroke-width=".576">
+                    <path d="M-37.965-11.133h33.561" fill="none"></path>
+                    <path d="M-7.11-14.59c.547 2.074 1.766 3.053 2.994 3.457-1.228.403-2.447 1.382-2.995 3.455" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-21.403" font-family="cmmi10" font-size="10" transform="translate(-2.057 31.893)" stroke="none">g</text>
+                  </g>
+                </g>
+              </svg></div>
           </div>
           <div>
             <p>The dual of a pullback is called a <strong>pushout</strong>.</p>
@@ -2465,28 +2520,48 @@ B\arrow[r,swap,"g"] & C
                   </svg></div>
               </div>
               <div class="callout-content" style="display: none;">
-                <div class="block-language-tikz">
-                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
-\usepackage{amsmath}
-\begin{document}
-\Large
-\begin{tikzcd}
-A \arrow[r,"f"]\arrow[d,swap,"g"] & C\arrow[d,"h"] & \arrow[d,phantom,"{(1)}"]\\
-B \arrow[r,swap,"k"] & D & \hphantom{\bullet}
-\end{tikzcd}
-\end{document}</script>
-                </div>
-                <div class="block-language-tikz">
-                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
-\usepackage{amsmath}
-\begin{document}
-\Large
-\begin{tikzcd}
-C \arrow[r,"\alpha"]\arrow[d,swap,"h"] & E\arrow[d,"\gamma"] & \arrow[d,phantom,"{(2)}"]\\
-D \arrow[r,swap,"\beta"] & F & \hphantom{\bullet}
-\end{tikzcd}
-\end{document}</script>
-                </div>
+                <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="183.899" height="99.425" viewBox="-72 -72 137.924 74.569">
+                    <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                      <g stroke="none"><text y="-81.093" x="7.457" font-family="cmmi12" font-size="14.4" transform="translate(-73.093 27.8)" stroke="none">A</text><text y="-81.093" x="65.465" font-family="cmmi12" font-size="14.4" transform="translate(-73.369 27.8)" stroke="none">C</text><text y="-35.333" x="7.457" font-family="cmmi12" font-size="14.4" transform="translate(-73.527 27.8)" stroke="none">B</text><text y="-35.333" x="65.465" font-family="cmmi12" font-size="14.4" transform="translate(-73.857 27.8)" stroke="none">D</text></g>
+                      <g stroke-width=".576">
+                        <path d="M-48.666-56.893h33.786" fill="none"></path>
+                        <path d="M-17.587-60.349c.547 2.074 1.767 3.053 2.995 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-4.462" font-family="cmmi10" font-size="10" transform="translate(-30.009 -26.892)" stroke="none">f</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-60.35-47.823v24.404" fill="none"></path>
+                        <path d="M-56.895-26.126c-2.074.547-3.053 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-4.462" font-family="cmmi10" font-size="10" transform="translate(-64.405 1.18)" stroke="none">g</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-2.343-47.823v24.404" fill="none"></path>
+                        <path d="M1.113-26.126c-2.074.547-3.053 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-4.462" font-family="cmmi10" font-size="10" transform="translate(5.507 3.472)" stroke="none">h</text>
+                      </g><text y="-35.333" x="-4.462" font-family="cmr12" font-size="14.4" transform="translate(49 8.52)" stroke="none" stroke-width=".576">(1)</text>
+                      <g stroke-width=".576">
+                        <path d="M-48.232-11.133h32.864" fill="none"></path>
+                        <path d="M-18.075-14.59c.547 2.074 1.766 3.053 2.995 3.457-1.229.403-2.448 1.382-2.995 3.455" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-4.462" font-family="cmmi10" font-size="10" transform="translate(-29.81 34.532)" stroke="none">k</text>
+                      </g>
+                    </g>
+                  </svg></div>
+                <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="183.69" height="96.862" viewBox="-72 -72 137.768 72.647">
+                    <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                      <g stroke="none"><text y="-84.96" x="7.709" font-family="cmmi12" font-size="14.4" transform="translate(-73.29 27.8)" stroke="none">C</text><text y="-84.96" x="65.639" font-family="cmmi12" font-size="14.4" transform="translate(-73.37 27.8)" stroke="none">E</text><text y="-39.2" x="7.709" font-family="cmmi12" font-size="14.4" transform="translate(-73.779 27.8)" stroke="none">D</text><text y="-39.2" x="65.639" font-family="cmmi12" font-size="14.4" transform="translate(-73.272 27.8)" stroke="none">F</text></g>
+                      <g stroke-width=".576">
+                        <path d="M-48.06-60.76h33.352" fill="none"></path>
+                        <path d="M-17.415-64.216c.547 2.074 1.767 3.053 2.995 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-39.2" x="-4.54" font-family="cmmi10" font-size="10" transform="translate(-29.772 -24.948)" stroke="none">®</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-60.02-51.69v24.404" fill="none"></path>
+                        <path d="M-56.565-29.993c-2.073.547-3.052 1.766-3.455 2.995-.404-1.229-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-39.2" x="-4.54" font-family="cmmi10" font-size="10" transform="translate(-64.63 3.472)" stroke="none">h</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-2.09-51.69v24.404" fill="none"></path>
+                        <path d="M1.365-29.993c-2.074.547-3.053 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-39.2" x="-4.54" font-family="cmmi10" font-size="10" transform="translate(5.837 1.18)" stroke="none">°</text>
+                      </g><text y="-39.2" x="-4.54" font-family="cmr12" font-size="14.4" transform="translate(48.921 8.52)" stroke="none" stroke-width=".576">(2)</text>
+                      <g stroke-width=".576">
+                        <path d="M-47.571-15h32.961" fill="none"></path>
+                        <path d="M-17.317-18.456c.547 2.074 1.767 3.053 2.995 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-39.2" x="-4.54" font-family="cmmi10" font-size="10" transform="translate(-29.354 34.532)" stroke="none">¯</text>
+                      </g>
+                    </g>
+                  </svg></div>
                 <div class="block-language-tikz">
                   <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
 \usepackage{amsmath}
@@ -2664,40 +2739,74 @@ X \arrow[drr,bend left,"n"]\arrow[ddr,bend right,swap,"m"]\arrow[dr,dashed,"\exi
                     </g>
                   </svg></div>
                 <p>In particular, we find the commutative diagram</p>
-                <div class="block-language-tikz">
-                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
-\usepackage{amsmath}
-\begin{document}
-\Large
-\begin{tikzcd}
-D \arrow[r,"\pi_C\circ h"]\arrow[d,"\pi_A\circ h",swap] & C \arrow[d,"g"]\\
-A \arrow[r,swap,"f"] & B
-\end{tikzcd}
-\end{document}</script>
-                </div>
+                <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="132.521" height="101.425" viewBox="-72 -72 99.391 76.069">
+                    <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                      <g stroke="none"><text y="-81.538" x="-1.718" font-family="cmmi12" font-size="14.4" transform="translate(-47.137 27.8)" stroke="none">D</text><text y="-81.538" x="56.29" font-family="cmmi12" font-size="14.4" transform="translate(-46.65 27.8)" stroke="none">C</text><text y="-35.778" x="-1.718" font-family="cmmi12" font-size="14.4" transform="translate(-46.373 27.8)" stroke="none">A</text><text y="-35.778" x="56.29" font-family="cmmi12" font-size="14.4" transform="translate(-46.807 27.8)" stroke="none">B</text></g>
+                      <g stroke-width=".576">
+                        <path d="M-30.357-57.338H2.665" fill="none"></path>
+                        <path d="M-.042-60.793c.547 2.073 1.766 3.052 2.995 3.455-1.229.404-2.448 1.383-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <g stroke="none"><text y="-35.778" x="-13.967" font-family="cmmi10" font-size="10" transform="translate(-11.185 -26.448)">¼</text><text y="-34.278" x="-8.267" font-family="cmmi7" font-size="7" transform="translate(-11.185 -26.448)">C</text><text y="-35.778" x="-1.541" font-family="cmsy10" font-size="10" transform="translate(-11.185 -26.448)">±</text><text y="-35.778" x="3.459" font-family="cmmi10" font-size="10" transform="translate(-11.185 -26.448)">h</text></g>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-42.806-48.268v24.404" fill="none"></path>
+                        <path d="M-39.35-26.57c-2.074.546-3.053 1.766-3.456 2.994-.403-1.228-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <g stroke="none"><text y="-35.778" x="-13.967" font-family="cmmi10" font-size="10" transform="translate(-55.203 2.722)">¼</text><text y="-34.278" x="-8.267" font-family="cmmi7" font-size="7" transform="translate(-55.203 2.722)">A</text><text y="-35.778" x="-1.753" font-family="cmsy10" font-size="10" transform="translate(-55.203 2.722)">±</text><text y="-35.778" x="3.247" font-family="cmmi10" font-size="10" transform="translate(-55.203 2.722)">h</text></g>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M15.202-48.268v24.404" fill="none"></path>
+                        <path d="M18.657-26.57c-2.073.546-3.052 1.766-3.455 2.994-.404-1.228-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.778" x="-13.967" font-family="cmmi10" font-size="10" transform="translate(32.557 1.18)" stroke="none">g</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-31.121-11.578H2.507" fill="none"></path>
+                        <path d="M-.2-15.034c.547 2.074 1.766 3.053 2.995 3.456-1.229.403-2.448 1.383-2.996 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.778" x="-13.967" font-family="cmmi10" font-size="10" transform="translate(-3.038 34.532)" stroke="none">f</text>
+                      </g>
+                    </g>
+                  </svg></div>
                 <p>Hence, there exist cones for the pullback diagram. Assume now that there exists another such cone</p>
-                <div class="block-language-tikz">
-                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
-\usepackage{amsmath}
-\begin{document}
-\Large
-\begin{tikzcd}
-E \arrow[r,"\beta"]\arrow[d,"\alpha",swap] & C \arrow[d,"g"]\\
-A \arrow[r,swap,"f"] & B
-\end{tikzcd}
-\end{document}</script>
-                </div>
+                <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="109.921" height="102.018" viewBox="-72 -72 82.44 76.513">
+                    <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                      <g stroke="none"><text y="-81.093" x="-18.668" font-family="cmmi12" font-size="14.4" transform="translate(-46.32 27.8)" stroke="none">E</text><text y="-81.093" x="38.931" font-family="cmmi12" font-size="14.4" transform="translate(-46.24 27.8)" stroke="none">C</text><text y="-35.333" x="-18.668" font-family="cmmi12" font-size="14.4" transform="translate(-45.965 27.8)" stroke="none">A</text><text y="-35.333" x="38.931" font-family="cmmi12" font-size="14.4" transform="translate(-46.399 27.8)" stroke="none">B</text></g>
+                      <g stroke-width=".576">
+                        <path d="M-47.307-56.893h33.021" fill="none"></path>
+                        <path d="M-16.993-60.349c.548 2.074 1.767 3.053 2.995 3.456-1.228.403-2.447 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-30.509" font-family="cmmi10" font-size="10" transform="translate(-3.091 -26.892)" stroke="none">¯</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-59.348-47.823v24.404" fill="none"></path>
+                        <path d="M-55.892-26.126c-2.074.547-3.053 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-30.509" font-family="cmmi10" font-size="10" transform="translate(-38.66 2.153)" stroke="none">®</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-1.749-47.823v24.404" fill="none"></path>
+                        <path d="M1.707-26.126c-2.073.547-3.052 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.455-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-30.509" font-family="cmmi10" font-size="10" transform="translate(32.149 1.18)" stroke="none">g</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-47.663-11.133h33.22" fill="none"></path>
+                        <path d="M-17.15-14.59c.546 2.074 1.766 3.053 2.994 3.457-1.228.403-2.448 1.382-2.995 3.455" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.333" x="-30.509" font-family="cmmi10" font-size="10" transform="translate(-3.242 34.532)" stroke="none">f</text>
+                      </g>
+                    </g>
+                  </svg></div>
                 <p>then we induce the morphism <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> such that we have an equaliser cone</p>
-                <div class="block-language-tikz">
-                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
-\usepackage{amsmath}
-\begin{document}
-\Large
-\begin{tikzcd}
-E \arrow[r,"{(\alpha,\beta)}"] & A\times C \arrow[r,shift left,"f\circ\pi_A"]\arrow[r,shift right,swap,"g\circ\pi_C"] & B
-\end{tikzcd}
-\end{document}</script>
-                </div>
+                <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="222.521" height="46.93" viewBox="-72 -72 166.891 35.198">
+                    <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                      <g stroke="none"><text y="-54.141" x="23.016" font-family="cmmi12" font-size="14.4" transform="translate(-89.086 4.32)" stroke="none">E</text>
+                        <g font-size="14.4" stroke="none"><text y="-54.141" x="94.542" font-family="cmmi12" transform="translate(-103.091 4.32)">A</text><text y="-54.141" x="108.312" font-family="cmsy10" transform="translate(-103.091 4.32)">£</text><text y="-54.141" x="122.712" font-family="cmmi12" transform="translate(-103.091 4.32)">C</text></g><text y="-54.141" x="166.147" font-family="cmmi12" font-size="14.4" transform="translate(-89.164 4.32)" stroke="none">B</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-48.388-53.421h32.863" fill="none"></path>
+                        <path d="M-18.232-56.877c.547 2.074 1.767 3.053 2.995 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <g font-size="10" stroke="none"><text y="-54.141" x="11.175" font-family="cmr10" transform="translate(-54.43 -5.168)">(</text><text y="-54.141" x="15.064" font-family="cmmi10" transform="translate(-54.43 -5.168)">®</text><text y="-54.141" x="21.498" font-family="cmmi10" transform="translate(-54.43 -5.168)">;¯</text><text y="-54.141" x="30.46" font-family="cmr10" transform="translate(-54.43 -5.168)">)</text></g>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M37.143-56.893h32.863" fill="none"></path>
+                        <path d="M67.3-60.349c.546 2.074 1.766 3.053 2.994 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <g stroke="none"><text y="-54.141" x="11.175" font-family="cmmi10" font-size="10" transform="translate(31.094 -8.084)">f</text><text y="-54.141" x="17.148" font-family="cmsy10" font-size="10" transform="translate(31.094 -8.084)">±</text><text y="-54.141" x="22.148" font-family="cmmi10" font-size="10" transform="translate(31.094 -8.084)">¼</text><text y="-52.641" x="27.848" font-family="cmmi7" font-size="7" transform="translate(31.094 -8.084)">A</text></g>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M37.143-49.95h32.863" fill="none"></path>
+                        <path d="M67.3-53.405c.546 2.073 1.766 3.053 2.994 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <g stroke="none"><text y="-54.141" x="11.175" font-family="cmmi10" font-size="10" transform="translate(31.41 12.024)">g</text><text y="-54.141" x="16.304" font-family="cmsy10" font-size="10" transform="translate(31.41 12.024)">±</text><text y="-54.141" x="21.304" font-family="cmmi10" font-size="10" transform="translate(31.41 12.024)">¼</text><text y="-52.641" x="27.004" font-family="cmmi7" font-size="7" transform="translate(31.41 12.024)">C</text></g>
+                      </g>
+                    </g>
+                  </svg></div>
                 <p>and hence, there exists a unique <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> such that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>. In particular, this means that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is a morphism in the category of pullback cones.<br>
                   To finalise this proof, we need to show that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> is unique in the context of the category of pullback cones. Indeed, assume that there exists a <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D438 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> such that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.153em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D70B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>, and therefore <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-msup space="3"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>. However, the equaliser then guarantees that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D458 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em;"><mjx-mo class="mjx-var" size="s"><mjx-c class="mjx-c2032"></mjx-c></mjx-mo></mjx-script></mjx-msup></mjx-math></mjx-container></span>. Therefore, we have generated a pullback for <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D454 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>.</p>
               </div>

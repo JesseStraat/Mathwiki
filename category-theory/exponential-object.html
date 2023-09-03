@@ -22,13 +22,13 @@
   <!-- Graph View Data -->
   <script>
     let nodes = {
-      "nodeCount": 39,
-      "linkCount": 87,
-      "radii": [7, 7, 7, 7, 7, 7, 6.996913580246913, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.209876543209877, 6.209876543209877, 6.209876543209877, 6.209876543209877, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 3],
-      "labels": ["Differentiable Manifold", "Object", "Morphism", "Limit", "Functor", "Category", "Smallness", "Exponential object", "Smooth Function", "Tangent Space", "Subobject", "Natural Transformation", "Language", "index", "Vector Bundle", "Topos", "Complex manifold", "Language of Sets", "Topological space", "Ring", "Presheaves", "Natural Numbers Object", "Fibre Bundle", "Theory", "Structure", "Formula", "Logic", "ZFC Set Theory", "Topology", "Continuous Function", "Lie Derivatives", "Integration on Manifolds", "Differential Geometry", "Adjoint", "Riemann Surface", "Set Theory", "Abstract Algebra", "Category Theory", "Algebraic Geometry"],
-      "paths": ["differential-geometry/differentiable-manifold.html", "category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "set-theory/smallness.html", "category-theory/exponential-object.html", "differential-geometry/smooth-function.html", "differential-geometry/tangent-space.html", "category-theory/subobject.html", "category-theory/natural-transformation.html", "logic/language.html", "index.html", "differential-geometry/vector-bundle.html", "category-theory/topos.html", "algebraic-geometry/complex-manifold.html", "set-theory/language-of-sets.html", "topology/topological-space.html", "abstract-algebra/ring.html", "category-theory/presheaves.html", "category-theory/natural-numbers-object.html", "category-theory/fibre-bundle.html", "logic/theory.html", "logic/structure.html", "logic/formula.html", "logic/logic.html", "set-theory/zfc-set-theory.html", "topology/topology.html", "topology/continuous-function.html", "differential-geometry/lie-derivatives.html", "differential-geometry/integration-on-manifolds.html", "differential-geometry/differential-geometry.html", "category-theory/adjoint.html", "algebraic-geometry/riemann-surface.html", "set-theory/set-theory.html", "abstract-algebra/abstract-algebra.html", "category-theory/category-theory.html", "algebraic-geometry/algebraic-geometry.html"],
-      "linkSources": [36, 19, 16, 16, 34, 37, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 7, 22, 22, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 2, 2, 2, 21, 21, 21, 11, 11, 11, 1, 1, 20, 20, 20, 10, 10, 10, 10, 15, 15, 15, 15, 0, 0, 0, 32, 31, 30, 8, 8, 8, 8, 9, 9, 14, 14, 6, 6, 6, 29, 28, 28, 13, 13, 13, 13, 27, 26, 25, 24, 24, 23, 17, 17, 17],
-      "linkTargets": [19, 19, 0, 2, 16, 5, 1, 2, 3, 4, 11, 6, 0, 14, 5, 3, 1, 2, 33, 5, 3, 5, 1, 2, 4, 6, 4, 1, 11, 2, 5, 6, 5, 1, 2, 5, 1, 2, 5, 4, 2, 5, 1, 6, 5, 4, 5, 1, 2, 3, 5, 3, 7, 10, 18, 5, 2, 0, 0, 9, 0, 29, 5, 9, 0, 14, 22, 9, 5, 1, 2, 18, 18, 32, 31, 30, 8, 33, 35, 27, 12, 12, 25, 12, 26, 23, 12]
+      "nodeCount": 40,
+      "linkCount": 92,
+      "radii": [7, 7, 7, 7, 7, 7, 7, 6.888888888888889, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.209876543209877, 6.209876543209877, 6.209876543209877, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 3],
+      "labels": ["Smallness", "Differentiable Manifold", "Object", "Morphism", "Limit", "Functor", "Category", "Language of Sets", "Exponential object", "Language", "ZFC Set Theory", "Smooth Function", "Tangent Space", "Subobject", "Natural Transformation", "index", "Vector Bundle", "Topos", "Complex manifold", "Topological space", "Ring", "Presheaves", "Natural Numbers Object", "Fibre Bundle", "Theory", "Structure", "Formula", "Logic", "Ordinal", "Topology", "Continuous Function", "Lie Derivatives", "Integration on Manifolds", "Differential Geometry", "Adjoint", "Riemann Surface", "Set Theory", "Abstract Algebra", "Category Theory", "Algebraic Geometry"],
+      "paths": ["set-theory/smallness.html", "differential-geometry/differentiable-manifold.html", "category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "set-theory/language-of-sets.html", "category-theory/exponential-object.html", "logic/language.html", "set-theory/zfc-set-theory.html", "differential-geometry/smooth-function.html", "differential-geometry/tangent-space.html", "category-theory/subobject.html", "category-theory/natural-transformation.html", "index.html", "differential-geometry/vector-bundle.html", "category-theory/topos.html", "algebraic-geometry/complex-manifold.html", "topology/topological-space.html", "abstract-algebra/ring.html", "category-theory/presheaves.html", "category-theory/natural-numbers-object.html", "category-theory/fibre-bundle.html", "logic/theory.html", "logic/structure.html", "logic/formula.html", "logic/logic.html", "set-theory/ordinal.html", "topology/topology.html", "topology/continuous-function.html", "differential-geometry/lie-derivatives.html", "differential-geometry/integration-on-manifolds.html", "differential-geometry/differential-geometry.html", "category-theory/adjoint.html", "algebraic-geometry/riemann-surface.html", "set-theory/set-theory.html", "abstract-algebra/abstract-algebra.html", "category-theory/category-theory.html", "algebraic-geometry/algebraic-geometry.html"],
+      "linkSources": [37, 20, 18, 18, 35, 38, 6, 6, 6, 6, 6, 6, 6, 6, 8, 8, 8, 8, 8, 23, 23, 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 3, 3, 3, 22, 22, 22, 14, 14, 14, 2, 2, 21, 21, 21, 13, 13, 13, 13, 17, 17, 17, 17, 1, 1, 1, 33, 32, 31, 11, 11, 11, 11, 12, 12, 16, 16, 0, 0, 0, 0, 30, 29, 29, 15, 15, 15, 15, 10, 10, 10, 27, 26, 25, 25, 24, 7, 7, 7, 28, 28],
+      "linkTargets": [20, 20, 1, 3, 18, 6, 2, 3, 4, 5, 14, 0, 1, 16, 6, 4, 2, 3, 34, 6, 4, 6, 2, 3, 5, 0, 5, 2, 14, 3, 6, 0, 6, 2, 3, 6, 2, 3, 6, 5, 3, 6, 2, 0, 6, 5, 6, 2, 3, 4, 6, 4, 8, 13, 19, 6, 3, 1, 1, 12, 1, 30, 6, 12, 1, 16, 23, 12, 7, 6, 2, 3, 19, 19, 33, 32, 31, 11, 34, 9, 7, 36, 10, 9, 9, 26, 9, 27, 24, 9, 7, 10]
     };
     let attractionForce = 1;
     let linkLength = 10;
@@ -240,6 +240,10 @@
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="set-theory/ordinal.html"><span class="tree-item-title">Ordinal</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="set-theory/set-theory.html"><span class="tree-item-title">Set Theory</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
@@ -285,6 +289,36 @@
     <div class="document-container">
       <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" tabindex="-1" style="tab-size: 4;">
         <style id="MJX-CHTML-styles">
+          mjx-c.mjx-c1D443.TEX-I::before {
+            padding: 0.683em 0.751em 0px 0px;
+            content: "P";
+          }
+
+          mjx-c.mjx-c4E::before {
+            padding: 0.683em 0.75em 0px 0px;
+            content: "N";
+          }
+
+          mjx-c.mjx-c1D539.TEX-A::before {
+            padding: 0.683em 0.667em 0px 0px;
+            content: "B";
+          }
+
+          mjx-c.mjx-c45::before {
+            padding: 0.68em 0.681em 0px 0px;
+            content: "E";
+          }
+
+          mjx-c.mjx-c29.TEX-MI::before {
+            padding: 0.75em 0.409em 0.25em 0px;
+            content: ")";
+          }
+
+          mjx-c.mjx-c79::before {
+            padding: 0.431em 0.528em 0.204em 0px;
+            content: "y";
+          }
+
           mjx-c.mjx-c2243::before {
             padding: 0.464em 0.778em 0px 0px;
             content: "≃";
@@ -2250,31 +2284,18 @@
             <p>Given a Cartesian closed category <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span>, we can construct for any object <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> an exponentiation endofunctor <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-texatom space="2" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-texatom space="4" texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom></mjx-math></mjx-container></span> through <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c21A6"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.051em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup></mjx-math></mjx-container></span> and for <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>, we choose <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msup><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.053em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-msup space="2"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.051em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-msup space="4"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: 0.363em; margin-left: 0.059em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup></mjx-math></mjx-container></span> as the unique morphism</p>
           </div>
           <div>
-            <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="177.314" height="98.268" viewBox="-72 -72 132.985 73.701">
-                <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
-                  <g stroke="none">
-                    <g stroke="none"><text y="-84.96" x="31.178" font-family="cmmi12" font-size="14.4" transform="translate(-87.046 30.019)">X</text><text y="-90.186" x="44.013" font-family="cmmi10" font-size="10" transform="translate(-87.046 30.019)">Z</text><text y="-84.96" x="55.254" font-family="cmsy10" font-size="14.4" transform="translate(-87.046 30.019)">£</text><text y="-84.96" x="69.654" font-family="cmmi12" font-size="14.4" transform="translate(-87.046 30.019)">X</text></g><text y="-84.96" x="109.49" font-family="cmmi12" font-size="14.4" transform="translate(-67.809 30.019)" stroke="none">X</text>
-                    <g stroke="none"><text y="-35.781" x="31.178" font-family="cmmi12" font-size="14.4" transform="translate(-86.286 30.019)">Y</text><text y="-41.007" x="42.492" font-family="cmmi10" font-size="10" transform="translate(-86.286 30.019)">Z</text><text y="-35.781" x="53.734" font-family="cmsy10" font-size="14.4" transform="translate(-86.286 30.019)">£</text><text y="-35.781" x="68.134" font-family="cmmi12" font-size="14.4" transform="translate(-86.286 30.019)">X</text></g><text y="-35.781" x="109.49" font-family="cmmi12" font-size="14.4" transform="translate(-67.049 30.019)" stroke="none">Y</text>
-                  </g>
-                  <g stroke-width=".576">
-                    <path d="M1.842-58.541h32.863" fill="none"></path>
-                    <path d="M31.998-61.997c.547 2.074 1.767 3.053 2.995 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.781" x="-.676" font-family="cmmi10" font-size="10" transform="translate(14.307 -26.148)" stroke="none">ev</text>
-                  </g>
-                  <g stroke-dasharray="4.03181,2.3039" stroke-width=".576">
-                    <path d="M-30.213-48.271v24.404" fill="none"></path>
-                    <path d="M-26.757-26.574c-2.074.547-3.053 1.766-3.456 2.995-.403-1.229-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="none"></path>
-                    <g stroke="none"><text y="-35.781" x="-.676" font-family="cmr10" font-size="10" transform="translate(-68.494 2.956)">(</text><text y="-35.781" x="3.212" font-family="cmmi10" font-size="10" transform="translate(-68.494 2.956)">f</text><text y="-39.41" x="9.185" font-family="cmmi7" font-size="7" transform="translate(-68.494 2.956)">Z</text><text y="-35.781" x="15.624" font-family="cmmi10" font-size="10" transform="translate(-68.494 2.956)">;</text><text y="-35.781" x="18.401" font-family="cmr10" font-size="10" transform="translate(-68.494 2.956)">1</text><text y="-34.281" x="23.401" font-family="cmmi7" font-size="7" transform="translate(-68.494 2.956)">X</text><text y="-35.781" x="31.004" font-family="cmr10" font-size="10" transform="translate(-68.494 2.956)">)</text></g>
-                  </g>
-                  <g stroke-width=".576">
-                    <path d="M48.098-49.471v27.823" fill="none"></path>
-                    <path d="M51.554-24.355c-2.073.547-3.053 1.766-3.456 2.995-.403-1.229-1.382-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.781" x="-.676" font-family="cmmi10" font-size="10" transform="translate(52.163 3.01)" stroke="none">f</text>
-                  </g>
-                  <g stroke-width=".576">
-                    <path d="M1.082-9.362h34.383" fill="none"></path>
-                    <path d="M32.758-12.818c.547 2.073 1.767 3.053 2.995 3.456-1.228.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-35.781" x="-.676" font-family="cmmi10" font-size="10" transform="translate(14.307 34.112)" stroke="none">ev</text>
-                  </g>
-                </g>
-              </svg></div>
+            <div class="block-language-tikz">
+              <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+X^Z\times X\arrow[r,"ev"]\arrow[d,swap,dashed,"{(f^Z,1_X)}"] & X\arrow[d,"f"]\\
+Y^Z\times X\arrow[r,swap,"ev"] & Y
+\end{tikzcd}
+\end{document}</script>
+            </div>
           </div>
           <div>
             <p>One can see that in a Cartesian closed category, the exponential endofunctor <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-msup><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-script style="vertical-align: 0.363em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msup></mjx-math></mjx-container></span> is the <a data-tooltip-position="top" aria-label="Adjoint" data-href="Adjoint" href="category-theory/adjoint.html" class="internal-link" target="_self" rel="noopener">right adjoint</a> to the product endofunctor <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> for all <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>.</p>
@@ -2350,184 +2371,73 @@
                               </g>
                             </g>
                           </svg></div>
-                        <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="211.993" height="100.504" viewBox="-72 -72 158.995 75.378">
-                            <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
-                              <g stroke="none">
-                                <g stroke="none"><text y="-83.76" x="57.948" font-family="cmmi12" font-size="14.4" transform="translate(-103.318 28.819)">Y</text><text y="-88.986" x="69.262" font-family="cmmi10" font-size="10" transform="translate(-103.318 28.819)">Z</text><text y="-83.76" x="80.503" font-family="cmsy10" font-size="14.4" transform="translate(-103.318 28.819)">£</text><text y="-83.76" x="94.903" font-family="cmmi12" font-size="14.4" transform="translate(-103.318 28.819)">Z</text></g><text y="-83.76" x="154.365" font-family="cmmi12" font-size="14.4" transform="translate(-85.154 28.819)" stroke="none">Y</text>
-                                <g stroke="none"><text y="-34.581" x="57.948" font-family="cmr12" font-size="14.4" transform="translate(-124.018 28.819)">(</text><text y="-34.581" x="63.431" font-family="cmmi12" font-size="14.4" transform="translate(-124.018 28.819)">X</text><text y="-34.581" x="79.465" font-family="cmsy10" font-size="14.4" transform="translate(-124.018 28.819)">£</text><text y="-34.581" x="93.865" font-family="cmmi12" font-size="14.4" transform="translate(-124.018 28.819)">Y</text><text y="-34.581" x="105.179" font-family="cmr12" font-size="14.4" transform="translate(-124.018 28.819)">)</text><text y="-39.807" x="110.662" font-family="cmmi10" font-size="10" transform="translate(-124.018 28.819)">Z</text><text y="-34.581" x="121.904" font-family="cmsy10" font-size="14.4" transform="translate(-124.018 28.819)">£</text><text y="-34.581" x="136.304" font-family="cmmi12" font-size="14.4" transform="translate(-124.018 28.819)">Z</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M8.67-58.541h53.565" fill="none"></path>
-                                <path d="M59.528-61.997c.547 2.074 1.766 3.053 2.995 3.456-1.229.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-34.581" x="7.227" font-family="cmmi10" font-size="10" transform="translate(23.582 -27.348)" stroke="none">ev</text>
-                              </g>
-                              <g stroke-dasharray="4.03181,2.3039" stroke-width=".576">
-                                <path d="M-21.55-23.291v-24.404" fill="none"></path>
-                                <path d="M-25.005-44.988c2.073-.547 3.052-1.767 3.456-2.995.403 1.228 1.382 2.448 3.455 2.995" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="none"></path>
-                                <g stroke="none"><text y="-34.581" x="7.227" font-family="cmr10" font-size="10" transform="translate(-65.978 1.3)">(</text><text y="-34.581" x="11.116" font-family="cmmi10" font-size="10" transform="translate(-65.978 1.3)">f</text><text y="-33.081" x="16.012" font-family="cmmi7" font-size="7" transform="translate(-65.978 1.3)">Y</text><text y="-34.581" x="22.935" font-family="cmmi10" font-size="10" transform="translate(-65.978 1.3)">;</text><text y="-34.581" x="25.713" font-family="cmr10" font-size="10" transform="translate(-65.978 1.3)">1</text><text y="-33.081" x="30.713" font-family="cmmi7" font-size="7" transform="translate(-65.978 1.3)">Z</text><text y="-34.581" x="37.152" font-family="cmr10" font-size="10" transform="translate(-65.978 1.3)">)</text></g>
-                              </g>
-                              <g stroke="red" fill="red" stroke-width=".576">
-                                <path d="m5.74-23.291 56.557-28.845" fill="none"></path>
-                                <path d="M58.316-53.985c1.43 1.599 2.96 1.917 4.238 1.718-.911.917-1.553 2.344-1.098 4.44" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759884799999999"></path>
-                                <g fill="red" stroke="none"><text y="-34.581" x="7.227" font-family="cmmi10" font-size="10" transform="translate(30.436 4.57)">¼</text><text y="-33.081" x="12.928" font-family="cmmi7" font-size="7" transform="translate(30.436 4.57)">Y</text><text y="-34.581" x="19.851" font-family="cmsy10" font-size="10" transform="translate(30.436 4.57)">±</text><text y="-34.581" x="24.851" font-family="cmmi10" font-size="10" transform="translate(30.436 4.57)">ev</text></g>
-                              </g>
-                            </g>
-                          </svg></div>
+                        <div class="block-language-tikz">
+                          <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+Y^Z\times Z\arrow[r,"ev"] & Y\\
+(X\times Y)^Z\times Z\arrow[u,dashed,"{(f_Y,1_Z)}"]\arrow[ru,red,swap,"\pi_Y\circ ev"]
+\end{tikzcd}
+\end{document}</script>
+                        </div>
                         Now assume that we have the following diagram:
-                        <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="262.774" height="162.875" viewBox="-72 -72 197.081 122.156">
-                            <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
-                              <g stroke="none">
-                                <g stroke="none"><text y="-110.749" x="99.718" font-family="cmmi12" font-size="14.4" transform="translate(-108.978 55.808)">X</text><text y="-115.975" x="112.552" font-family="cmmi10" font-size="10" transform="translate(-108.978 55.808)">Z</text></g><text y="-62.77" x="37.755" font-family="cmmi12" font-size="14.4" transform="translate(-103.825 55.808)" stroke="none">A</text>
-                                <g stroke="none"><text y="-62.77" x="186.773" font-family="cmr12" font-size="14.4" transform="translate(-128.919 55.808)">(</text><text y="-62.77" x="192.256" font-family="cmmi12" font-size="14.4" transform="translate(-128.919 55.808)">X</text><text y="-62.77" x="208.29" font-family="cmsy10" font-size="14.4" transform="translate(-128.919 55.808)">£</text><text y="-62.77" x="222.69" font-family="cmmi12" font-size="14.4" transform="translate(-128.919 55.808)">Y</text><text y="-62.77" x="234.005" font-family="cmr12" font-size="14.4" transform="translate(-128.919 55.808)">)</text><text y="-67.996" x="239.488" font-family="cmmi10" font-size="10" transform="translate(-128.919 55.808)">Z</text></g>
-                                <g stroke="none"><text y="-11.192" x="99.718" font-family="cmmi12" font-size="14.4" transform="translate(-108.218 55.808)">Y</text><text y="-16.417" x="111.032" font-family="cmmi10" font-size="10" transform="translate(-108.218 55.808)">Z</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="m-49.1-19.608 38.116-29.51" fill="none"></path>
-                                <path d="M-15.24-50.194c1.703 1.305 3.266 1.333 4.484.9-.724 1.07-1.09 2.59-.253 4.565" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759711999999999"></path><text y="-11.192" x="26.27" font-family="cmmi10" font-size="10" transform="translate(-65.907 -26.736)" stroke="none">®</text>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="m-49.894-1.492 34.55 28.765" fill="none"></path>
-                                <path d="M-15.212 22.885c-.907 1.944-.596 3.477.09 4.572-1.202-.476-2.765-.503-4.513.74" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759711999999999"></path><text y="-11.192" x="26.27" font-family="cmmi10" font-size="10" transform="translate(-68.24 34.599)" stroke="none">¯</text>
-                              </g>
-                              <g stroke="red" fill="red" stroke-width=".576">
-                                <path d="M-49.1-10.562h99.979" fill="none"></path>
-                                <path d="M48.172-14.018c.547 2.073 1.766 3.053 2.995 3.456-1.229.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-11.192" x="26.27" font-family="cmmi10" font-size="10" transform="translate(-27.974 -2.758)" fill="red" stroke="none">h</text>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M62.96-24.491 18.128-49.193" fill="none"></path>
-                                <path d="M18.83-44.86c.522-2.08-.073-3.526-.955-4.472 1.27.24 2.811-.03 4.291-1.581" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57597696"></path>
-                                <g stroke="none"><text y="-11.192" x="26.27" font-family="cmmi10" font-size="10" transform="translate(17.41 -31.122)">f</text><text y="-9.692" x="31.166" font-family="cmmi7" font-size="7" transform="translate(17.41 -31.122)">X</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="m66.854 2.108-49.103 29.1" fill="none"></path>
-                                <path d="M21.841 32.8c-1.528-1.505-3.076-1.725-4.338-1.446.851-.973 1.4-2.437.814-4.5" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759711999999999"></path>
-                                <g stroke="none"><text y="-11.192" x="26.27" font-family="cmmi10" font-size="10" transform="translate(19.172 38.328)">f</text><text y="-9.692" x="31.166" font-family="cmmi7" font-size="7" transform="translate(19.172 38.328)">Y</text></g>
-                              </g>
-                            </g>
-                          </svg></div>
+                        <div class="block-language-tikz">
+                          <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+&X^Z&\\
+A\arrow[ur,"\alpha"]\arrow[dr,swap,"\beta"]\arrow[rr,red,"h"] & & (X\times Y)^Z\arrow[ul,swap,"f_X"]\arrow[dl,"f_Y"]\\
+&Y^Z&
+\end{tikzcd}
+\end{document}</script>
+                        </div>
                         where the red arrow represents a morphism <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> that may or may not exist. In this proof, we will show that there is only one possible candidate for <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>, and then we show that the commutative diagram indeed commutes.<br>
                         Taking the binary product with <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> everywhere gives us the diagram
-                        <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="375.914" height="299.501" viewBox="-72 -72 281.935 224.625">
-                            <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
-                              <g stroke="none">
-                                <g stroke="none"><text y="-156.509" x="184.572" font-family="cmmi12" font-size="14.4" transform="translate(-165.548 101.568)">X</text><text y="-161.735" x="197.406" font-family="cmmi10" font-size="10" transform="translate(-165.548 101.568)">Z</text><text y="-156.509" x="208.648" font-family="cmsy10" font-size="14.4" transform="translate(-165.548 101.568)">£</text><text y="-156.509" x="223.048" font-family="cmmi12" font-size="14.4" transform="translate(-165.548 101.568)">Z</text></g><text y="-109.549" x="184.572" font-family="cmmi12" font-size="14.4" transform="translate(-147.385 101.568)" stroke="none">X</text>
-                                <g font-size="14.4" stroke="none"><text y="-61.57" x="94.325" font-family="cmmi12" transform="translate(-160.395 101.568)">A</text><text y="-61.57" x="108.095" font-family="cmsy10" transform="translate(-160.395 101.568)">£</text><text y="-61.57" x="122.495" font-family="cmmi12" transform="translate(-160.395 101.568)">Z</text></g>
-                                <g font-size="14.4" stroke="none"><text y="-61.57" x="184.572" font-family="cmmi12" transform="translate(-161.842 101.568)">X</text><text y="-61.57" x="200.606" font-family="cmsy10" transform="translate(-161.842 101.568)">£</text><text y="-61.57" x="215.006" font-family="cmmi12" transform="translate(-161.842 101.568)">Y</text></g>
-                                <g stroke="none"><text y="-61.57" x="299.913" font-family="cmr12" font-size="14.4" transform="translate(-185.488 101.568)">(</text><text y="-61.57" x="305.396" font-family="cmmi12" font-size="14.4" transform="translate(-185.488 101.568)">X</text><text y="-61.57" x="321.43" font-family="cmsy10" font-size="14.4" transform="translate(-185.488 101.568)">£</text><text y="-61.57" x="335.83" font-family="cmmi12" font-size="14.4" transform="translate(-185.488 101.568)">Y</text><text y="-61.57" x="347.144" font-family="cmr12" font-size="14.4" transform="translate(-185.488 101.568)">)</text><text y="-66.796" x="352.627" font-family="cmmi10" font-size="10" transform="translate(-185.488 101.568)">Z</text><text y="-61.57" x="363.869" font-family="cmsy10" font-size="14.4" transform="translate(-185.488 101.568)">£</text><text y="-61.57" x="378.269" font-family="cmmi12" font-size="14.4" transform="translate(-185.488 101.568)">Z</text></g><text y="-12.211" x="184.572" font-family="cmmi12" font-size="14.4" transform="translate(-146.625 101.568)" stroke="none">Y</text>
-                                <g stroke="none"><text y="35.768" x="184.572" font-family="cmmi12" font-size="14.4" transform="translate(-164.788 101.568)">Y</text><text y="30.542" x="195.886" font-family="cmmi10" font-size="10" transform="translate(-164.788 101.568)">Z</text><text y="35.768" x="207.128" font-family="cmsy10" font-size="14.4" transform="translate(-164.788 101.568)">£</text><text y="35.768" x="221.528" font-family="cmmi12" font-size="14.4" transform="translate(-164.788 101.568)">Z</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M43.605-48.271v24.404" fill="none"></path>
-                                <path d="M47.06-26.574c-2.073.547-3.052 1.766-3.455 2.995-.404-1.229-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(-21.705 -69.396)" stroke="none">ev</text>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="m-35.511 24.688 68.96-72.542" fill="none"></path>
-                                <path d="M29.08-48.273c1.88 1.032 3.43.823 4.568.21-.554 1.169-.685 2.727.441 4.552" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759711999999999"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(-101.347 -53.448)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(-101.347 -53.448)">®</text><text y="35.768" x="79.021" font-family="cmmi10" font-size="10" transform="translate(-101.347 -53.448)">;</text><text y="35.768" x="81.798" font-family="cmr10" font-size="10" transform="translate(-101.347 -53.448)">1</text><text y="37.268" x="86.798" font-family="cmmi7" font-size="7" transform="translate(-101.347 -53.448)">Z</text><text y="35.768" x="93.237" font-family="cmr10" font-size="10" transform="translate(-101.347 -53.448)">)</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="m-37.129 46.668 67.433 72.717" fill="none"></path>
-                                <path d="M30.997 115.05c-1.148 1.811-1.037 3.371-.497 4.546-1.131-.627-2.678-.855-4.57.154" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57597696"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(-103.48 58.357)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(-103.48 58.357)">¯</text><text y="35.768" x="78.771" font-family="cmmi10" font-size="10" transform="translate(-103.48 58.357)">;</text><text y="35.768" x="81.548" font-family="cmr10" font-size="10" transform="translate(-103.48 58.357)">1</text><text y="37.268" x="86.548" font-family="cmmi7" font-size="7" transform="translate(-103.48 58.357)">Z</text><text y="35.768" x="92.987" font-family="cmr10" font-size="10" transform="translate(-103.48 58.357)">)</text></g>
-                              </g>
-                              <g stroke="red" fill="red" stroke-width=".576">
-                                <path d="M-46.643 46.668v101.4c0 2.209 0 2.209 0 0a4 4 0 0 0 4 4h197.588a4 4 0 0 0 4-4V49.644" fill="none"></path>
-                                <path d="M155.489 52.35c2.074-.547 3.053-1.766 3.456-2.994.403 1.228 1.382 2.447 3.456 2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
-                                <g fill="red" stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(93.635 67.3)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(93.635 67.3)">h;</text><text y="35.768" x="81.126" font-family="cmr10" font-size="10" transform="translate(93.635 67.3)">1</text><text y="37.268" x="86.126" font-family="cmmi7" font-size="7" transform="translate(93.635 67.3)">Z</text><text y="35.768" x="92.565" font-family="cmr10" font-size="10" transform="translate(93.635 67.3)">)</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M43.605 24.688V-1.935" fill="none"></path>
-                                <path d="M40.149.772C42.222.225 43.2-.995 43.605-2.223 44.008-.995 44.987.225 47.06.772" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(-41.783 -23.277)">¼</text><text y="37.268" x="74.398" font-family="cmmi7" font-size="7" transform="translate(-41.783 -23.277)">X</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M43.605 46.668V73.47" fill="none"></path>
-                                <path d="M47.06 70.764c-2.073.547-3.052 1.767-3.455 2.995-.404-1.228-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(-21.705 25.992)">¼</text><text y="37.268" x="74.398" font-family="cmmi7" font-size="7" transform="translate(-21.705 25.992)">Y</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M142.022 22.469 56.521-47.905" fill="none"></path>
-                                <path d="M56.415-43.517c.895-1.948.576-3.48-.117-4.571 1.205.47 2.769.488 4.509-.765" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759654399999999"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(33.74 -54.557)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(33.74 -54.557)">f</text><text y="37.268" x="77.482" font-family="cmmi7" font-size="7" transform="translate(33.74 -54.557)">X</text><text y="35.768" x="85.085" font-family="cmmi10" font-size="10" transform="translate(33.74 -54.557)">;</text><text y="35.768" x="87.862" font-family="cmr10" font-size="10" transform="translate(33.74 -54.557)">1</text><text y="37.268" x="92.862" font-family="cmmi7" font-size="7" transform="translate(33.74 -54.557)">Z</text><text y="35.768" x="99.301" font-family="cmr10" font-size="10" transform="translate(33.74 -54.557)">)</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="m143.944 49.068-83.401 70.368" fill="none"></path>
-                                <path d="M64.84 120.331c-1.755-1.232-3.318-1.194-4.517-.71.679-1.1.98-2.635.06-4.572" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57597696"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(36.714 59.557)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(36.714 59.557)">f</text><text y="37.268" x="77.482" font-family="cmmi7" font-size="7" transform="translate(36.714 59.557)">Y</text><text y="35.768" x="84.405" font-family="cmmi10" font-size="10" transform="translate(36.714 59.557)">;</text><text y="35.768" x="87.183" font-family="cmr10" font-size="10" transform="translate(36.714 59.557)">1</text><text y="37.268" x="92.183" font-family="cmmi7" font-size="7" transform="translate(36.714 59.557)">Z</text><text y="35.768" x="98.622" font-family="cmr10" font-size="10" transform="translate(36.714 59.557)">)</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M108.024 36.398h-36.57" fill="none"></path>
-                                <path d="M74.162 39.853c-.548-2.073-1.767-3.052-2.995-3.455 1.228-.404 2.447-1.383 2.995-3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(15.823 8.323)" stroke="none">ev</text>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M43.605 119.807V95.403" fill="none"></path>
-                                <path d="M40.149 98.11c2.073-.547 3.052-1.766 3.456-2.995.403 1.229 1.382 2.448 3.455 2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(-38.343 73.702)" stroke="none">ev</text>
-                              </g>
-                            </g>
-                          </svg></div>
+                        <div class="block-language-tikz">
+                          <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+&X^Z\times Z\arrow[d,"ev"]&\\
+&X&\\
+A\times Z\arrow[uur,"{(\alpha,1_Z)}"]\arrow[ddr,swap,"{(\beta,1_Z)}"]\arrow[rr,red,swap,"{(h,1_Z)}",
+rounded corners,
+to path={|- ([yshift=-17ex]\tikztostart.south)
+-| (\tikztotarget) [near end]\tikztonodes
+}] & X\times Y \arrow[u,"\pi_X"]\arrow[d,"\pi_Y"]& (X\times Y)^Z\times Z\arrow[uul,swap,"{(f_X,1_Z)}"]\arrow[ddl,"{(f_Y,1_Z)}"]\arrow[l,"ev"]\\
+&Y&\\
+&Y^Z\times Z\arrow[u,"ev"]&
+\end{tikzcd}
+\end{document}</script>
+                        </div>
                         From the binary product, we find that there is a unique <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D711 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c3A"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c2192"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-cD7"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> such that
-                        <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="375.914" height="299.501" viewBox="-72 -72 281.935 224.625">
-                            <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
-                              <g stroke="none">
-                                <g stroke="none"><text y="-156.509" x="184.572" font-family="cmmi12" font-size="14.4" transform="translate(-165.548 101.568)">X</text><text y="-161.735" x="197.406" font-family="cmmi10" font-size="10" transform="translate(-165.548 101.568)">Z</text><text y="-156.509" x="208.648" font-family="cmsy10" font-size="14.4" transform="translate(-165.548 101.568)">£</text><text y="-156.509" x="223.048" font-family="cmmi12" font-size="14.4" transform="translate(-165.548 101.568)">Z</text></g><text y="-109.549" x="184.572" font-family="cmmi12" font-size="14.4" transform="translate(-147.385 101.568)" stroke="none">X</text>
-                                <g font-size="14.4" stroke="none"><text y="-61.57" x="94.325" font-family="cmmi12" transform="translate(-160.395 101.568)">A</text><text y="-61.57" x="108.095" font-family="cmsy10" transform="translate(-160.395 101.568)">£</text><text y="-61.57" x="122.495" font-family="cmmi12" transform="translate(-160.395 101.568)">Z</text></g>
-                                <g font-size="14.4" stroke="none"><text y="-61.57" x="184.572" font-family="cmmi12" transform="translate(-161.842 101.568)">X</text><text y="-61.57" x="200.606" font-family="cmsy10" transform="translate(-161.842 101.568)">£</text><text y="-61.57" x="215.006" font-family="cmmi12" transform="translate(-161.842 101.568)">Y</text></g>
-                                <g stroke="none"><text y="-61.57" x="299.913" font-family="cmr12" font-size="14.4" transform="translate(-185.488 101.568)">(</text><text y="-61.57" x="305.396" font-family="cmmi12" font-size="14.4" transform="translate(-185.488 101.568)">X</text><text y="-61.57" x="321.43" font-family="cmsy10" font-size="14.4" transform="translate(-185.488 101.568)">£</text><text y="-61.57" x="335.83" font-family="cmmi12" font-size="14.4" transform="translate(-185.488 101.568)">Y</text><text y="-61.57" x="347.144" font-family="cmr12" font-size="14.4" transform="translate(-185.488 101.568)">)</text><text y="-66.796" x="352.627" font-family="cmmi10" font-size="10" transform="translate(-185.488 101.568)">Z</text><text y="-61.57" x="363.869" font-family="cmsy10" font-size="14.4" transform="translate(-185.488 101.568)">£</text><text y="-61.57" x="378.269" font-family="cmmi12" font-size="14.4" transform="translate(-185.488 101.568)">Z</text></g><text y="-12.211" x="184.572" font-family="cmmi12" font-size="14.4" transform="translate(-146.625 101.568)" stroke="none">Y</text>
-                                <g stroke="none"><text y="35.768" x="184.572" font-family="cmmi12" font-size="14.4" transform="translate(-164.788 101.568)">Y</text><text y="30.542" x="195.886" font-family="cmmi10" font-size="10" transform="translate(-164.788 101.568)">Z</text><text y="35.768" x="207.128" font-family="cmsy10" font-size="14.4" transform="translate(-164.788 101.568)">£</text><text y="35.768" x="221.528" font-family="cmmi12" font-size="14.4" transform="translate(-164.788 101.568)">Z</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M43.605-48.271v24.404" fill="none"></path>
-                                <path d="M47.06-26.574c-2.073.547-3.052 1.766-3.455 2.995-.404-1.229-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(-21.705 -69.396)" stroke="none">ev</text>
-                              </g>
-                              <g stroke-dasharray="4.03181,2.3039" stroke-width=".576">
-                                <path d="M-20.815 36.398h36.57" fill="none"></path>
-                                <path d="M13.047 32.942c.548 2.073 1.767 3.052 2.996 3.456-1.229.403-2.448 1.382-2.996 3.455" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-dasharray="none"></path>
-                                <g font-size="10" stroke="none"><text y="35.768" x="68.698" font-family="cmsy10" transform="translate(-78.378 -4.703)">9</text><text y="35.768" x="74.253" font-family="cmr10" transform="translate(-78.378 -4.703)">!</text><text y="35.768" x="77.031" font-family="cmmi10" transform="translate(-78.378 -4.703)">'</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="m-35.511 24.688 68.96-72.542" fill="none"></path>
-                                <path d="M29.08-48.273c1.88 1.032 3.43.823 4.568.21-.554 1.169-.685 2.727.441 4.552" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759711999999999"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(-101.347 -53.448)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(-101.347 -53.448)">®</text><text y="35.768" x="79.021" font-family="cmmi10" font-size="10" transform="translate(-101.347 -53.448)">;</text><text y="35.768" x="81.798" font-family="cmr10" font-size="10" transform="translate(-101.347 -53.448)">1</text><text y="37.268" x="86.798" font-family="cmmi7" font-size="7" transform="translate(-101.347 -53.448)">Z</text><text y="35.768" x="93.237" font-family="cmr10" font-size="10" transform="translate(-101.347 -53.448)">)</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="m-37.129 46.668 67.433 72.717" fill="none"></path>
-                                <path d="M30.997 115.05c-1.148 1.811-1.037 3.371-.497 4.546-1.131-.627-2.678-.855-4.57.154" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57597696"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(-103.48 58.357)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(-103.48 58.357)">¯</text><text y="35.768" x="78.771" font-family="cmmi10" font-size="10" transform="translate(-103.48 58.357)">;</text><text y="35.768" x="81.548" font-family="cmr10" font-size="10" transform="translate(-103.48 58.357)">1</text><text y="37.268" x="86.548" font-family="cmmi7" font-size="7" transform="translate(-103.48 58.357)">Z</text><text y="35.768" x="92.987" font-family="cmr10" font-size="10" transform="translate(-103.48 58.357)">)</text></g>
-                              </g>
-                              <g stroke="red" fill="red" stroke-width=".576">
-                                <path d="M-46.643 46.668v101.4c0 2.209 0 2.209 0 0a4 4 0 0 0 4 4h197.588a4 4 0 0 0 4-4V49.644" fill="none"></path>
-                                <path d="M155.489 52.35c2.074-.547 3.053-1.766 3.456-2.994.403 1.228 1.382 2.447 3.456 2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
-                                <g fill="red" stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(93.635 67.3)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(93.635 67.3)">h;</text><text y="35.768" x="81.126" font-family="cmr10" font-size="10" transform="translate(93.635 67.3)">1</text><text y="37.268" x="86.126" font-family="cmmi7" font-size="7" transform="translate(93.635 67.3)">Z</text><text y="35.768" x="92.565" font-family="cmr10" font-size="10" transform="translate(93.635 67.3)">)</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M43.605 24.688V-1.935" fill="none"></path>
-                                <path d="M40.149.772C42.222.225 43.2-.995 43.605-2.223 44.008-.995 44.987.225 47.06.772" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(-41.783 -23.277)">¼</text><text y="37.268" x="74.398" font-family="cmmi7" font-size="7" transform="translate(-41.783 -23.277)">X</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M43.605 46.668V73.47" fill="none"></path>
-                                <path d="M47.06 70.764c-2.073.547-3.052 1.767-3.455 2.995-.404-1.228-1.383-2.448-3.456-2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(-21.705 25.992)">¼</text><text y="37.268" x="74.398" font-family="cmmi7" font-size="7" transform="translate(-21.705 25.992)">Y</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M142.022 22.469 56.521-47.905" fill="none"></path>
-                                <path d="M56.415-43.517c.895-1.948.576-3.48-.117-4.571 1.205.47 2.769.488 4.509-.765" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759654399999999"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(33.74 -54.557)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(33.74 -54.557)">f</text><text y="37.268" x="77.482" font-family="cmmi7" font-size="7" transform="translate(33.74 -54.557)">X</text><text y="35.768" x="85.085" font-family="cmmi10" font-size="10" transform="translate(33.74 -54.557)">;</text><text y="35.768" x="87.862" font-family="cmr10" font-size="10" transform="translate(33.74 -54.557)">1</text><text y="37.268" x="92.862" font-family="cmmi7" font-size="7" transform="translate(33.74 -54.557)">Z</text><text y="35.768" x="99.301" font-family="cmr10" font-size="10" transform="translate(33.74 -54.557)">)</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="m143.944 49.068-83.401 70.368" fill="none"></path>
-                                <path d="M64.84 120.331c-1.755-1.232-3.318-1.194-4.517-.71.679-1.1.98-2.635.06-4.572" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57597696"></path>
-                                <g stroke="none"><text y="35.768" x="68.698" font-family="cmr10" font-size="10" transform="translate(36.714 59.557)">(</text><text y="35.768" x="72.587" font-family="cmmi10" font-size="10" transform="translate(36.714 59.557)">f</text><text y="37.268" x="77.482" font-family="cmmi7" font-size="7" transform="translate(36.714 59.557)">Y</text><text y="35.768" x="84.405" font-family="cmmi10" font-size="10" transform="translate(36.714 59.557)">;</text><text y="35.768" x="87.183" font-family="cmr10" font-size="10" transform="translate(36.714 59.557)">1</text><text y="37.268" x="92.183" font-family="cmmi7" font-size="7" transform="translate(36.714 59.557)">Z</text><text y="35.768" x="98.622" font-family="cmr10" font-size="10" transform="translate(36.714 59.557)">)</text></g>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M108.024 36.398h-36.57" fill="none"></path>
-                                <path d="M74.162 39.853c-.548-2.073-1.767-3.052-2.995-3.455 1.228-.404 2.447-1.383 2.995-3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(15.823 8.323)" stroke="none">ev</text>
-                              </g>
-                              <g stroke-width=".576">
-                                <path d="M43.605 119.807V95.403" fill="none"></path>
-                                <path d="M40.149 98.11c2.073-.547 3.052-1.766 3.456-2.995.403 1.229 1.382 2.448 3.455 2.995" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="35.768" x="68.698" font-family="cmmi10" font-size="10" transform="translate(-38.343 73.702)" stroke="none">ev</text>
-                              </g>
-                            </g>
-                          </svg></div>
+                        <div class="block-language-tikz">
+                          <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+&X^Z\times Z\arrow[d,"ev"]&\\
+&X&\\
+A\times Z\arrow[r,dashed,"\exists !\varphi"]\arrow[uur,"{(\alpha,1_Z)}"]\arrow[ddr,swap,"{(\beta,1_Z)}"]\arrow[rr,red,swap,"{(h,1_Z)}",
+rounded corners,
+to path={|- ([yshift=-17ex]\tikztostart.south)
+-| (\tikztotarget) [near end]\tikztonodes
+}] & X\times Y \arrow[u,"\pi_X"]\arrow[d,"\pi_Y"]& (X\times Y)^Z\times Z\arrow[uul,swap,"{(f_X,1_Z)}"]\arrow[ddl,"{(f_Y,1_Z)}"]\arrow[l,"ev"]\\
+&Y&\\
+&Y^Z\times Z\arrow[u,"ev"]&
+\end{tikzcd}
+\end{document}</script>
+                        </div>
                         so in particular, if <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> exists, then <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D711 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D463 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>. The universal property now gives us that there exists a unique <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> such that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D711 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D452 TEX-I"></mjx-c></mjx-mi><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D463 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-msub space="2"><mjx-mn class="mjx-n"><mjx-c class="mjx-c31"></mjx-c></mjx-mn><mjx-script style="vertical-align: -0.15em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44D TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> holds. Hence, we have found the unique candidate for <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. However, we have not yet guaranteed that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.06em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44B TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FC TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> and <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-msub><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-script style="vertical-align: -0.15em; margin-left: -0.06em;"><mjx-mi class="mjx-i" size="s"><mjx-c class="mjx-c1D44C TEX-I"></mjx-c></mjx-mi></mjx-script></mjx-msub><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c210E TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n" space="4"><mjx-c class="mjx-c3D"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="4"><mjx-c class="mjx-c1D6FD TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>. We have the following commutative diagram:
                         <div class="block-language-tikz">
                           <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}

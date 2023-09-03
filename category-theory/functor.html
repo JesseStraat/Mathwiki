@@ -22,13 +22,13 @@
   <!-- Graph View Data -->
   <script>
     let nodes = {
-      "nodeCount": 39,
-      "linkCount": 87,
-      "radii": [7, 7, 7, 7, 7, 7, 6.996913580246913, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.209876543209877, 6.209876543209877, 6.209876543209877, 6.209876543209877, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 3],
-      "labels": ["Differentiable Manifold", "Object", "Morphism", "Limit", "Functor", "Category", "Smallness", "Exponential object", "Smooth Function", "Tangent Space", "Subobject", "Natural Transformation", "Language", "index", "Vector Bundle", "Topos", "Complex manifold", "Language of Sets", "Topological space", "Ring", "Presheaves", "Natural Numbers Object", "Fibre Bundle", "Theory", "Structure", "Formula", "Logic", "ZFC Set Theory", "Topology", "Continuous Function", "Lie Derivatives", "Integration on Manifolds", "Differential Geometry", "Adjoint", "Riemann Surface", "Set Theory", "Abstract Algebra", "Category Theory", "Algebraic Geometry"],
-      "paths": ["differential-geometry/differentiable-manifold.html", "category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "set-theory/smallness.html", "category-theory/exponential-object.html", "differential-geometry/smooth-function.html", "differential-geometry/tangent-space.html", "category-theory/subobject.html", "category-theory/natural-transformation.html", "logic/language.html", "index.html", "differential-geometry/vector-bundle.html", "category-theory/topos.html", "algebraic-geometry/complex-manifold.html", "set-theory/language-of-sets.html", "topology/topological-space.html", "abstract-algebra/ring.html", "category-theory/presheaves.html", "category-theory/natural-numbers-object.html", "category-theory/fibre-bundle.html", "logic/theory.html", "logic/structure.html", "logic/formula.html", "logic/logic.html", "set-theory/zfc-set-theory.html", "topology/topology.html", "topology/continuous-function.html", "differential-geometry/lie-derivatives.html", "differential-geometry/integration-on-manifolds.html", "differential-geometry/differential-geometry.html", "category-theory/adjoint.html", "algebraic-geometry/riemann-surface.html", "set-theory/set-theory.html", "abstract-algebra/abstract-algebra.html", "category-theory/category-theory.html", "algebraic-geometry/algebraic-geometry.html"],
-      "linkSources": [36, 19, 16, 16, 34, 37, 5, 5, 5, 5, 5, 5, 5, 5, 7, 7, 7, 7, 7, 22, 22, 4, 4, 4, 4, 4, 3, 3, 3, 3, 3, 3, 2, 2, 2, 21, 21, 21, 11, 11, 11, 1, 1, 20, 20, 20, 10, 10, 10, 10, 15, 15, 15, 15, 0, 0, 0, 32, 31, 30, 8, 8, 8, 8, 9, 9, 14, 14, 6, 6, 6, 29, 28, 28, 13, 13, 13, 13, 27, 26, 25, 24, 24, 23, 17, 17, 17],
-      "linkTargets": [19, 19, 0, 2, 16, 5, 1, 2, 3, 4, 11, 6, 0, 14, 5, 3, 1, 2, 33, 5, 3, 5, 1, 2, 4, 6, 4, 1, 11, 2, 5, 6, 5, 1, 2, 5, 1, 2, 5, 4, 2, 5, 1, 6, 5, 4, 5, 1, 2, 3, 5, 3, 7, 10, 18, 5, 2, 0, 0, 9, 0, 29, 5, 9, 0, 14, 22, 9, 5, 1, 2, 18, 18, 32, 31, 30, 8, 33, 35, 27, 12, 12, 25, 12, 26, 23, 12]
+      "nodeCount": 40,
+      "linkCount": 92,
+      "radii": [7, 7, 7, 7, 7, 7, 7, 6.888888888888889, 6.888888888888889, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.626543209876543, 6.209876543209877, 6.209876543209877, 6.209876543209877, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 5.638888888888889, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.913580246913581, 4.033950617283951, 4.033950617283951, 4.033950617283951, 4.033950617283951, 3],
+      "labels": ["Smallness", "Differentiable Manifold", "Object", "Morphism", "Limit", "Functor", "Category", "Language of Sets", "Exponential object", "Language", "ZFC Set Theory", "Smooth Function", "Tangent Space", "Subobject", "Natural Transformation", "index", "Vector Bundle", "Topos", "Complex manifold", "Topological space", "Ring", "Presheaves", "Natural Numbers Object", "Fibre Bundle", "Theory", "Structure", "Formula", "Logic", "Ordinal", "Topology", "Continuous Function", "Lie Derivatives", "Integration on Manifolds", "Differential Geometry", "Adjoint", "Riemann Surface", "Set Theory", "Abstract Algebra", "Category Theory", "Algebraic Geometry"],
+      "paths": ["set-theory/smallness.html", "differential-geometry/differentiable-manifold.html", "category-theory/object.html", "category-theory/morphism.html", "category-theory/limit.html", "category-theory/functor.html", "category-theory/category.html", "set-theory/language-of-sets.html", "category-theory/exponential-object.html", "logic/language.html", "set-theory/zfc-set-theory.html", "differential-geometry/smooth-function.html", "differential-geometry/tangent-space.html", "category-theory/subobject.html", "category-theory/natural-transformation.html", "index.html", "differential-geometry/vector-bundle.html", "category-theory/topos.html", "algebraic-geometry/complex-manifold.html", "topology/topological-space.html", "abstract-algebra/ring.html", "category-theory/presheaves.html", "category-theory/natural-numbers-object.html", "category-theory/fibre-bundle.html", "logic/theory.html", "logic/structure.html", "logic/formula.html", "logic/logic.html", "set-theory/ordinal.html", "topology/topology.html", "topology/continuous-function.html", "differential-geometry/lie-derivatives.html", "differential-geometry/integration-on-manifolds.html", "differential-geometry/differential-geometry.html", "category-theory/adjoint.html", "algebraic-geometry/riemann-surface.html", "set-theory/set-theory.html", "abstract-algebra/abstract-algebra.html", "category-theory/category-theory.html", "algebraic-geometry/algebraic-geometry.html"],
+      "linkSources": [37, 20, 18, 18, 35, 38, 6, 6, 6, 6, 6, 6, 6, 6, 8, 8, 8, 8, 8, 23, 23, 5, 5, 5, 5, 5, 4, 4, 4, 4, 4, 4, 3, 3, 3, 22, 22, 22, 14, 14, 14, 2, 2, 21, 21, 21, 13, 13, 13, 13, 17, 17, 17, 17, 1, 1, 1, 33, 32, 31, 11, 11, 11, 11, 12, 12, 16, 16, 0, 0, 0, 0, 30, 29, 29, 15, 15, 15, 15, 10, 10, 10, 27, 26, 25, 25, 24, 7, 7, 7, 28, 28],
+      "linkTargets": [20, 20, 1, 3, 18, 6, 2, 3, 4, 5, 14, 0, 1, 16, 6, 4, 2, 3, 34, 6, 4, 6, 2, 3, 5, 0, 5, 2, 14, 3, 6, 0, 6, 2, 3, 6, 2, 3, 6, 5, 3, 6, 2, 0, 6, 5, 6, 2, 3, 4, 6, 4, 8, 13, 19, 6, 3, 1, 1, 12, 1, 30, 6, 12, 1, 16, 23, 12, 7, 6, 2, 3, 19, 19, 33, 32, 31, 11, 34, 9, 7, 36, 10, 9, 9, 26, 9, 27, 24, 9, 7, 10]
     };
     let attractionForce = 1;
     let linkLength = 10;
@@ -240,6 +240,10 @@
                   <div class="tree-item-children"></div>
                 </div>
                 <div class="tree-item mod-tree-file" data-depth="2">
+                  <div class="tree-item-contents"><a class="tree-item-link" href="set-theory/ordinal.html"><span class="tree-item-title">Ordinal</span></a></div>
+                  <div class="tree-item-children"></div>
+                </div>
+                <div class="tree-item mod-tree-file" data-depth="2">
                   <div class="tree-item-contents"><a class="tree-item-link" href="set-theory/set-theory.html"><span class="tree-item-title">Set Theory</span></a></div>
                   <div class="tree-item-children"></div>
                 </div>
@@ -285,6 +289,36 @@
     <div class="document-container">
       <div class="markdown-preview-view markdown-rendered node-insert-event is-readable-line-width allow-fold-headings show-indentation-guide allow-fold-lists" tabindex="-1" style="tab-size: 4;">
         <style id="MJX-CHTML-styles">
+          mjx-c.mjx-c1D443.TEX-I::before {
+            padding: 0.683em 0.751em 0px 0px;
+            content: "P";
+          }
+
+          mjx-c.mjx-c4E::before {
+            padding: 0.683em 0.75em 0px 0px;
+            content: "N";
+          }
+
+          mjx-c.mjx-c1D539.TEX-A::before {
+            padding: 0.683em 0.667em 0px 0px;
+            content: "B";
+          }
+
+          mjx-c.mjx-c45::before {
+            padding: 0.68em 0.681em 0px 0px;
+            content: "E";
+          }
+
+          mjx-c.mjx-c29.TEX-MI::before {
+            padding: 0.75em 0.409em 0.25em 0px;
+            content: ")";
+          }
+
+          mjx-c.mjx-c79::before {
+            padding: 0.431em 0.528em 0.204em 0px;
+            content: "y";
+          }
+
           mjx-c.mjx-c2243::before {
             padding: 0.464em 0.778em 0px 0px;
             content: "≃";
@@ -2609,18 +2643,28 @@
                     </g>
                   </svg></div>
                 <p>This now induces the commutative diagram</p>
-                <div class="block-language-tikz">
-                  <script type="text/tikz" data-show-console="true">\usepackage{tikz-cd}
-\usepackage{amsmath}
-\usepackage{amssymb}
-\begin{document}
-\Large
-\begin{tikzcd}
-X \arrow[rr,"f"]\arrow[rd,swap,"\nu_i"] && \mathcal{C}(A,C) \arrow[ld,"{\mathrm{Hom}(A,\mu_i) = \mu_i\circ -}"]\\
-& \mathcal{C}(A,Di) &
-\end{tikzcd}
-\end{document}</script>
-                </div>
+                <div class="block-language-tikz"><svg xmlns="http://www.w3.org/2000/svg" width="299.696" height="104.222" viewBox="-72 -72 224.772 78.167">
+                    <g stroke-width=".4" stroke="currentColor" fill="currentColor" stroke-miterlimit="10">
+                      <g stroke="none"><text y="-82.053" x="49.494" font-family="cmmi12" font-size="14.4" transform="translate(-115.564 28.76)" stroke="none">X</text>
+                        <g font-size="14.4" stroke="none"><text y="-82.053" x="225.272" font-family="cmsy10" transform="translate(-132.845 28.76)">C</text><text y="-82.053" x="233.694" font-family="cmr12" transform="translate(-132.845 28.76)">(</text><text y="-82.053" x="239.177" font-family="cmmi12" transform="translate(-132.845 28.76)">A;</text><text y="-82.053" x="256.064" font-family="cmmi12" transform="translate(-132.845 28.76)">C</text><text y="-82.053" x="267.186" font-family="cmr12" transform="translate(-132.845 28.76)">)</text></g>
+                        <g font-size="14.4" stroke="none"><text y="-31.733" x="128.742" font-family="cmsy10" transform="translate(-135.739 28.76)">C</text><text y="-31.733" x="137.164" font-family="cmr12" transform="translate(-135.739 28.76)">(</text><text y="-31.733" x="142.648" font-family="cmmi12" transform="translate(-135.739 28.76)">A;</text><text y="-31.733" x="159.534" font-family="cmmi12" transform="translate(-135.739 28.76)">D</text><text y="-31.733" x="171.633" font-family="cmmi12" transform="translate(-135.739 28.76)">i</text><text y="-31.733" x="176.443" font-family="cmr12" transform="translate(-135.739 28.76)">)</text></g>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-46.836-56.893H85.451" fill="none"></path>
+                        <path d="M82.744-60.349c.547 2.074 1.766 3.053 2.995 3.456-1.229.403-2.448 1.382-2.995 3.456" fill="none" stroke-linejoin="round" stroke-linecap="round"></path><text y="-31.733" x="36.877" font-family="cmmi10" font-size="10" transform="translate(-20.268 -30.492)" stroke="none">f</text>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M-46.836-48.757-.839-19.552" fill="none"></path>
+                        <path d="M-1.272-23.92c-.65 2.043-.145 3.523.676 4.522-1.253-.318-2.807-.145-4.38 1.312" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".5759654399999999"></path>
+                        <g stroke="none"><text y="-31.733" x="36.877" font-family="cmmi10" font-size="10" transform="translate(-72.128 5.427)">º</text><text y="-30.233" x="41.817" font-family="cmmi7" font-size="7" transform="translate(-72.128 5.427)">i</text></g>
+                      </g>
+                      <g stroke-width=".576">
+                        <path d="M91.827-44.223 44.404-19.51" fill="none"></path>
+                        <path d="M48.401-17.696c-1.443-1.586-2.977-1.89-4.252-1.68.903-.926 1.531-2.357 1.058-4.449" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width=".57595968"></path>
+                        <g stroke="none"><text y="-31.733" x="36.877" font-family="cmr10" font-size="10" transform="translate(34.371 10.888)">Hom</text><text y="-31.733" x="57.71" font-family="cmr10" font-size="10" transform="translate(34.371 10.888)">(</text><text y="-31.733" x="61.599" font-family="cmmi10" font-size="10" transform="translate(34.371 10.888)">A;¹</text><text y="-30.233" x="77.902" font-family="cmmi7" font-size="7" transform="translate(34.371 10.888)">i</text><text y="-31.733" x="81.232" font-family="cmr10" font-size="10" transform="translate(34.371 10.888)">)=</text><text y="-31.733" x="92.898" font-family="cmmi10" font-size="10" transform="translate(34.371 10.888)">¹</text><text y="-30.233" x="98.924" font-family="cmmi7" font-size="7" transform="translate(34.371 10.888)">i</text><text y="-31.733" x="102.253" font-family="cmsy10" font-size="10" transform="translate(34.371 10.888)">±¡</text></g>
+                      </g>
+                    </g>
+                  </svg></div>
                 <p>In fact, the unicity of <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span> follows directly from the unicity of each <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D453 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D465 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span>. Hence, we have proven that <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="2"><mjx-c class="mjx-c1D436 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo></mjx-math></mjx-container></span> is the limit of <span class="math math-inline is-loaded"><mjx-container class="MathJax" jax="CHTML"><mjx-math class="MJX-TEX"><mjx-texatom texclass="ORD"><mjx-mi class="mjx-cal mjx-i"><mjx-c class="mjx-c43 TEX-C"></mjx-c></mjx-mi></mjx-texatom><mjx-mo class="mjx-n"><mjx-c class="mjx-c28"></mjx-c></mjx-mo><mjx-mi class="mjx-i"><mjx-c class="mjx-c1D434 TEX-I"></mjx-c></mjx-mi><mjx-mo class="mjx-n"><mjx-c class="mjx-c2C"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="2"><mjx-c class="mjx-c2212"></mjx-c></mjx-mo><mjx-mo class="mjx-n"><mjx-c class="mjx-c29"></mjx-c></mjx-mo><mjx-mo class="mjx-n" space="3"><mjx-c class="mjx-c2218"></mjx-c></mjx-mo><mjx-mi class="mjx-i" space="3"><mjx-c class="mjx-c1D437 TEX-I"></mjx-c></mjx-mi></mjx-math></mjx-container></span>.</p>
               </div>
             </div>
