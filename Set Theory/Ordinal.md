@@ -26,10 +26,15 @@ Let $x$ be an ordinal. Then $x\cup\{x\}$ is also an ordinal. Indeed,
 >```
 
 This defines the successor function for ordinals $s(x) := x\cup \{x\}$.
+
+A set that contains the empty set $\emptyset$ and is closed under the successor function is called **iterative**.
 ## Natural numbers
 We define the natural numbers as follows:
 $0 = \emptyset$, $1 = s(0) = \{\emptyset\}$, $2 = s(1) = \{\emptyset,\{\emptyset\}\}$, and so on.
-Now, we will show that the collection of all natural numbers forms a set. Indeed, let $N$ be the set postulated by the [[ZFC Set Theory|axiom of infinity]]. Then, define
-$$\omega = \mathbb{N} = \{x\in N\ |\ \forall y(y\in\mathcal{P}(N) \Rightarrow [\emptyset\in y\wedge \forall z(z\in y\Rightarrow z\cup \{z\}\in y)] \Rightarrow x\in y)\}.$$
-In other words, $\mathbb{N}$ is the intersection of all subsets of $N$ that contain $\emptyset$ and are closed under the succession function. Of course, this means that the set itself must contain $\emptyset$ and is closed under succession, therefore containing all the natural numbers.
+Now, we will show that the collection of all natural numbers forms a set. Indeed, let $N$ be the set postulated by the [[ZFC Set Theory|axiom of infinity]], i.e., any iterative set. Define
+$$\omega = \mathbb{N} = \{x\in N\ |\ \forall y(y\in\mathcal{P}(N) \Rightarrow ([\emptyset\in y\wedge \forall z(z\in y\Rightarrow z\cup \{z\}\in y)] \Rightarrow x\in y))\}.$$
+In other words, $\mathbb{N}$ is the intersection of all iterative subsets of $N$. Of course, this means that the set itself must contain $\emptyset$ and is closed under succession, therefore containing all the natural numbers.
+
+Note that it does not matter which iterative set $N$ we started with. Indeed, if we were to have started with a different iterative set $M$ and induced another set $\mathbb{M}$, then $\mathbb{M}\cap N$ is an iterative subset of $N$, and hence $\mathbb{N}\subseteq \mathbb{M}\cap N\subseteq \mathbb{M}$. However, since $\mathbb{M}$ is the smallest iterative subset of $M$, we find that $\mathbb{M}=\mathbb{N}$.
+
 This proves that every model of ZFC must contain the set of natural numbers.
