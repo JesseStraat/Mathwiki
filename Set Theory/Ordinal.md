@@ -32,3 +32,4 @@ $0 = \emptyset$, $1 = s(0) = \{\emptyset\}$, $2 = s(1) = \{\emptyset,\{\emptyset
 Now, we will show that the collection of all natural numbers forms a set. Indeed, let $N$ be the set postulated by the [[ZFC Set Theory|axiom of infinity]]. Then, define
 $$\omega = \mathbb{N} = \{x\in N\ |\ \forall y(y\in\mathcal{P}(N) \Rightarrow [\emptyset\in y\wedge \forall z(z\in y\Rightarrow z\cup \{z\}\in y)] \Rightarrow x\in y)\}.$$
 In other words, $\mathbb{N}$ is the intersection of all subsets of $N$ that contain $\emptyset$ and are closed under the succession function. Of course, this means that the set itself must contain $\emptyset$ and is closed under succession, therefore containing all the natural numbers.
+This proves that every model of ZFC must contain the set of natural numbers.

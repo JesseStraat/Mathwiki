@@ -25,9 +25,11 @@ Given any closed term $t$ of $L_M$, we inductively define an element $t^M\in M$.
 
 We will now define what it means for a sentence $\varphi$ in $L_M$ to be true in $M$, denoted $M\vDash\varphi$. For $t_1,\dots,t_n$ closed terms and $R$ an $n$-ary relation symbol, we define for atomic formulas
 - $M\vDash\perp$ never holds,
-- $M\vDash (t_1=t_2)$ if $t^M=s^M$,
+- $M\vDash (t_1=t_2)$ if $t_1^M=t_2^M$,
 - $M\vDash R(t_1,\dots, t_n)$ if $(t_1^M,\dots,t_n^M)\in R^M$,
-for $\psi,\chi$ formulas,
+
+and for $\psi, \chi$ formulas and $x$ a variable
+
 - $M\vDash (\psi\wedge\chi)$ if $M\vDash \psi$ and $M\vDash\chi$,
 - $M\vDash(\psi\vee\chi)$ if $M\vDash\psi$ or $M\vDash\chi$ (in the inclusive sense),
 - $M\vDash(\psi\Rightarrow\chi)$ if $M\vDash\chi$ whenever $M\vDash\psi$,
