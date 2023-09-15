@@ -44,7 +44,7 @@ Conversely, a category is $\mathcal{A}$-enriched iff its hom-sets are objects of
 Quite trivially, a $\mathrm{Set}$-enriched category is a [[Smallness#Category theory|locally small]] category.
 ### $\mathrm{Ab}$-enriched category
 [[Monoidal Category#$ mathrm{Ab}$|Recall that Abelian groups form a monoidal category]]. Let us work explicitly through $\mathrm{Ab}$-enriched categories. In particular, notice that $\mathrm{Ab}$-enriched categories are categories, through the reasoning above.
-A category is $\mathrm{Ab}$-enriched if and only if its hom-sets have the structure of an Abelian group and composition is bilinear. The unit of the hom-set is called the *zero morphism*. In particular, all hom-sets must contain a zero morphism and is therefore non-empty.
+A category is $\mathrm{Ab}$-enriched if and only if its hom-sets have the structure of an Abelian group and composition is bilinear. The unit of the hom-set is called the *zero morphism*, denoted by $0$. In particular, all hom-sets must contain a zero morphism and is therefore non-empty.
 $\mathrm{Ab}$-enriched categories are sometimes called *ringoids*, although this term may be reserved for small $\mathrm{Ab}$-enriched categories.
 
 **Proposition:** Let $\mathcal{C}$ be an $\mathrm{Ab}$-enriched category. Any object $A$ is a zero object (i.e., both [[Limit#Terminal object|terminal]] and initial) if and only if its identity morphism $1_A$ is the unit of the Abelian group $\mathcal{C}(A,A)$.
@@ -57,6 +57,24 @@ $\mathrm{Ab}$-enriched categories are sometimes called *ringoids*, although this
 >[!proof]-
 >Let $A$ be initial in $\mathcal{C}$. Then there is exactly one morphism in $\mathcal{C}(A,A)$, which then implies that $1_A$ is the unit. Therefore, it is a zero object.
 >The same claim for terminal objects follows by the duality principle, concluding the proof.
+
+In any $\mathrm{Ab}$-enriched category, we will denote any zero object by $0$. Note that any morphism into a zero object is epi, and any morphism out of a zero object is mono.
+
+**Proposition:** Let $A,B$ denote any two objects in an $\mathrm{Ab}$-enriched category with zero object $0$. Then the zero morphism between the two is given precisely by the unique map
+```tikz
+\usepackage{tikz-cd}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\begin{document}
+\Large
+\begin{tikzcd}
+	A & 0 & B \arrow[two heads, from=1-1, to=1-2] \arrow[hook, from=1-2, to=1-3]
+\end{tikzcd}
+\end{document}
+```
+In other words, zero morphisms factor through $0$.
+>[!proof]-
+>Due to the unicity of the zero morphism, it is sufficient to show that the given map is a zero morphism. Due to the necessary bilinearity of composition, we find that any composition with a zero morphism must also be a zero morphism. Furthermore, since both morphisms in the proposed composition are unique, and hence the zero morphism, we find that their composition must then also be a zero morphism between $A$ and $B$. This concludes the proof.
 
 **Proposition:** If we have any finite [[Limit#Binary product|product]], then the finite coproduct also exists and they are equal. Moreover, the dual holds by the duality principle. Since they coincide, we call them a *biproduct*.
 >[!proof]-
