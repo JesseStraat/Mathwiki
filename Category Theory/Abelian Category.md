@@ -1,7 +1,7 @@
 ## Definition
 Recall the definition of [[Additive Category|additive categories]].
 
-A **pre-Abelian category** is an additive category such that every morphism $f\colon A\to B$ has a *kernel* $\mathrm{ker}(f)$ and a *cokernel* $\mathrm{coker}(f)$, which means there are pullbacks
+A **pre-Abelian category** is an additive category such that every [[Morphism|morphism]] $f\colon A\to B$ has a *kernel* $\mathrm{ker}(f)$ and a *cokernel* $\mathrm{coker}(f)$, which means there are [[Limit#Pullback|pullbacks]]
 ```tikz
 \usepackage{tikz-cd}
 \usepackage{amsmath}
@@ -25,7 +25,28 @@ and pushouts
 \end{tikzcd}
 \end{document}
 ```
-Equivalently, it is an $\mathrm{Ab}$-enriched category with all finite limits and colimits.
+Equivalently, it is an $\mathrm{Ab}$-[[Enriched Category#$ mathrm{Ab}$-enriched category|enriched category]] with all finite [[Limit|limits]] and colimits.
+
+From here, we define the *image* of a morphism as $\mathrm{im}(f) = \mathrm{ker}(\mathrm{Coker}(f))$, and similarly the *co-image* $\mathrm{coim}(f)$. This induces a diagram
+```tikz
+\usepackage{tikz-cd}
+\usetikzlibrary{calc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\tikzset{curve/.style={settings={#1},to path={(\tikztostart)
+    .. controls ($(\tikztostart)!\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+    and ($(\tikztostart)!1-\pv{pos}!(\tikztotarget)!\pv{height}!270:(\tikztotarget)$)
+    .. (\tikztotarget)\tikztonodes}},
+    settings/.code={\tikzset{quiver/.cd,#1}
+        \def\pv##1{\pgfkeysvalueof{/tikz/quiver/##1}}},
+    quiver/.cd,pos/.initial=0.35,height/.initial=0}
+\begin{document}
+\Large
+\begin{tikzcd}
+	{\mathrm{im}(f)} \\ & A & B \\ & 0 & {\mathrm{coker}(f)} \arrow[two heads, from=2-2, to=3-2] \arrow["f", from=2-2, to=2-3] \arrow[two heads, from=2-3, to=3-3] \arrow[hook, from=3-2, to=3-3] \arrow["\ulcorner"{anchor=center, pos=0.125}, draw=none, from=2-2, to=3-3] \arrow[curve={height=-24pt}, hook, from=1-1, to=2-3] \arrow[curve={height=24pt}, two heads, from=1-1, to=3-2] \arrow["\lrcorner"{anchor=center, pos=0.125}, draw=none, from=1-1, to=3-3]
+\end{tikzcd}
+\end{document}
+```
 
 **Proposition:** Every morphism $f\colon A\to B$ in a pre-Abelian category has a (canonical) decomposition
 ```tikz
@@ -154,7 +175,7 @@ Equivalently, it is an $\mathrm{Ab}$-enriched category with all finite limits an
 >```
 >This gives the canonical decomposition.
 
-A pre-Abelian category in which $\bar{f}$ is an isomorphism for all morphisms $f$ is called an **Abelian category**.
+A pre-Abelian category in which $\bar{f}$ is an [[Morphism#Isomorphisms|isomorphism]] for all morphisms $f$ is called an **Abelian category**.
 ## Examples
 ### $R\mathrm{Mod}$
 We already saw in [[Additive Category|the article on additive category]] that $R\mathrm{Mod}$ is additive. Moreover, it is quite easy to derive that kernels of morphisms $f\colon A\to B$ are given by submodules $\mathrm{ker}(f) = \{x\in A\ |\ f(x)=0\}$ and cokernels are given by $\mathrm{coker}(f) = B/fA$. Then $\mathrm{Ker}(f)$ is simply the inclusion and $\mathrm{Coker}(f)$ the projection onto the quotient.
