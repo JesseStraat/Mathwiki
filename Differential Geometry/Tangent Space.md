@@ -25,7 +25,7 @@ In terms of [[Vector Bundle|vector bundles]], we say that a $1$-form is a sectio
 Let $TM$ denote the tangent bundle of some manifold $M$. Then, the **$(m,n)$-tensor bundle** is
 $$T^m_nM = TM^{\otimes m}\otimes T^*M^{\otimes n}.$$
 A **$(m,n)$-tensor field** is a section of the $T^m_nM$ vector bundle. Notice, in particular, that
- - An $n$-form is a $(0,n)$-tensor field;
+ - An $n$-form is an asymmetric $(0,n)$-tensor field;
  - A vector field is a $(1,0)$-tensor field;
  - A smooth function is a $(0,0)$-tensor field.
 ## Propositions
