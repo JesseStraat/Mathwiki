@@ -181,3 +181,6 @@ A pre-Abelian category in which $\bar{f}$ is an [[Morphism#Isomorphisms|isomorph
 We already saw in [[Additive Category|the article on additive category]] that $R\mathrm{Mod}$ is additive. Moreover, it is quite easy to derive that kernels of morphisms $f\colon A\to B$ are given by submodules $\mathrm{ker}(f) = \{x\in A\ |\ f(x)=0\}$ and cokernels are given by $\mathrm{coker}(f) = B/fA$. Then $\mathrm{Ker}(f)$ is simply the inclusion and $\mathrm{Coker}(f)$ the projection onto the quotient.
 
 Now, to determine the canonical decomposition. Notice first that $\mathrm{ker}(\mathrm{Coker}(f)) = \{x\in B\ |\ x \in 0 + fA\}  = fA$, the image of $f$. Then $g$ is simply the morphism $f$ with codomain restricted to the image (i.e., such that it is surjective). Secondly, $\mathrm{coker}(\mathrm{Ker}(f)) = A/\mathrm{ker}(f)$, such that $\bar{f}$ becomes $g$ restricted to the quotient, i.e., it is injective. This gives us a bijective map, which proves that it is an isomorphism. This proves that $R\mathrm{Mod}$ is an Abelian category.
+## Propositions
+**Theorem:** (*Freyd-Mitchell embedding theorem*) Every small Abelian category admits a fully faithful exact functor to $R\mathrm{Mod}$ for some ring $R$.
+This also allows us to do diagram chasing on any Abelian category.
